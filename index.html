@@ -1705,7 +1705,7 @@ initDiag();
 // メールアドレスを難読化（ROT13 + 分割）して組み立て
 (function(){
   // Parts encoded to prevent bot harvesting
-  const _p=['jo','bt','vi','re','.','zr','qv','n@','tn','vy','.',pb','z'];
+  const _p=['jo','bt','vi','re','.','zr','qv','n@','tn','vy','.','pb','z'];
   // Actual construction via char-code shift (ROT13-style obfuscation)
   const raw=[106,111,98,116,105,101,114,46,109,101,100,105,97,64,103,109,97,105,108,46,99,111,109];
   window.__fbTarget=raw.map(c=>String.fromCharCode(c)).join('');
