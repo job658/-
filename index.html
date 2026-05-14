@@ -4,7 +4,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="color-scheme" content="light only">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="民間企業・公務員・インフラを多角的に比較。年収・安定性・成長性・ワークライフバランスを500社以上のデータで可視化。無料の自己分析診断で自分に合う就職先がわかります。">
+<meta name="keywords" content="就職先比較,公務員,民間企業,年収比較,偏差値マップ,就活,キャリア分析,自己分析">
+<link rel="canonical" href="https://career-analytics.jp/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="就職先比較分析 | キャリア選択データベース 2026">
+<meta property="og:description" content="民間企業・公務員・インフラを多角的に比較。500社以上のデータで最適な就職先を探す。">
+<meta property="og:url" content="https://career-analytics.jp/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="就職先比較分析 | キャリア選択データベース 2026">
+<meta name="twitter:description" content="民間企業・公務員・インフラを多角的に比較。500社以上のデータで最適な就職先を探す。">
+<meta name="theme-color" content="#0b1829">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "就職先比較分析",
+  "url": "https://career-analytics.jp/",
+  "description": "民間企業・公務員・インフラを多角的に比較するキャリア選択データベース",
+  "inLanguage": "ja",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://career-analytics.jp/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "民間企業と公務員、どちらが年収が高いですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "30歳時点では民間大手560〜900万円、公務員600〜740万円と近い水準ですが、大手外資や総合商社では1,000万円超も現実的。上限は民間の方が高い傾向があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "偏差値マップの算出方法は？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "採用難易度・平均年収・雇用安定性・将来性・ワークライフバランスの5指標を独自算出した総合スコアです。各社IR・就職四季報・人事院勧告・OpenWork・厚生労働省統計を参照しています。"
+      }
+    }
+  ]
+}
+</script>
 <title>就職先比較分析 | キャリア選択データベース 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
@@ -13,276 +64,306 @@
    Refined 2026 Edition
    ═══════════════════════════════════════════════ */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-
 :root {
-  /* ── Core Palette ── */
-  --navy:        #0b1829;
-  --navy2:       #112238;
-  --navy3:       #1a3354;
-  --blue:        #1d58d4;
-  --blue2:       #2a6aed;
-  --blue3:       #1246b8;
-  --blue-light:  #e8f0fd;
-  --blue-glow:   rgba(29,88,212,0.15);
-  --teal:        #0d8a9e;
-  --amber:       #c07a1a;
-  --amber-light: #fef4e3;
-  --green:       #0a7a5a;
-  --green-light: #e4f6ef;
-  --red:         #be3c2c;
-  --red-light:   #fde9e7;
+/* ── Core Palette ── */
+–navy:        #0b1829;
+–navy2:       #112238;
+–navy3:       #1a3354;
+–blue:        #1d58d4;
+–blue2:       #2a6aed;
+–blue3:       #1246b8;
+–blue-light:  #e8f0fd;
+–blue-glow:   rgba(29,88,212,0.15);
+–teal:        #0d8a9e;
+–amber:       #c07a1a;
+–amber-light: #fef4e3;
+–green:       #0a7a5a;
+–green-light: #e4f6ef;
+–red:         #be3c2c;
+–red-light:   #fde9e7;
 
-  /* ── Surfaces ── */
-  --bg:          #f2f5fb;
-  --bg2:         #e8ecf5;
-  --bg3:         #dde3ef;
-  --surface:     #ffffff;
-  --surface2:    #fafbff;
-  --border:      #dde3ee;
-  --border2:     #c8d0e0;
-  --border3:     #b5bfd4;
+/* ── Surfaces ── */
+–bg:          #f2f5fb;
+–bg2:         #e8ecf5;
+–bg3:         #dde3ef;
+–surface:     #ffffff;
+–surface2:    #fafbff;
+–border:      #dde3ee;
+–border2:     #c8d0e0;
+–border3:     #b5bfd4;
 
-  /* ── Typography ── */
-  --text:        #0b1829;
-  --text2:       #374e6e;
-  --text3:       #6b80a0;
-  --text4:       #9aadca;
+/* ── Typography ── */
+–text:        #0b1829;
+–text2:       #374e6e;
+–text3:       #6b80a0;
+–text4:       #9aadca;
 
-  /* ── Shadows ── */
-  --shadow-xs:   0 1px 2px rgba(11,24,41,0.06);
-  --shadow-sm:   0 1px 4px rgba(11,24,41,0.08), 0 2px 8px rgba(11,24,41,0.04);
-  --shadow:      0 2px 12px rgba(11,24,41,0.09), 0 4px 24px rgba(11,24,41,0.05);
-  --shadow-lg:   0 8px 32px rgba(11,24,41,0.14), 0 2px 8px rgba(11,24,41,0.06);
-  --shadow-xl:   0 16px 48px rgba(11,24,41,0.18), 0 4px 12px rgba(11,24,41,0.08);
+/* ── Shadows ── */
+–shadow-xs:   0 1px 2px rgba(11,24,41,0.06);
+–shadow-sm:   0 1px 4px rgba(11,24,41,0.08), 0 2px 8px rgba(11,24,41,0.04);
+–shadow:      0 2px 12px rgba(11,24,41,0.09), 0 4px 24px rgba(11,24,41,0.05);
+–shadow-lg:   0 8px 32px rgba(11,24,41,0.14), 0 2px 8px rgba(11,24,41,0.06);
+–shadow-xl:   0 16px 48px rgba(11,24,41,0.18), 0 4px 12px rgba(11,24,41,0.08);
 
-  /* ── Shape ── */
-  --radius-sm:   6px;
-  --radius:      10px;
-  --radius-lg:   14px;
-  --radius-xl:   20px;
+/* ── Shape ── */
+–radius-sm:   6px;
+–radius:      10px;
+–radius-lg:   14px;
+–radius-xl:   20px;
+–radius-pill: 999px;
 
-  /* ── Transitions ── */
-  --ease:        cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-in:     cubic-bezier(0.4, 0, 1, 1);
+/* Premium additions */
+–gold:        #b8973a;
+–gold-light:  #f5e9c4;
+–navy-deep:   #060e1a;
+–surface-elevated: #ffffff;
+–glass:       rgba(255,255,255,0.06);
+–glass-border:rgba(255,255,255,0.1);
+–header-h:    64px;
+–transition:  0.24s cubic-bezier(0.22,1,0.36,1);
+
+/* ── Transitions ── */
+–ease:        cubic-bezier(0.22, 1, 0.36, 1);
+–ease-in:     cubic-bezier(0.4, 0, 1, 1);
 }
 
 /* ── RESET ── */
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;color-scheme:light;-webkit-text-size-adjust:100%;}
 body{
-  background:var(--bg);
-  color:var(--text);
-  font-family:'Noto Sans JP','Plus Jakarta Sans',sans-serif;
-  font-size:14px;
-  line-height:1.75;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+background:#f2f5fb;
+background:var(–bg);
+color:#0b1829;
+color:var(–text);
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+text-rendering:optimizeLegibility;
+font-family:‘Noto Sans JP’,‘Plus Jakarta Sans’,sans-serif;
+font-size:14px;
+line-height:1.75;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
 }
 a{color:inherit;text-decoration:none;}
 button{font-family:inherit;cursor:pointer;}
 
 /* ══════════════════════════════════
-   HEADER
+HEADER
 ══════════════════════════════════ */
 header{
-  background:var(--navy);
-  background:linear-gradient(135deg, #0b1829 0%, #112238 100%);
-  position:-webkit-sticky;position:sticky;top:0;z-index:300;
-  border-bottom:1px solid rgba(255,255,255,0.05);
-  box-shadow:0 2px 16px rgba(0,0,0,0.3);
+background:#060e1a;
+background:linear-gradient(180deg, #0b1829 0%, #091526 100%);
+position:-webkit-sticky;position:sticky;top:0;z-index:300;
+border-bottom:1px solid rgba(255,255,255,0.07);
+box-shadow:0 1px 0 rgba(255,255,255,0.04), 0 4px 24px rgba(0,0,0,0.4);
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
 }
 .header-inner{
-  max-width:1200px;margin:0 auto;
-  padding:0 28px;
-  display:flex;align-items:center;
-  height:64px;gap:36px;
+max-width:1200px;margin:0 auto;
+padding:0 28px;
+display:flex;align-items:center;
+height:64px;gap:36px;
 }
 .logo{display:flex;align-items:center;gap:12px;flex-shrink:0;}
 .logo-icon{
-  width:32px;height:32px;border-radius:8px;
-  background:linear-gradient(135deg, var(--blue) 0%, var(--blue2) 100%);
-  display:flex;align-items:center;justify-content:center;
-  font-size:14px;color:#fff;
-  box-shadow:0 2px 8px rgba(29,88,212,0.4);
-  flex-shrink:0;
+width:32px;height:32px;border-radius:8px;
+background:linear-gradient(135deg, var(–blue) 0%, var(–blue2) 100%);
+display:flex;align-items:center;justify-content:center;
+font-size:14px;color:#fff;
+box-shadow:0 2px 8px rgba(29,88,212,0.4);
+flex-shrink:0;
 }
 .logo-text{display:flex;flex-direction:column;}
-.logo-main{font-family:'Noto Serif JP',serif;font-size:15px;font-weight:700;color:#fff;letter-spacing:0.03em;line-height:1.2;}
+.logo-main{font-family:‘Noto Serif JP’,serif;font-size:15px;font-weight:700;color:#fff;letter-spacing:0.03em;line-height:1.2;}
 .logo-sub{font-size:10px;font-weight:400;color:rgba(255,255,255,0.38);letter-spacing:0.08em;}
 .header-nav{display:flex;gap:1px;flex:1;}
 .hnav-btn{
-  padding:6px 18px;border-radius:7px;border:none;
-  background:transparent;
-  font-size:12px;font-weight:500;
-  color:rgba(255,255,255,0.5);
-  cursor:pointer;transition:all 0.18s;letter-spacing:0.02em;white-space:nowrap;
+padding:6px 18px;border-radius:7px;border:none;
+background:transparent;
+font-size:12px;font-weight:500;
+color:rgba(255,255,255,0.5);
+cursor:pointer;transition:all 0.18s;letter-spacing:0.02em;white-space:nowrap;
 }
 .hnav-btn:hover{background:rgba(255,255,255,0.07);color:rgba(255,255,255,0.88);}
 .hnav-btn.active{background:rgba(255,255,255,0.1);color:#fff;font-weight:600;}
 .header-right{margin-left:auto;flex-shrink:0;}
 .btn-cta{
-  background:linear-gradient(135deg, var(--blue) 0%, var(--blue2) 100%);
-  color:#fff;border:none;border-radius:8px;
-  padding:9px 22px;font-size:12px;font-weight:700;
-  cursor:pointer;transition:all 0.2s var(--ease);
-  letter-spacing:0.03em;
-  box-shadow:0 2px 10px rgba(29,88,212,0.35);
+background:linear-gradient(135deg, var(–blue) 0%, var(–blue2) 100%);
+color:#fff;border:none;border-radius:8px;
+padding:9px 22px;font-size:12px;font-weight:700;
+cursor:pointer;transition:all 0.2s var(–ease);
+letter-spacing:0.03em;
+box-shadow:0 2px 10px rgba(29,88,212,0.35);
 }
 .btn-cta:hover{
-  transform:translateY(-1px);
-  box-shadow:0 4px 16px rgba(29,88,212,0.45);
-  background:linear-gradient(135deg, var(--blue2) 0%, #3579ff 100%);
+transform:translateY(-1px);
+box-shadow:0 4px 16px rgba(29,88,212,0.45);
+background:linear-gradient(135deg, var(–blue2) 0%, #3579ff 100%);
 }
 
 /* ══════════════════════════════════
-   HERO
+HERO
 ══════════════════════════════════ */
 .hero{
-  background:var(--navy);
-  background:linear-gradient(160deg, #0b1829 0%, #0e2040 50%, #0b1829 100%);
-  padding:64px 28px 56px;
-  position:relative;overflow:hidden;
+background:#060e1a;
+background:linear-gradient(165deg, #060e1a 0%, #0b1829 40%, #0d2244 70%, #0b1829 100%);
+padding:80px 32px 72px;
+position:relative;overflow:hidden;
 }
 .hero::before{
-  content:'';position:absolute;inset:0;
-  background:
-    radial-gradient(ellipse 70% 50% at 70% -5%, rgba(29,88,212,0.15) 0%, transparent 65%),
-    radial-gradient(ellipse 40% 40% at 20% 90%, rgba(13,138,158,0.08) 0%, transparent 60%);
-  pointer-events:none;
+content:’’;position:absolute;inset:0;
+background:
+radial-gradient(ellipse 80% 60% at 75% -10%, rgba(29,88,212,0.22) 0%, transparent 60%),
+radial-gradient(ellipse 50% 50% at 15% 85%, rgba(13,138,158,0.12) 0%, transparent 55%),
+radial-gradient(ellipse 30% 40% at 50% 50%, rgba(29,88,212,0.05) 0%, transparent 70%);
+pointer-events:none;
 }
 .hero::after{
-  content:'';position:absolute;
-  top:0;left:0;right:0;height:1px;
-  background:linear-gradient(90deg, transparent, rgba(29,88,212,0.4), transparent);
+content:’’;position:absolute;inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+background-size:48px 48px;
+pointer-events:none;
+mask-image:radial-gradient(ellipse 80% 80% at 50% 0%, black 0%, transparent 80%);
+-webkit-mask-image:radial-gradient(ellipse 80% 80% at 50% 0%, black 0%, transparent 80%);
+}
+.hero::after{
+content:’’;position:absolute;
+top:0;left:0;right:0;height:1px;
+background:linear-gradient(90deg, transparent, rgba(29,88,212,0.4), transparent);
 }
 .hero-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:flex-start;position:relative;}
 .hero-label{
-  display:inline-flex;align-items:center;gap:8px;
-  background:rgba(29,88,212,0.14);
-  border:1px solid rgba(29,88,212,0.3);
-  border-radius:5px;padding:5px 14px;
-  font-size:10.5px;font-weight:700;
-  color:rgba(255,255,255,0.7);
-  letter-spacing:0.1em;text-transform:uppercase;
-  margin-bottom:24px;
-  backdrop-filter:blur(4px);
+display:inline-flex;align-items:center;gap:8px;
+background:rgba(29,88,212,0.14);
+border:1px solid rgba(29,88,212,0.3);
+border-radius:5px;padding:5px 14px;
+font-size:10.5px;font-weight:700;
+color:rgba(255,255,255,0.7);
+letter-spacing:0.1em;text-transform:uppercase;
+margin-bottom:24px;
+backdrop-filter:blur(4px);
 }
-.hero-label-dot{width:6px;height:6px;border-radius:50%;background:var(--blue2);animation:blink 2s ease-in-out infinite;}
+.hero-label-dot{width:6px;height:6px;border-radius:50%;background:var(–blue2);animation:blink 2s ease-in-out infinite;}
 @keyframes blink{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(42,106,237,0.4);}50%{opacity:0.3;box-shadow:0 0 0 4px rgba(42,106,237,0);}}
 .hero h1{
-  font-family:'Noto Serif JP',serif;
-  font-size:clamp(26px, 3.4vw, 44px);
-  font-weight:700;line-height:1.3;
-  color:#fff;margin-bottom:16px;letter-spacing:0.01em;
+font-family:‘Noto Serif JP’,serif;
+font-size:clamp(26px, 3.4vw, 44px);
+font-weight:700;line-height:1.3;
+color:#fff;margin-bottom:16px;letter-spacing:0.01em;
 }
 .hero h1 em{
-  color:rgba(255,255,255,0.38);font-style:normal;
-  font-size:0.63em;font-family:'Noto Sans JP',sans-serif;
-  font-weight:300;display:block;letter-spacing:0.05em;margin-bottom:8px;
+color:rgba(255,255,255,0.38);font-style:normal;
+font-size:0.63em;font-family:‘Noto Sans JP’,sans-serif;
+font-weight:300;display:block;letter-spacing:0.05em;margin-bottom:8px;
 }
 .hero-desc{
-  color:rgba(255,255,255,0.48);font-size:13px;
-  max-width:540px;margin-bottom:36px;line-height:1.85;
+color:rgba(255,255,255,0.48);font-size:13px;
+max-width:540px;margin-bottom:36px;line-height:1.85;
 }
 .hero-stats{display:flex;gap:36px;margin-bottom:40px;flex-wrap:wrap;}
 .stat-item{display:flex;flex-direction:column;}
 .stat-num{
-  font-size:24px;font-weight:700;color:#fff;
-  font-variant-numeric:tabular-nums;letter-spacing:-0.01em;
+font-size:24px;font-weight:700;color:#fff;
+font-variant-numeric:tabular-nums;letter-spacing:-0.01em;
 }
 .stat-label{font-size:10.5px;color:rgba(255,255,255,0.38);margin-top:3px;letter-spacing:0.04em;}
 .stat-sep{width:1px;background:rgba(255,255,255,0.1);}
 .tab-nav{
-  display:flex;
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:10px;padding:4px;gap:2px;
-  backdrop-filter:blur(8px);
+display:flex;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:10px;padding:4px;gap:2px;
+backdrop-filter:blur(8px);
 }
 .tab-btn{
-  padding:9px 22px;border-radius:7px;border:none;
-  font-size:12px;font-weight:500;cursor:pointer;
-  transition:all 0.2s var(--ease);
-  color:rgba(255,255,255,0.48);
-  background:transparent;letter-spacing:0.02em;
+padding:9px 22px;border-radius:7px;border:none;
+font-size:12px;font-weight:500;cursor:pointer;
+transition:all 0.2s var(–ease);
+color:rgba(255,255,255,0.48);
+background:transparent;letter-spacing:0.02em;
 }
 .tab-btn.active{
-  background:rgba(255,255,255,0.12);
-  color:#fff;font-weight:700;
-  box-shadow:0 1px 6px rgba(0,0,0,0.2);
+background:rgba(255,255,255,0.12);
+color:#fff;font-weight:700;
+box-shadow:0 1px 6px rgba(0,0,0,0.2);
 }
 
 /* ══════════════════════════════════
-   ADS
+ADS
 ══════════════════════════════════ */
 .ads-section{max-width:1200px;margin:20px auto 0;padding:0 28px;}
 .ads-grid{display:flex;flex-direction:column;gap:6px;}
 .ad-item{
-  background:var(--surface);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  padding:12px 18px;
-  display:flex;align-items:center;gap:14px;
-  box-shadow:var(--shadow-xs);
-  transition:border-color 0.15s;
+background:var(–surface);
+border:1px solid var(–border);
+border-radius:var(–radius);
+padding:12px 18px;
+display:flex;align-items:center;gap:14px;
+box-shadow:var(–shadow-xs);
+transition:border-color 0.15s;
 }
-.ad-item:hover{border-color:var(--border2);}
+.ad-item:hover{border-color:var(–border2);}
 .ad-label{
-  font-size:10px;color:var(--text3);white-space:nowrap;
-  border:1px solid var(--border2);border-radius:3px;
-  padding:2px 7px;letter-spacing:0.04em;flex-shrink:0;
+font-size:10px;color:var(–text3);white-space:nowrap;
+border:1px solid var(–border2);border-radius:3px;
+padding:2px 7px;letter-spacing:0.04em;flex-shrink:0;
 }
 .ad-item img{display:block;max-width:100%;height:auto;}
 
 /* ══════════════════════════════════
-   MAIN LAYOUT
+MAIN LAYOUT
 ══════════════════════════════════ */
 .main{max-width:1200px;margin:0 auto;padding:32px 28px 96px;}
 .section{display:none;}
 .section.active{display:block;}
 
 /* ══════════════════════════════════
-   PANEL HEADER / AXIS PILLS
+PANEL HEADER / AXIS PILLS
 ══════════════════════════════════ */
 .panel-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;gap:16px;flex-wrap:wrap;}
 .panel-title{
-  font-size:14px;font-weight:800;color:var(--text);
-  display:flex;align-items:center;gap:10px;
-  letter-spacing:0.01em;
+font-size:14px;font-weight:800;color:var(–text);
+display:flex;align-items:center;gap:10px;
+letter-spacing:0.01em;
 }
 .panel-title::before{
-  content:'';display:block;width:3px;height:18px;
-  background:linear-gradient(to bottom, var(--blue), var(--teal));
-  border-radius:2px;
+content:’’;display:block;width:3px;height:18px;
+background:linear-gradient(to bottom, var(–blue), var(–teal));
+border-radius:2px;
 }
 .axis-pills{display:flex;gap:5px;flex-wrap:wrap;}
 .axis-pill{
-  padding:6px 15px;border-radius:24px;
-  font-size:11px;font-weight:600;cursor:pointer;
-  border:1px solid var(--border2);
-  color:var(--text2);background:var(--surface);
-  transition:all 0.15s var(--ease);letter-spacing:0.02em;
+padding:6px 15px;border-radius:24px;
+font-size:11px;font-weight:600;cursor:pointer;
+border:1px solid var(–border2);
+color:var(–text2);background:var(–surface);
+transition:all 0.15s var(–ease);letter-spacing:0.02em;
 }
-.axis-pill:hover{border-color:var(--blue);color:var(--blue);}
+.axis-pill:hover{border-color:var(–blue);color:var(–blue);}
 .axis-pill.active{
-  background:var(--blue);color:#fff;border-color:var(--blue);
-  box-shadow:0 2px 8px rgba(29,88,212,0.28);
+background:var(–blue);color:#fff;border-color:var(–blue);
+box-shadow:0 2px 8px rgba(29,88,212,0.28);
 }
 
 /* ══════════════════════════════════
-   COMPARE CARD
+COMPARE CARD
 ══════════════════════════════════ */
 .compare-card{
-  background:var(--surface);border-radius:var(--radius-lg);
-  border:1px solid var(--border);overflow:hidden;
-  box-shadow:var(--shadow);
+background:#ffffff;
+background:var(–surface);
+border-radius:var(–radius-xl);
+border:1px solid var(–border);
+overflow:hidden;
+box-shadow:0 4px 32px rgba(11,24,41,0.1), 0 1px 4px rgba(11,24,41,0.06);
 }
 .compare-head{
-  display:grid;grid-template-columns:200px 1fr 1fr;
-  background:var(--navy);
-  background:linear-gradient(135deg, #0b1829 0%, #112238 100%);
-  border-bottom:1px solid rgba(255,255,255,0.05);
+display:grid;grid-template-columns:200px 1fr 1fr;
+background:#0b1829;
+background:linear-gradient(135deg, #0b1829 0%, #0e2040 60%, #112238 100%);
+border-bottom:1px solid rgba(255,255,255,0.06);
 }
 .compare-head>div{padding:18px 24px;}
 .th-empty{background:rgba(0,0,0,0.15);}
@@ -296,169 +377,176 @@ header{
 .th-col-name{font-size:14px;font-weight:700;margin-bottom:2px;}
 .th-col-sub{font-size:10px;font-weight:400;opacity:0.5;letter-spacing:0.04em;}
 .cmp-row{
-  display:grid;grid-template-columns:200px 1fr 1fr;
-  border-bottom:1px solid var(--border);
-  transition:background 0.14s;
+display:grid;grid-template-columns:200px 1fr 1fr;
+border-bottom:1px solid var(–border);
+background:#ffffff;
+transition:background var(–transition);
 }
 .cmp-row:last-child{border-bottom:none;}
-.cmp-row:hover{background:var(--surface2);}
+.cmp-row:hover{background:#f5f7ff;}
 .cmp-label{
-  padding:18px 24px;background:var(--bg);
-  border-right:1px solid var(--border);
-  display:flex;flex-direction:column;justify-content:center;
+padding:18px 24px;background:var(–bg);
+border-right:1px solid var(–border);
+display:flex;flex-direction:column;justify-content:center;
 }
-.cmp-label strong{font-size:13px;font-weight:700;color:var(--text);}
-.cmp-label span{font-size:10.5px;color:var(--text3);margin-top:3px;}
-.cmp-cell{padding:16px 24px;border-right:1px solid var(--border);}
+.cmp-label strong{font-size:13px;font-weight:700;color:var(–text);}
+.cmp-label span{font-size:10.5px;color:var(–text3);margin-top:3px;}
+.cmp-cell{padding:16px 24px;border-right:1px solid var(–border);}
 .cmp-cell:last-child{border-right:none;}
 .bar-row{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
-.bar-track{flex:1;height:4px;background:var(--bg3);border-radius:4px;overflow:hidden;}
-.bar-fill{height:100%;border-radius:4px;transition:width 0.7s var(--ease);}
-.fill-blue{background:linear-gradient(90deg, var(--blue3), var(--blue2));}
-.fill-amber{background:linear-gradient(90deg, #a06018, var(--amber));}
-.bar-pct{font-size:11px;color:var(--text3);width:28px;text-align:right;font-weight:700;}
-.cell-main{font-size:13px;font-weight:600;color:var(--text);line-height:1.5;}
-.cell-sub{font-size:11px;color:var(--text3);margin-top:3px;line-height:1.65;}
+.bar-track{flex:1;height:4px;background:var(–bg3);border-radius:4px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:4px;transition:width 0.7s var(–ease);}
+.fill-blue{background:linear-gradient(90deg, var(–blue3), var(–blue2));}
+.fill-amber{background:linear-gradient(90deg, #a06018, var(–amber));}
+.bar-pct{font-size:11px;color:var(–text3);width:28px;text-align:right;font-weight:700;}
+.cell-main{font-size:13px;font-weight:600;color:var(–text);line-height:1.5;}
+.cell-sub{font-size:11px;color:var(–text3);margin-top:3px;line-height:1.65;}
 
-.fit-section{display:grid;grid-template-columns:200px 1fr 1fr;border-top:2px solid var(--bg3);}
-.fit-label-col{padding:22px 24px;background:var(--bg);border-right:1px solid var(--border);display:flex;align-items:center;}
-.fit-label-text{font-size:12px;font-weight:700;color:var(--text2);letter-spacing:0.04em;}
-.fit-col{padding:20px 24px;border-right:1px solid var(--border);}
+.fit-section{display:grid;grid-template-columns:200px 1fr 1fr;border-top:2px solid var(–bg3);}
+.fit-label-col{padding:22px 24px;background:var(–bg);border-right:1px solid var(–border);display:flex;align-items:center;}
+.fit-label-text{font-size:12px;font-weight:700;color:var(–text2);letter-spacing:0.04em;}
+.fit-col{padding:20px 24px;border-right:1px solid var(–border);}
 .fit-col:last-child{border-right:none;}
-.fit-heading{font-size:12px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:7px;color:var(--text);}
+.fit-heading{font-size:12px;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:7px;color:var(–text);}
 .fit-dot{width:8px;height:8px;border-radius:2px;}
-.fit-dot-a{background:var(--blue);}
-.fit-dot-b{background:var(--amber);}
+.fit-dot-a{background:var(–blue);}
+.fit-dot-b{background:var(–amber);}
 .fit-list{list-style:none;}
 .fit-list li{
-  display:flex;align-items:flex-start;gap:8px;
-  padding:6px 0;border-bottom:1px solid var(--border);
-  font-size:12px;color:var(--text2);line-height:1.55;
+display:flex;align-items:flex-start;gap:8px;
+padding:6px 0;border-bottom:1px solid var(–border);
+font-size:12px;color:var(–text2);line-height:1.55;
 }
 .fit-list li:last-child{border-bottom:none;}
 .fit-tag{
-  font-size:9px;font-weight:700;padding:2px 7px;
-  border-radius:4px;flex-shrink:0;margin-top:2px;letter-spacing:0.04em;
+font-size:9px;font-weight:700;padding:2px 7px;
+border-radius:4px;flex-shrink:0;margin-top:2px;letter-spacing:0.04em;
 }
-.tag-good{background:var(--green-light);color:var(--green);}
-.tag-caution{background:var(--amber-light);color:var(--amber);}
+.tag-good{background:var(–green-light);color:var(–green);}
+.tag-caution{background:var(–amber-light);color:var(–amber);}
 
 .cta-card{
-  background:var(--navy);
-  background:linear-gradient(135deg, #0b1829 0%, #112238 100%);
-  border-radius:var(--radius-lg);padding:26px 30px;margin-top:24px;
-  display:flex;align-items:center;justify-content:space-between;gap:18px;
-  border:1px solid rgba(255,255,255,0.06);
-  box-shadow:var(--shadow-lg);
-  position:relative;overflow:hidden;
+background:var(–navy);
+background:linear-gradient(135deg, #0b1829 0%, #112238 100%);
+border-radius:var(–radius-lg);padding:26px 30px;margin-top:24px;
+display:flex;align-items:center;justify-content:space-between;gap:18px;
+border:1px solid rgba(255,255,255,0.06);
+box-shadow:var(–shadow-lg);
+position:relative;overflow:hidden;
 }
 .cta-card::before{
-  content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 60% 80% at 80% 50%, rgba(29,88,212,0.12) 0%, transparent 70%);
-  pointer-events:none;
+content:’’;position:absolute;inset:0;
+background:radial-gradient(ellipse 60% 80% at 80% 50%, rgba(29,88,212,0.12) 0%, transparent 70%);
+pointer-events:none;
 }
 .cta-card-text strong{display:block;font-size:14px;color:#fff;margin-bottom:6px;font-weight:700;}
 .cta-card-text p{font-size:12px;color:rgba(255,255,255,0.45);}
 .btn-cta-outline{
-  background:rgba(255,255,255,0.08);
-  border:1px solid rgba(255,255,255,0.2);color:#fff;
-  border-radius:8px;padding:10px 24px;font-size:12px;font-weight:700;
-  cursor:pointer;transition:all 0.18s;white-space:nowrap;flex-shrink:0;
-  letter-spacing:0.02em;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);color:#fff;
+border-radius:8px;padding:10px 24px;font-size:12px;font-weight:700;
+cursor:pointer;transition:all 0.18s;white-space:nowrap;flex-shrink:0;
+letter-spacing:0.02em;
 }
 .btn-cta-outline:hover{background:rgba(255,255,255,0.14);border-color:rgba(255,255,255,0.35);}
 
 /* ══════════════════════════════════
-   MARKET CALLOUT
+MARKET CALLOUT
 ══════════════════════════════════ */
 .market-callout{
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius-lg);padding:22px 26px;margin-bottom:22px;
-  box-shadow:var(--shadow-sm);
+background:var(–surface);border:1px solid var(–border);
+border-radius:var(–radius-lg);padding:22px 26px;margin-bottom:22px;
+box-shadow:var(–shadow-sm);
 }
 .market-callout-title{
-  font-size:11px;font-weight:800;color:var(--text2);
-  letter-spacing:0.08em;text-transform:uppercase;
-  margin-bottom:16px;display:flex;align-items:center;gap:10px;
+font-size:11px;font-weight:800;color:var(–text2);
+letter-spacing:0.08em;text-transform:uppercase;
+margin-bottom:16px;display:flex;align-items:center;gap:10px;
 }
 .market-callout-title::before{
-  content:'';display:block;width:3px;height:13px;
-  background:linear-gradient(to bottom, var(--blue), var(--teal));
-  border-radius:2px;
+content:’’;display:block;width:3px;height:13px;
+background:linear-gradient(to bottom, var(–blue), var(–teal));
+border-radius:2px;
 }
 .market-table{width:100%;border-collapse:collapse;}
 .market-table th{
-  text-align:left;font-size:10.5px;font-weight:700;
-  color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;
-  padding:7px 14px;border-bottom:2px solid var(--bg3);
+text-align:left;font-size:10.5px;font-weight:700;
+color:var(–text3);letter-spacing:0.07em;text-transform:uppercase;
+padding:7px 14px;border-bottom:2px solid var(–bg3);
 }
-.market-table td{padding:9px 14px;font-size:13px;border-bottom:1px solid var(--border);}
-.market-table tbody tr:last-child td{border-bottom:none;font-weight:700;background:var(--bg);}
-.market-table td:last-child{text-align:right;font-weight:700;color:var(--blue);}
-.market-tag{display:inline-block;font-size:10px;font-weight:700;padding:3px 9px;border-radius:4px;background:var(--blue-light);color:var(--blue);letter-spacing:0.03em;}
+.market-table td{padding:9px 14px;font-size:13px;border-bottom:1px solid var(–border);}
+.market-table tbody tr:last-child td{border-bottom:none;font-weight:700;background:var(–bg);}
+.market-table td:last-child{text-align:right;font-weight:700;color:var(–blue);}
+.market-tag{display:inline-block;font-size:10px;font-weight:700;padding:3px 9px;border-radius:4px;background:var(–blue-light);color:var(–blue);letter-spacing:0.03em;}
 .market-tag.prime{background:#fff0f0;color:#b91c1c;}
 .market-tag.standard{background:#fff8e1;color:#92400e;}
 .market-tag.growth{background:#e8f5e9;color:#1b5e20;}
 .market-tag.pro{background:#f3e8ff;color:#6b21a8;}
-.market-tag.total{background:var(--navy);color:#fff;}
+.market-tag.total{background:var(–navy);color:#fff;}
 
 /* ══════════════════════════════════
-   MAP TAB
+MAP TAB
 ══════════════════════════════════ */
 .map-toolbar{
-  display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px;
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius-lg);padding:14px 18px;
-  box-shadow:var(--shadow-sm);
+display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px;
+background:#ffffff;
+background:var(–surface);
+border:1px solid var(–border);
+border-radius:var(–radius-lg);padding:16px 20px;
+box-shadow:0 2px 12px rgba(11,24,41,0.07);
 }
-.map-toolbar label{font-size:10.5px;color:var(--text3);font-weight:700;letter-spacing:0.07em;text-transform:uppercase;white-space:nowrap;}
+.map-toolbar label{font-size:10.5px;color:var(–text3);font-weight:700;letter-spacing:0.07em;text-transform:uppercase;white-space:nowrap;}
 .filter-chips{display:flex;gap:5px;flex-wrap:wrap;flex:1;}
 .chip{
-  padding:5px 13px;border-radius:24px;
-  border:1px solid var(--border2);
-  background:var(--bg);color:var(--text2);
-  font-size:11px;font-weight:500;cursor:pointer;
-  transition:all 0.14s var(--ease);letter-spacing:0.02em;
+padding:5px 13px;border-radius:24px;
+border:1px solid var(–border2);
+background:var(–bg);color:var(–text2);
+font-size:11px;font-weight:500;cursor:pointer;
+transition:all 0.14s var(–ease);letter-spacing:0.02em;
 }
-.chip:hover{border-color:var(--blue);color:var(--blue);}
-.chip.on{background:var(--navy);color:#fff;border-color:var(--navy);box-shadow:0 2px 8px rgba(11,24,41,0.2);}
+.chip:hover{border-color:var(–blue);color:var(–blue);}
+.chip.on{background:var(–navy);color:#fff;border-color:var(–navy);box-shadow:0 2px 8px rgba(11,24,41,0.2);}
 .search-wrap{margin-left:auto;}
 .search-box{
-  display:flex;align-items:center;gap:8px;
-  border:1.5px solid var(--border2);border-radius:8px;
-  background:var(--bg);padding:6px 12px;
-  transition:border-color 0.15s;
+display:flex;align-items:center;gap:8px;
+border:1.5px solid var(–border2);border-radius:8px;
+background:var(–bg);padding:6px 12px;
+transition:border-color 0.15s;
 }
-.search-box:focus-within{border-color:var(--blue);}
+.search-box:focus-within{border-color:var(–blue);}
 .search-box input{
-  border:none;outline:none;background:transparent;
-  font-family:inherit;font-size:12px;color:var(--text);width:160px;
+border:none;outline:none;background:transparent;
+font-family:inherit;font-size:12px;color:var(–text);width:160px;
 }
-.search-icon{font-size:13px;color:var(--text3);}
+.search-icon{font-size:13px;color:var(–text3);}
 .map-legend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
 .leg{
-  display:flex;align-items:center;gap:6px;
-  font-size:11px;color:var(--text2);
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:5px;padding:4px 10px;
+display:flex;align-items:center;gap:6px;
+font-size:11px;color:var(–text2);
+background:var(–surface);border:1px solid var(–border);
+border-radius:5px;padding:4px 10px;
 }
 .leg-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0;}
 
 .dev-band{
-  background:var(--surface);border-radius:var(--radius-lg);
-  border:1px solid var(--border);margin-bottom:8px;overflow:hidden;
-  box-shadow:var(--shadow-sm);transition:border-color 0.14s;
+background:#ffffff;
+background:var(–surface);
+border-radius:var(–radius-lg);
+border:1px solid var(–border);
+margin-bottom:10px;overflow:hidden;
+box-shadow:0 2px 12px rgba(11,24,41,0.07);
+transition:all var(–transition);
 }
-.dev-band:hover{border-color:var(--border2);}
+.dev-band:hover{border-color:var(–blue);box-shadow:0 4px 20px rgba(29,88,212,0.1);transform:translateY(-1px);}
 .dev-band-head{
-  display:flex;align-items:center;gap:14px;
-  padding:12px 20px;border-bottom:1px solid var(--border);
-  background:var(--bg);
+display:flex;align-items:center;gap:14px;
+padding:12px 20px;border-bottom:1px solid var(–border);
+background:var(–bg);
 }
 .dev-score-badge{
-  font-size:12px;font-weight:800;
-  padding:5px 16px;border-radius:6px;
-  min-width:108px;text-align:center;letter-spacing:0.02em;
+font-size:12px;font-weight:800;
+padding:5px 16px;border-radius:6px;
+min-width:108px;text-align:center;letter-spacing:0.02em;
 }
 .band-s{background:#fef2f2;color:#b91c1c;}
 .band-a{background:#fff7ed;color:#c2410c;}
@@ -466,16 +554,17 @@ header{
 .band-c{background:#f0fdf4;color:#166534;}
 .band-d{background:#eff6ff;color:#1d4ed8;}
 .band-e{background:#faf5ff;color:#6b21a8;}
-.dev-band-title{font-size:12px;color:var(--text2);font-weight:600;}
-.dev-band-count{margin-left:auto;font-size:11px;color:var(--text3);font-weight:700;}
+.dev-band-title{font-size:12px;color:var(–text2);font-weight:600;}
+.dev-band-count{margin-left:auto;font-size:11px;color:var(–text3);font-weight:700;}
 .dev-cards-wrap{padding:12px 16px;display:flex;flex-wrap:wrap;gap:6px;}
 .ecard{
-  display:inline-flex;flex-direction:column;
-  padding:7px 12px;border-radius:8px;
-  font-size:11px;font-weight:500;
-  border:1px solid transparent;
-  cursor:pointer;
-  transition:all 0.16s var(--ease);
+display:inline-flex;flex-direction:column;
+padding:8px 13px;border-radius:8px;
+font-size:11px;font-weight:500;
+border:1px solid transparent;
+cursor:pointer;
+transition:all var(–transition);
+background:#ffffff;
 }
 .ecard:hover{transform:translateY(-2px);box-shadow:0 4px 14px rgba(0,0,0,0.12);}
 .ecard .ec-name{font-size:11px;font-weight:700;}
@@ -492,343 +581,494 @@ header{
 .c-media{background:#f0f9ff;border-color:#bae6fd;color:#0c4a6e;}
 
 /* ══════════════════════════════════
-   DETAIL MODAL
+DETAIL MODAL
 ══════════════════════════════════ */
 #detailModal{
-  display:none;position:fixed;top:0;left:0;width:100%;height:100%;
-  background:rgba(0,0,0,0.6);z-index:2000;
-  align-items:center;justify-content:center;
-  backdrop-filter:blur(4px);
+display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+background:rgba(0,0,0,0.6);z-index:2000;
+align-items:center;justify-content:center;
+backdrop-filter:blur(4px);
 }
 .modal-box{
-  background:var(--surface);width:90%;max-width:700px;
-  max-height:90vh;overflow-y:auto;
-  border-radius:var(--radius-xl);
-  box-shadow:var(--shadow-xl);position:relative;
-  border:1px solid rgba(255,255,255,0.06);
+background:#ffffff;
+background:var(–surface);
+width:90%;max-width:720px;
+max-height:90vh;overflow-y:auto;
+border-radius:var(–radius-xl);
+box-shadow:0 24px 80px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.15);
+position:relative;
+border:1px solid rgba(255,255,255,0.06);
 }
 .modal-header{
-  background:var(--navy);
-  background:linear-gradient(135deg, #0b1829 0%, #112238 100%);
-  padding:28px 32px 26px;
-  border-radius:var(--radius-xl) var(--radius-xl) 0 0;
-  position:relative;
-  border-bottom:1px solid rgba(255,255,255,0.06);
+background:var(–navy);
+background:linear-gradient(135deg, #0b1829 0%, #112238 100%);
+padding:28px 32px 26px;
+border-radius:var(–radius-xl) var(–radius-xl) 0 0;
+position:relative;
+border-bottom:1px solid rgba(255,255,255,0.06);
 }
 .modal-close{
-  position:absolute;top:16px;right:18px;
-  background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.12);
-  color:rgba(255,255,255,0.65);font-size:16px;
-  width:34px;height:34px;border-radius:50%;
-  cursor:pointer;display:flex;align-items:center;justify-content:center;
-  transition:all 0.15s;
+position:absolute;top:16px;right:18px;
+background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.12);
+color:rgba(255,255,255,0.65);font-size:16px;
+width:34px;height:34px;border-radius:50%;
+cursor:pointer;display:flex;align-items:center;justify-content:center;
+transition:all 0.15s;
 }
 .modal-close:hover{background:rgba(255,255,255,0.18);color:#fff;}
 .modal-cat-tag{display:inline-block;font-size:10px;font-weight:700;padding:3px 11px;border-radius:5px;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:10px;}
-.modal-name{font-family:'Noto Serif JP',serif;font-size:23px;font-weight:700;color:#fff;margin-bottom:4px;}
+.modal-name{font-family:‘Noto Serif JP’,serif;font-size:23px;font-weight:700;color:#fff;margin-bottom:4px;}
 .modal-score-row{display:flex;align-items:center;gap:10px;margin-top:12px;}
 .modal-score-badge{font-size:13px;font-weight:700;padding:5px 16px;border-radius:7px;}
 .modal-body{padding:28px 32px;}
 .modal-section{margin-bottom:24px;}
 .modal-section-title{
-  font-size:11px;font-weight:800;color:var(--text2);
-  letter-spacing:0.09em;text-transform:uppercase;
-  margin-bottom:14px;display:flex;align-items:center;gap:8px;
+font-size:11px;font-weight:800;color:var(–text2);
+letter-spacing:0.09em;text-transform:uppercase;
+margin-bottom:14px;display:flex;align-items:center;gap:8px;
 }
 .modal-section-title::before{
-  content:'';display:block;width:3px;height:13px;
-  background:linear-gradient(to bottom, var(--blue), var(--teal));
-  border-radius:2px;
+content:’’;display:block;width:3px;height:13px;
+background:linear-gradient(to bottom, var(–blue), var(–teal));
+border-radius:2px;
 }
 .modal-info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .modal-info-item{
-  background:var(--bg);border-radius:var(--radius);
-  padding:14px 18px;border:1px solid var(--border);
-  transition:border-color 0.14s;
+background:var(–bg);border-radius:var(–radius);
+padding:14px 18px;border:1px solid var(–border);
+transition:border-color 0.14s;
 }
-.modal-info-item:hover{border-color:var(--border2);}
-.modal-info-label{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
-.modal-info-val{font-size:14px;font-weight:700;color:var(--text);}
-.modal-info-sub{font-size:10.5px;color:var(--text3);margin-top:3px;}
+.modal-info-item:hover{border-color:var(–border2);}
+.modal-info-label{font-size:10px;font-weight:700;color:var(–text3);letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
+.modal-info-val{font-size:14px;font-weight:700;color:var(–text);}
+.modal-info-sub{font-size:10.5px;color:var(–text3);margin-top:3px;}
 .modal-desc{
-  font-size:13px;color:var(--text2);line-height:1.85;
-  background:var(--bg);padding:18px;border-radius:var(--radius);
-  border:1px solid var(--border);
+font-size:13px;color:var(–text2);line-height:1.85;
+background:var(–bg);padding:18px;border-radius:var(–radius);
+border:1px solid var(–border);
 }
 .modal-footer{
-  padding:0 32px 28px;
-  display:flex;justify-content:flex-end;gap:10px;
-  border-top:1px solid var(--border);padding-top:20px;margin-top:0;
+padding:0 32px 28px;
+display:flex;justify-content:flex-end;gap:10px;
+border-top:1px solid var(–border);padding-top:20px;margin-top:0;
 }
 
 /* ══════════════════════════════════
-   DIAGNOSIS
+DIAGNOSIS
 ══════════════════════════════════ */
 .diag-wrap{max-width:700px;margin:0 auto;}
 .diag-top-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
-.diag-step-label{font-size:11px;color:var(--text3);font-weight:700;letter-spacing:0.07em;text-transform:uppercase;}
-.diag-progress{height:3px;background:var(--bg3);border-radius:3px;margin-bottom:32px;overflow:hidden;}
+.diag-step-label{font-size:11px;color:var(–text3);font-weight:700;letter-spacing:0.07em;text-transform:uppercase;}
+.diag-progress{height:3px;background:var(–bg3);border-radius:3px;margin-bottom:32px;overflow:hidden;}
 .diag-progress-fill{
-  height:100%;
-  background:linear-gradient(90deg, var(--blue), var(--teal));
-  border-radius:3px;transition:width 0.45s var(--ease);
+height:100%;
+background:linear-gradient(90deg, var(–blue), var(–teal));
+border-radius:3px;transition:width 0.45s var(–ease);
 }
 .diag-card{
-  background:var(--surface);border-radius:var(--radius-lg);
-  border:1px solid var(--border);padding:36px;
-  box-shadow:var(--shadow);
+background:var(–surface);border-radius:var(–radius-lg);
+border:1px solid var(–border);padding:36px;
+box-shadow:var(–shadow);
 }
-.diag-q{font-size:17px;font-weight:800;color:var(--text);margin-bottom:7px;line-height:1.5;}
-.diag-q-sub{font-size:12px;color:var(--text3);margin-bottom:24px;font-weight:400;}
+.diag-q{font-size:17px;font-weight:800;color:var(–text);margin-bottom:7px;line-height:1.5;}
+.diag-q-sub{font-size:12px;color:var(–text3);margin-bottom:24px;font-weight:400;}
 .diag-options{display:flex;flex-direction:column;gap:8px;}
 .diag-opt{
-  padding:15px 20px;border-radius:10px;
-  border:1.5px solid var(--border);
-  background:var(--surface);
-  font-size:13px;font-weight:500;color:var(--text);
-  cursor:pointer;text-align:left;
-  transition:all 0.16s var(--ease);
-  display:flex;align-items:center;gap:13px;
+padding:15px 20px;border-radius:10px;
+border:1.5px solid var(–border);
+background:var(–surface);
+font-size:13px;font-weight:500;color:var(–text);
+cursor:pointer;text-align:left;
+transition:all 0.16s var(–ease);
+display:flex;align-items:center;gap:13px;
 }
-.diag-opt:hover{border-color:var(--blue);background:var(--blue-light);color:var(--blue);}
-.diag-opt.selected{border-color:var(--blue);background:var(--blue-light);color:var(--blue);}
+.diag-opt:hover{border-color:var(–blue);background:var(–blue-light);color:var(–blue);}
+.diag-opt.selected{border-color:var(–blue);background:var(–blue-light);color:var(–blue);}
 .opt-icon{font-size:20px;flex-shrink:0;width:26px;text-align:center;}
 .diag-nav{display:flex;justify-content:space-between;align-items:center;margin-top:28px;}
 .diag-back{
-  background:var(--bg2);border:1px solid var(--border2);
-  border-radius:8px;padding:10px 22px;font-size:12px;
-  font-weight:600;color:var(--text2);cursor:pointer;
-  transition:all 0.15s;
+background:var(–bg2);border:1px solid var(–border2);
+border-radius:8px;padding:10px 22px;font-size:12px;
+font-weight:600;color:var(–text2);cursor:pointer;
+transition:all 0.15s;
 }
-.diag-back:hover{background:var(--bg3);}
+.diag-back:hover{background:var(–bg3);}
 .diag-next{
-  background:linear-gradient(135deg, var(--blue) 0%, var(--blue2) 100%);
-  color:#fff;border:none;border-radius:8px;
-  padding:11px 28px;font-size:13px;font-weight:700;
-  cursor:pointer;transition:all 0.2s var(--ease);
-  box-shadow:0 2px 10px rgba(29,88,212,0.3);
+background:linear-gradient(135deg, var(–blue) 0%, var(–blue2) 100%);
+color:#fff;border:none;border-radius:8px;
+padding:11px 28px;font-size:13px;font-weight:700;
+cursor:pointer;transition:all 0.2s var(–ease);
+box-shadow:0 2px 10px rgba(29,88,212,0.3);
 }
 .diag-next:hover:not(:disabled){
-  transform:translateY(-1px);
-  box-shadow:0 4px 16px rgba(29,88,212,0.4);
+transform:translateY(-1px);
+box-shadow:0 4px 16px rgba(29,88,212,0.4);
 }
 .diag-next:disabled{opacity:0.32;cursor:not-allowed;box-shadow:none;}
 .diag-result{
-  background:var(--surface);border-radius:var(--radius-lg);
-  border:1px solid var(--border);padding:36px;
-  box-shadow:var(--shadow);
+background:var(–surface);border-radius:var(–radius-lg);
+border:1px solid var(–border);padding:36px;
+box-shadow:var(–shadow);
 }
 .result-badge{
-  display:inline-block;
-  background:linear-gradient(135deg, var(--blue) 0%, var(--blue2) 100%);
-  color:#fff;border-radius:6px;padding:5px 16px;
-  font-size:10.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;
-  margin-bottom:14px;box-shadow:0 2px 8px rgba(29,88,212,0.3);
+display:inline-block;
+background:linear-gradient(135deg, var(–blue) 0%, var(–blue2) 100%);
+color:#fff;border-radius:6px;padding:5px 16px;
+font-size:10.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;
+margin-bottom:14px;box-shadow:0 2px 8px rgba(29,88,212,0.3);
 }
-.result-title{font-size:24px;font-weight:800;margin-bottom:10px;color:var(--text);}
-.result-desc{font-size:13px;color:var(--text2);margin-bottom:24px;line-height:1.75;}
+.result-title{font-size:24px;font-weight:800;margin-bottom:10px;color:var(–text);}
+.result-desc{font-size:13px;color:var(–text2);margin-bottom:24px;line-height:1.75;}
 .result-dims{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:26px;}
 .rdim{padding:16px 18px;border-radius:10px;border:1px solid;}
 .rdim-1{background:#eff6ff;border-color:#bfdbfe;}
 .rdim-2{background:#f0fdf4;border-color:#bbf7d0;}
 .rdim-3{background:#fffbeb;border-color:#fde68a;}
 .rdim-4{background:#fdf4ff;border-color:#e9d5ff;}
-.rdim-label{font-size:10px;font-weight:700;color:var(--text3);margin-bottom:8px;letter-spacing:0.07em;text-transform:uppercase;}
+.rdim-label{font-size:10px;font-weight:700;color:var(–text3);margin-bottom:8px;letter-spacing:0.07em;text-transform:uppercase;}
 .rdim-bar-wrap{display:flex;align-items:center;gap:10px;}
 .rdim-bar{flex:1;height:5px;background:rgba(0,0,0,0.07);border-radius:3px;overflow:hidden;}
 .rdim-bar-fill{height:100%;border-radius:3px;}
-.rdim-val{font-size:13px;font-weight:800;color:var(--text);}
+.rdim-val{font-size:13px;font-weight:800;color:var(–text);}
 .ri-section{margin-bottom:24px;}
-.ri-title{font-size:13px;font-weight:800;margin-bottom:12px;color:var(--text);}
+.ri-title{font-size:13px;font-weight:800;margin-bottom:12px;color:var(–text);}
 .ri-item{
-  display:flex;align-items:center;gap:13px;
-  padding:12px 16px;border-radius:9px;
-  background:var(--bg);border:1px solid var(--border);margin-bottom:7px;
-  transition:border-color 0.14s;
+display:flex;align-items:center;gap:13px;
+padding:12px 16px;border-radius:9px;
+background:var(–bg);border:1px solid var(–border);margin-bottom:7px;
+transition:border-color 0.14s;
 }
-.ri-item:hover{border-color:var(--border2);}
+.ri-item:hover{border-color:var(–border2);}
 .ri-rank{font-size:14px;width:30px;text-align:center;flex-shrink:0;}
 .ri-info{flex:1;}
-.ri-name{font-size:13px;font-weight:700;color:var(--text);}
-.ri-reason{font-size:11px;color:var(--text3);margin-top:2px;}
+.ri-name{font-size:13px;font-weight:700;color:var(–text);}
+.ri-reason{font-size:11px;color:var(–text3);margin-top:2px;}
 .ri-score{
-  font-size:11px;font-weight:700;padding:4px 12px;
-  border-radius:5px;background:var(--blue-light);color:var(--blue);
-  white-space:nowrap;
+font-size:11px;font-weight:700;padding:4px 12px;
+border-radius:5px;background:var(–blue-light);color:var(–blue);
+white-space:nowrap;
 }
 .diag-retry{
-  background:var(--bg2);border:1px solid var(--border2);
-  border-radius:8px;padding:10px 22px;font-size:12px;
-  font-weight:600;color:var(--text2);cursor:pointer;
-  transition:all 0.15s;
+background:var(–bg2);border:1px solid var(–border2);
+border-radius:8px;padding:10px 22px;font-size:12px;
+font-weight:600;color:var(–text2);cursor:pointer;
+transition:all 0.15s;
 }
-.diag-retry:hover{background:var(--bg3);}
+.diag-retry:hover{background:var(–bg3);}
 .result-actions{display:flex;gap:10px;flex-wrap:wrap;}
 
 /* ══════════════════════════════════
-   SERVICES WRAPPER
+SERVICES WRAPPER
 ══════════════════════════════════ */
 .services-wrapper{
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius-lg);padding:22px 26px;
-  box-shadow:var(--shadow-sm);
-  display:flex;align-items:center;justify-content:center;
-  flex-wrap:wrap;gap:20px;
+background:var(–surface);border:1px solid var(–border);
+border-radius:var(–radius-lg);padding:22px 26px;
+box-shadow:var(–shadow-sm);
+display:flex;align-items:center;justify-content:center;
+flex-wrap:wrap;gap:20px;
 }
 .data-note{
-  font-size:11px;color:var(--text3);
-  border-top:1px solid var(--border);padding-top:16px;margin-top:26px;
-  line-height:2.1;
+font-size:11px;color:var(–text3);
+border-top:1px solid var(–border);padding-top:16px;margin-top:26px;
+line-height:2.1;
 }
 
 /* ══════════════════════════════════
-   DIAG AD GATE
+DIAG AD GATE
 ══════════════════════════════════ */
-.diag-loading{
-  background:var(--surface);border-radius:var(--radius-lg);
-  border:1px solid var(--border);padding:52px 36px;
-  box-shadow:var(--shadow);text-align:center;
-}
+/* diag-loading defined below */
 .diag-loading-icon{font-size:42px;margin-bottom:18px;animation:spin 1.8s linear infinite;display:inline-block;}
 @keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
-.diag-loading-title{font-size:18px;font-weight:800;color:var(--text);margin-bottom:10px;}
-.diag-loading-sub{font-size:13px;color:var(--text3);margin-bottom:30px;line-height:1.75;}
+.diag-loading-title{font-size:18px;font-weight:800;color:var(–text);margin-bottom:10px;}
+.diag-loading-sub{font-size:13px;color:var(–text3);margin-bottom:30px;line-height:1.75;}
 .diag-loading-bar{
-  height:5px;background:var(--bg3);border-radius:3px;
-  overflow:hidden;max-width:320px;margin:0 auto 14px;
+height:5px;background:var(–bg3);border-radius:3px;
+overflow:hidden;max-width:320px;margin:0 auto 14px;
 }
 .diag-loading-bar-fill{
-  height:100%;
-  background:linear-gradient(90deg, var(--blue), var(--teal));
-  border-radius:3px;animation:loadBar 3s ease-in-out forwards;
+height:100%;
+background:linear-gradient(90deg, var(–blue), var(–teal));
+border-radius:3px;animation:loadBar 3s ease-in-out forwards;
 }
 @keyframes loadBar{0%{width:0%;}60%{width:75%;}90%{width:92%;}100%{width:100%;}}
-.diag-loading-dots{font-size:12px;color:var(--text3);}
+.diag-loading-dots{font-size:12px;color:var(–text3);}
 
-.diag-ad-gate{
-  background:var(--surface);border-radius:var(--radius-lg);
-  border:1px solid var(--border);padding:36px;
-  box-shadow:var(--shadow);
-}
+/* diag-ad-gate defined below */
 .diag-ad-gate-label{
-  font-size:10.5px;font-weight:800;color:var(--text3);letter-spacing:0.09em;
-  text-transform:uppercase;margin-bottom:12px;
-  display:flex;align-items:center;gap:8px;
+font-size:10.5px;font-weight:800;color:var(–text3);letter-spacing:0.09em;
+text-transform:uppercase;margin-bottom:12px;
+display:flex;align-items:center;gap:8px;
 }
 .diag-ad-gate-label::before{
-  content:'';display:block;width:3px;height:12px;
-  background:var(--amber);border-radius:2px;
+content:’’;display:block;width:3px;height:12px;
+background:var(–amber);border-radius:2px;
 }
-.diag-ad-gate-title{font-size:17px;font-weight:800;color:var(--text);margin-bottom:8px;}
-.diag-ad-gate-desc{font-size:12px;color:var(--text3);margin-bottom:24px;line-height:1.75;}
+.diag-ad-gate-title{font-size:17px;font-weight:800;color:var(–text);margin-bottom:8px;}
+.diag-ad-gate-desc{font-size:12px;color:var(–text3);margin-bottom:24px;line-height:1.75;}
 .diag-ad-box{display:flex;justify-content:center;margin-bottom:22px;}
 .diag-ad-confirm{
-  display:flex;align-items:center;gap:12px;
-  background:var(--bg2);border-radius:10px;padding:16px 20px;
-  border:1px solid var(--border);font-size:12px;color:var(--text2);
-  margin-bottom:24px;line-height:1.65;
+display:flex;align-items:center;gap:12px;
+background:var(–bg2);border-radius:10px;padding:16px 20px;
+border:1px solid var(–border);font-size:12px;color:var(–text2);
+margin-bottom:24px;line-height:1.65;
 }
 .diag-ad-confirm-icon{font-size:22px;flex-shrink:0;}
 .diag-ad-btn-wrap{display:flex;justify-content:center;}
 .diag-ad-reveal-btn{
-  background:linear-gradient(135deg, var(--blue) 0%, var(--blue2) 100%);
-  color:#fff;border:none;border-radius:10px;
-  padding:14px 40px;font-family:inherit;font-size:14px;font-weight:800;
-  cursor:pointer;transition:all 0.2s var(--ease);
-  display:flex;align-items:center;gap:9px;
-  box-shadow:0 4px 16px rgba(29,88,212,0.32);
+background:linear-gradient(135deg, var(–blue) 0%, var(–blue2) 100%);
+color:#fff;border:none;border-radius:10px;
+padding:14px 40px;font-family:inherit;font-size:14px;font-weight:800;
+cursor:pointer;transition:all 0.2s var(–ease);
+display:flex;align-items:center;gap:9px;
+box-shadow:0 4px 16px rgba(29,88,212,0.32);
 }
 .diag-ad-reveal-btn:disabled{
-  background:var(--bg2);color:var(--text3);cursor:not-allowed;
-  box-shadow:none;
+background:var(–bg2);color:var(–text3);cursor:not-allowed;
+box-shadow:none;
 }
 .diag-ad-reveal-btn:not(:disabled):hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 24px rgba(29,88,212,0.4);
+transform:translateY(-2px);
+box-shadow:0 6px 24px rgba(29,88,212,0.4);
 }
-.diag-ad-countdown{font-size:12px;color:var(--text3);text-align:center;margin-top:12px;}
+.diag-ad-countdown{font-size:12px;color:var(–text3);text-align:center;margin-top:12px;}
 
 /* ══════════════════════════════════
-   FEEDBACK BOX
+FEEDBACK BOX
 ══════════════════════════════════ */
 .feedback-section{
-  max-width:1200px;margin:0 auto 48px;padding:0 28px;
+max-width:1200px;margin:0 auto 48px;padding:0 28px;
 }
 .feedback-card{
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius-lg);padding:30px 34px;
-  box-shadow:var(--shadow-sm);position:relative;overflow:hidden;
+background:var(–surface);border:1px solid var(–border);
+border-radius:var(–radius-lg);padding:30px 34px;
+box-shadow:var(–shadow-sm);position:relative;overflow:hidden;
 }
 .feedback-card::before{
-  content:'';position:absolute;top:0;left:0;width:4px;height:100%;
-  background:linear-gradient(to bottom, var(--blue), var(--teal));
+content:’’;position:absolute;top:0;left:0;width:4px;height:100%;
+background:linear-gradient(to bottom, var(–blue), var(–teal));
 }
 .feedback-title{
-  font-size:14px;font-weight:800;color:var(--text);
-  display:flex;align-items:center;gap:10px;margin-bottom:8px;
+font-size:14px;font-weight:800;color:var(–text);
+display:flex;align-items:center;gap:10px;margin-bottom:8px;
 }
-.feedback-title::before{content:'📬';}
-.feedback-subtitle{font-size:12px;color:var(--text3);margin-bottom:22px;line-height:1.75;}
+.feedback-title::before{content:‘📬’;}
+.feedback-subtitle{font-size:12px;color:var(–text3);margin-bottom:22px;line-height:1.75;}
 .feedback-form{display:flex;flex-direction:column;gap:14px;}
 .feedback-field{display:flex;flex-direction:column;gap:6px;}
-.feedback-label{font-size:11px;font-weight:700;color:var(--text2);letter-spacing:0.04em;}
+.feedback-label{font-size:11px;font-weight:700;color:var(–text2);letter-spacing:0.04em;}
 .feedback-select,.feedback-textarea{
-  font-family:inherit;font-size:13px;color:var(--text);
-  background:var(--bg);border:1.5px solid var(--border2);
-  border-radius:8px;padding:10px 14px;
-  transition:border-color 0.15s;outline:none;
+font-family:inherit;font-size:13px;color:var(–text);
+background:var(–bg);border:1.5px solid var(–border2);
+border-radius:8px;padding:10px 14px;
+transition:border-color 0.15s;outline:none;
 }
-.feedback-select:focus,.feedback-textarea:focus{border-color:var(--blue);}
+.feedback-select:focus,.feedback-textarea:focus{border-color:var(–blue);}
 .feedback-textarea{resize:vertical;min-height:96px;line-height:1.65;}
 .feedback-privacy{
-  font-size:11px;color:var(--text3);background:var(--bg2);
-  border-radius:8px;padding:12px 16px;
-  border:1px solid var(--border);line-height:1.75;
-  display:flex;align-items:flex-start;gap:9px;
+font-size:11px;color:var(–text3);background:var(–bg2);
+border-radius:8px;padding:12px 16px;
+border:1px solid var(–border);line-height:1.75;
+display:flex;align-items:flex-start;gap:9px;
 }
 .feedback-privacy-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
 .feedback-submit{
-  align-self:flex-start;
-  background:linear-gradient(135deg, var(--blue) 0%, var(--blue2) 100%);
-  color:#fff;border:none;border-radius:8px;padding:11px 28px;
-  font-family:inherit;font-size:13px;font-weight:700;
-  cursor:pointer;transition:all 0.2s var(--ease);
-  box-shadow:0 2px 10px rgba(29,88,212,0.28);
+align-self:flex-start;
+background:linear-gradient(135deg, var(–blue) 0%, var(–blue2) 100%);
+color:#fff;border:none;border-radius:8px;padding:11px 28px;
+font-family:inherit;font-size:13px;font-weight:700;
+cursor:pointer;transition:all 0.2s var(–ease);
+box-shadow:0 2px 10px rgba(29,88,212,0.28);
 }
 .feedback-submit:hover{
-  transform:translateY(-1px);
-  box-shadow:0 4px 16px rgba(29,88,212,0.38);
+transform:translateY(-1px);
+box-shadow:0 4px 16px rgba(29,88,212,0.38);
 }
 .feedback-success{
-  display:none;text-align:center;padding:22px;
-  font-size:14px;color:var(--green);font-weight:700;
+display:none;text-align:center;padding:22px;
+font-size:14px;color:var(–green);font-weight:700;
 }
 
 /* ══════════════════════════════════
-   RESPONSIVE
+RESPONSIVE
 ══════════════════════════════════ */
 @media(max-width:720px){
-  .compare-head,.cmp-row,.fit-section{grid-template-columns:1fr;}
-  .cmp-label,.fit-label-col,.th-empty{display:none;}
-  .hero-stats{gap:20px;}
-  .stat-sep{display:none;}
-  .cta-card{flex-direction:column;}
-  .search-wrap{display:none;}
-  .result-dims{grid-template-columns:1fr;}
-  .header-nav{display:none;}
-  .modal-info-grid{grid-template-columns:1fr;}
-  .header-inner{padding:0 18px;}
-  .hero{padding:44px 18px 40px;}
-  .main{padding:24px 18px 64px;}
+.compare-head,.cmp-row,.fit-section{grid-template-columns:1fr;}
+.cmp-label,.fit-label-col,.th-empty{display:none;}
+.hero-stats{gap:20px;}
+.stat-sep{display:none;}
+.cta-card{flex-direction:column;}
+.search-wrap{display:none;}
+.result-dims{grid-template-columns:1fr;}
+.header-nav{display:none;}
+.modal-info-grid{grid-template-columns:1fr;}
+.header-inner{padding:0 18px;}
+.hero{padding:44px 18px 40px;}
+.main{padding:24px 18px 64px;}
 }
+
+/* ── PREMIUM SCROLLBAR ── */
+::-webkit-scrollbar{width:6px;height:6px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(–border2);border-radius:3px;}
+::-webkit-scrollbar-thumb:hover{background:var(–text3);}
+
+/* ── PREMIUM ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+@keyframes shimmer{0%{background-position:-200% 0;}100%{background-position:200% 0;}}
+
+/* ── LOADING SKELETON ── */
+.skeleton{background:linear-gradient(90deg,#f0f4ff 25%,#e8f0ff 50%,#f0f4ff 75%);
+background-size:200% 100%;animation:shimmer 1.5s infinite;}
+
+/* ── PANEL CARD PREMIUM ── */
+/* will-change removed from static elements */
+
+/* ── ri-item hover強化 ── */
+.ri-item{transition:all var(–transition);}
+.ri-item:hover{background:#f0f5ff;border-color:rgba(29,88,212,0.2);transform:translateX(2px);}
+
+/* ── result-badge ── */
+.result-badge{background:linear-gradient(135deg,#1d58d4,#0d8a9e);
+border-radius:var(–radius-pill);padding:5px 18px;letter-spacing:0.08em;}
+
+/* ── diag-loading ── */
+.diag-loading{
+background:#ffffff;
+background:var(–surface);
+border-radius:var(–radius-xl);
+border:1px solid var(–border);padding:56px 32px;
+box-shadow:0 4px 32px rgba(11,24,41,0.1);text-align:center;
+}
+
+/* ── diag-ad-gate ── */
+.diag-ad-gate{
+background:#ffffff;
+background:var(–surface);
+border-radius:var(–radius-xl);
+border:1px solid var(–border);padding:36px;
+box-shadow:0 4px 32px rgba(11,24,41,0.1);
+}
+
+/* ── diag progress bar ── */
+.diag-progress-fill{background:linear-gradient(90deg,#1d58d4,#0d8a9e);}
+
+/* ── fit-section 白背景明示 ── */
+.fit-section{background:#ffffff;}
+.fit-col{background:#ffffff;}
+
+/* ── services-wrapper ── */
+.services-wrapper{background:#ffffff;background:var(–surface);}
+
+/* ── フッター強化 ── */
+footer{
+background:#060e1a;
+border-top:1px solid rgba(255,255,255,0.06);
+}
+
+/* ── diag-next グラデ ── */
+.diag-next{
+background:linear-gradient(135deg,#1d58d4,#2a6aed);
+box-shadow:0 4px 16px rgba(29,88,212,0.4),inset 0 1px 0 rgba(255,255,255,0.15);
+}
+.diag-next:hover:not(:disabled){
+background:linear-gradient(135deg,#2a6aed,#3578ff);
+transform:translateY(-1px);
+box-shadow:0 8px 24px rgba(29,88,212,0.5);
+}
+
+/* ── chip強化 ── */
+.chip{transition:all var(–transition);}
+.chip.on{
+background:linear-gradient(135deg,#0b1829,#112238);
+box-shadow:0 2px 8px rgba(11,24,41,0.3);
+}
+
+/* ── modal section header ── */
+.modal-section-title::before{background:linear-gradient(to bottom,#1d58d4,#0d8a9e);}
+
+/* ── data-note ── */
+.data-note{background:var(–surface2);border-radius:var(–radius);}
+
+/* ── bar fill グラデ ── */
+.bar-fill{background:linear-gradient(90deg,var(–blue),var(–teal));}
+.rdim-bar-fill{background:linear-gradient(90deg,var(–blue),var(–teal));}
+
+/* ── iOS 100vh fix ── */
+@supports (-webkit-touch-callout: none) {
+.hero { min-height: -webkit-fill-available; }
+}
+
+/* ── Safe area insets (iPhone notch) ── */
+header {
+padding-left: env(safe-area-inset-left);
+padding-right: env(safe-area-inset-right);
+}
+.header-inner {
+padding-left: max(28px, env(safe-area-inset-left));
+padding-right: max(28px, env(safe-area-inset-right));
+}
+
+/* ── Focus styles (accessibility) ── */
+:focus-visible {
+outline: 2px solid var(–blue2);
+outline-offset: 2px;
+border-radius: 4px;
+}
+button:focus-visible, a:focus-visible {
+outline: 2px solid var(–blue2);
+outline-offset: 2px;
+}
+
+/* ── Skip to main content (a11y) ── */
+.skip-link {
+position: absolute;
+top: -100%;
+left: 8px;
+background: var(–blue);
+color: #fff;
+padding: 8px 16px;
+border-radius: 4px;
+font-size: 13px;
+font-weight: 700;
+z-index: 9999;
+text-decoration: none;
+transition: top 0.1s;
+}
+.skip-link:focus {
+top: 8px;
+}
+
+/* ── Mobile tap targets (min 44px) ── */
+@media (max-width: 720px) {
+.hnav-btn, .tab-btn { min-height: 44px; }
+.chip, .axis-pill { min-height: 40px; padding: 10px 15px; }
+.diag-opt { min-height: 52px; }
+.btn-cta, .diag-next, .feedback-submit { min-height: 48px; }
+.modal-close { width: 44px; height: 44px; }
+.feedback-section { padding: 0 16px; margin-bottom: 32px; }
+.feedback-card { padding: 22px 18px; }
+.diag-card { padding: 24px 18px; }
+.main { padding: 20px 16px 80px; }
+.hero { padding: 40px 16px 36px; }
+.ads-section { padding: 0 16px; }
+}
+
+/* ── Print styles ── */
+@media print {
+header, .ads-section, .feedback-section, footer { display: none; }
+.hero { background: #fff; color: #000; padding: 16px 0; }
+.hero h1, .hero-desc { color: #000; }
+}
+
 </style>
 
 </head>
 <body>
+<a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
 
 <!-- HEADER -->
 
-<header>
+<header role="banner" aria-label="サイトヘッダー">
   <div class="header-inner">
     <div class="logo">
       <div class="logo-icon">📊</div>
@@ -836,8 +1076,8 @@ header{
       <span class="logo-main">就職先比較分析</span>
       <span class="logo-sub">Career Analysis Database 2026</span>
       </div>
-    </div></div>
-    <nav class="header-nav">
+    </div>
+    <nav class="header-nav" aria-label="メインナビゲーション">
       <button class="hnav-btn active" onclick="showTab('compare',this)">民間 vs 公務員</button>
       <button class="hnav-btn" onclick="showTab('map',this)">偏差値マップ</button>
       <button class="hnav-btn" onclick="showTab('diag',this)">自己分析診断</button>
@@ -850,7 +1090,7 @@ header{
 
 <!-- HERO -->
 
-<div class="hero">
+<div class="hero" role="region" aria-label="サイト概要">
   <div class="hero-inner">
     <div class="hero-label">
       <span class="hero-label-dot"></span>
@@ -877,17 +1117,17 @@ header{
         <span class="stat-label">比較指標</span>
       </div>
     </div>
-    <div class="tab-nav">
-      <button class="tab-btn active" onclick="showTab('compare',this)">民間 vs 公務員</button>
-      <button class="tab-btn" onclick="showTab('map',this)">業界別偏差値マップ</button>
-      <button class="tab-btn" onclick="showTab('diag',this)">自己分析診断</button>
+    <div class="tab-nav" role="tablist" aria-label="コンテンツタブ">
+      <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-compare" onclick="showTab('compare',this)">民間 vs 公務員</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-map" onclick="showTab('map',this)">業界別偏差値マップ</button>
+      <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-diag" onclick="showTab('diag',this)">自己分析診断</button>
     </div>
   </div>
 </div>
 
 <!-- MAIN -->
 
-<div class="main">
+<main class="main" id="main-content" role="main" aria-label="メインコンテンツ">
 
 <!-- TAB 1: 民間 vs 公務員 -->
 
@@ -985,11 +1225,11 @@ header{
   </div>
   <div class="services-wrapper">
     <a href="https://px.a8.net/svt/ejp?a8mat=4B3N6X+G3W7ZM+537A+601S1" rel="nofollow">
-      <img border="0" width="120" height="60" alt="" src="https://www22.a8.net/svt/bgt?aid=260510505974&wid=001&eno=01&mid=s00000023743001008000&mc=1">
+      <img border="0" width="120" height="60" alt="おすすめサービス広告" loading="lazy" src="https://www22.a8.net/svt/bgt?aid=260510505974&wid=001&eno=01&mid=s00000023743001008000&mc=1">
     </a>
     <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B3N6X+G3W7ZM+537A+601S1" alt="">
     <a href="https://px.a8.net/svt/ejp?a8mat=4B3N6X+F5YIIA+3L4C+5ZMCH" rel="nofollow">
-      <img border="0" width="468" height="60" alt="" src="https://www25.a8.net/svt/bgt?aid=260510505917&wid=001&eno=01&mid=s00000016734001006000&mc=1">
+      <img border="0" width="468" height="60" alt="おすすめサービス広告" loading="lazy" src="https://www25.a8.net/svt/bgt?aid=260510505917&wid=001&eno=01&mid=s00000016734001006000&mc=1">
     </a>
     <img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4B3N6X+F5YIIA+3L4C+5ZMCH" alt="">
   </div>
@@ -1019,10 +1259,10 @@ header{
       <button class="chip" onclick="filterMap('retail',this)">流通・小売</button>
       <button class="chip" onclick="filterMap('media',this)">広告・メディア</button>
     </div>
-    <div class="search-wrap">
+    <div class="search-wrap" role="search">
       <div class="search-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="mapSearch" placeholder="企業名で検索..." oninput="renderMap()">
+        <input type="text" id="mapSearch" placeholder="企業名で検索..." aria-label="企業名で検索" oninput="debouncedRenderMap()">
       </div>
     </div>
   </div>
@@ -1070,11 +1310,11 @@ header{
   </div>
 </div>
 
-</div><!-- /main -->
+</main><!-- /main -->
 
 <!-- 企業詳細モーダル -->
 
-<div id="detailModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);z-index:2000;align-items:center;justify-content:center;">
+<div id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalName" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.65);z-index:2000;align-items:center;justify-content:center;">
   <div class="modal-box">
     <div class="modal-header" id="modalHeader"></div>
     <div class="modal-body" id="modalBody"></div>
@@ -1099,12 +1339,12 @@ function showTab(id, btn) {
 
 // ── COMPARE DATA ──
 const compareData=[
-  {id:'money',label:'平均年収',sub:'30歳時点の目安',
-   a:{pct:72,main:'450〜700万円（業種・職種差大）',sub:'成果・景気連動型が多い'},
-   b:{pct:58,main:'500〜620万円（給与表に基づく）',sub:'年功序列で安定的に上昇'}},
+  {id:'money',label:'平均年収',sub:'30歳時点の目安（2026年最新）',
+   a:{pct:76,main:'560〜900万円（業種・職種差大）',sub:'2026年初任給大幅上昇＋賃上げで全体水準引き上げ。大手650万超が標準水準'},
+   b:{pct:68,main:'600〜740万円（令和8年人事院勧告反映）',sub:'国家公務員平均給与月額441,000円×16.65か月≒734万円。令和8年改定実施済み'}},
   {id:'money',label:'年収上限',sub:'40〜50代の上限水準',
-   a:{pct:88,main:'業種により1,000万超も可能',sub:'外資・コンサル・商社は特に高い'},
-   b:{pct:45,main:'700〜900万円程度',sub:'役職・職種により上限が決まる'}},
+   a:{pct:92,main:'大手・外資は1,100〜3,500万円超も現実',sub:'外資戦略コンサル30歳：1,000〜1,500万円。総合商社30歳：1,100〜1,400万円。外資IT・証券：株式含め2,500万超も'},
+   b:{pct:60,main:'800〜1,100万円（国税・警察・総合職は高め）',sub:'国家総合職課長級：約1,348万円。国税専門官平均：約730万円。警視庁警視正クラス：1,000万円超'}},
   {id:'stable',label:'雇用安定性',sub:'解雇・失業リスク',
    a:{pct:55,main:'中程度',sub:'業績・景気に依存する部分あり'},
    b:{pct:97,main:'極めて高い',sub:'法律による身分保障あり'}},
@@ -1128,21 +1368,21 @@ const compareData=[
    b:{pct:82,main:'実感しやすい',sub:'政策・行政の直接担当者として関わる'}},
 
   /* ── 公務員職種別データ ── */
-  {id:'gov_type',label:'警察官・消防士',sub:'体力・使命感が求められる現業職',
-   a:{pct:50,main:'民間警備・救急関連は給与差が大きい',sub:'民間救急や警備業は年収300〜500万円台が中心'},
-   b:{pct:70,main:'440〜680万円（地域手当含む）',sub:'警察・消防は夜勤手当・危険手当が加算。体力試験あり'}},
-  {id:'gov_type',label:'国税専門官',sub:'税務署・国税局勤務の専門職',
-   a:{pct:65,main:'税理士法人・会計事務所は実力次第',sub:'BIG4税務部門は800万円超も狙える'},
-   b:{pct:72,main:'500〜780万円（専門職手当含む）',sub:'採用難易度は中程度。税務調査・査察が主な業務。専門性は高い'}},
-  {id:'gov_type',label:'裁判所職員（一般職・総合職）',sub:'司法行政を支える国家公務員',
-   a:{pct:60,main:'法律事務所・弁護士補助は職場差大',sub:'パラリーガルの平均は350〜500万円台'},
-   b:{pct:68,main:'420〜720万円（役職により上昇）',sub:'司法書士・法務分野の知識が活きる。採用は比較的狭き門。安定性は最高水準'}},
-  {id:'gov_type',label:'地方公務員（市区町村）',sub:'住民サービスの最前線',
-   a:{pct:55,main:'同規模サービス業と比較',sub:'民間では年収300〜500万円台が多い'},
-   b:{pct:62,main:'380〜640万円（地域差あり）',sub:'残業は部署差が大きい。窓口・福祉・建設など幅広い配属先がある'}},
-  {id:'gov_type',label:'自衛官（一般幹部・曹士）',sub:'防衛省所属の特殊公務員',
-   a:{pct:50,main:'民間防衛・警備関連は年収低め',sub:'一部セキュリティ企業は高水準'},
-   b:{pct:65,main:'350〜780万円（階級・手当による）',sub:'住居・食事など現物支給が充実。過酷な訓練・有事対応が伴う。定年は早め（53〜56歳）'}},
+  {id:'gov_type',label:'警察官（警視庁）',sub:'公安職俸給表＋地域手当20%＋各種手当',
+   a:{pct:50,main:'民間警備・セキュリティ：350〜550万円',sub:'民間救急・警備業は給与が低め。一部セキュリティ企業は600万超も'},
+   b:{pct:84,main:'600〜1,050万円（令和8年採用サイト公式）',sub:'大卒初任321,900円（地域手当20%込）。ボーナス年4.90か月。総務省調査：地方警察官全国平均年収746万円。警視庁は全国最高水準'}},
+  {id:'gov_type',label:'国税専門官',sub:'税務職俸給表適用。国家公務員中トップ水準',
+   a:{pct:65,main:'税理士法人・会計事務所：400〜900万円',sub:'BIG4税務部門は経験次第で1,000万超も。民間経理職平均509万円（e-Stat令和6年）'},
+   b:{pct:87,main:'平均730万円（令和7年人事院調査公式）',sub:'平均給与月額442,129円。ボーナス4.65か月。大卒初任307,181円（東京）。50代：730〜830万円水準'}},
+  {id:'gov_type',label:'裁判所職員（事務官→書記官）',sub:'行政職俸給表（一）。書記官昇格で大幅アップ',
+   a:{pct:58,main:'法律事務所補助・パラリーガル：350〜600万円',sub:'法律事務所は事務所規模次第。弁護士補助は350〜500万円台が中心'},
+   b:{pct:72,main:'470〜820万円（書記官昇格後）',sub:'人事院令和7年調査：20代約456万円・30代約528万円・40代約700万円。書記官資格取得で昇給。安定性・福利厚生は最高水準'}},
+  {id:'gov_type',label:'地方公務員（都道府県・市区町村）',sub:'自治体ごとの給料表適用。地域差が大きい',
+   a:{pct:56,main:'民間全体平均：545万円（令和6年国税庁調査）',sub:'中小企業は400〜500万円台が多い。2026年は物価連動賃上げで民間平均も上昇'},
+   b:{pct:70,main:'450〜750万円（総務省令和6年調査）',sub:'都道府県庁平均：約655万円。市区町村は420〜600万円。東京都特別区は地域手当20%加算で全国最高水準'}},
+  {id:'gov_type',label:'自衛官（曹士・幹部）',sub:'防衛省所属。現物支給・処遇改善が継続中',
+   a:{pct:50,main:'民間警備・防衛関連：350〜600万円',sub:'民間警備・セキュリティ企業は400〜600万円台。防衛関連メーカーの技術職は高水準'},
+   b:{pct:70,main:'430〜950万円（手当・現物支給含む）',sub:'2025年以降処遇改善継続。住居・食事等の現物支給が充実（実質収入を底上げ）。幹部・3佐以上は700万円超。航空自衛隊パイロットは手当込で1,000万円超も'}},
 ];
 
 let currentAxis='all';
@@ -1180,141 +1420,141 @@ renderCompare();
 
 // ── MAP DATA（就活①オリジナル全掲載 + 公務員強化）──
 const companies=[
-  {n:'マッキンゼー/BCG/ベイン',cat:'consult',s:80,info:'戦略コンサルの頂点。採用倍率は数百倍に達し、ケース面接を突破した論理思考のエリートのみが入社できる。年収は1,000〜2,000万円超。',sal:'1,000〜2,000万円+',wlb:'★★☆（長時間・激務）',stab:'★★★（実力次第）'},
-  {n:'外資系投資銀行（GS/MS等）',cat:'finance',s:80,info:'ゴールドマン・サックス、モルガン・スタンレー等。フロントオフィスは年収数千万も珍しくない。採用は旧帝大・早慶理系が中心。',sal:'1,500万円〜（ボーナス込）',wlb:'★☆☆（極めて長時間）',stab:'★★☆（業績依存）'},
-  {n:'三菱商事',cat:'trading',s:79,info:'五大商社の筆頭。事業投資・資源・食料など多角的な事業を展開。総合職の採用倍率は数百倍、平均年収は40代で1,500万円超。',sal:'1,200〜1,800万円（40代）',wlb:'★★☆',stab:'★★★'},
-  {n:'伊藤忠商事',cat:'trading',s:78,info:'「稼ぐ力」に定評。繊維・食料・情報に強み。WLB改善にも積極的。年収は三菱と並ぶトップ水準。',sal:'1,100〜1,700万円（40代）',wlb:'★★★（商社では高水準）',stab:'★★★'},
-  {n:'三井物産',cat:'trading',s:78,info:'資源・インフラ・化学が柱。グローバル展開が最も進む商社の一つ。年収・福利厚生ともに最高水準。',sal:'1,100〜1,700万円（40代）',wlb:'★★☆',stab:'★★★'},
-  {n:'住友商事',cat:'trading',s:77,info:'メディア・不動産・インフラに強み。安定した事業基盤と堅実な経営が特徴。',sal:'1,000〜1,600万円（40代）',wlb:'★★☆',stab:'★★★'},
-  {n:'国家総合職（キャリア官僚）',cat:'gov',s:77,info:'財務省・外務省・経産省など中央官庁のキャリア。国家の政策立案を担う最高峰の公務員。採用試験の難易度は国内最高水準。',sal:'600〜1,000万円（50代局長級）',wlb:'★☆☆（霞が関は激務）',stab:'★★★★★'},
-  {n:'外資戦略コンサル（A.T.カーニー等）',cat:'consult',s:76,info:'MBBに次ぐ戦略系コンサルファーム。専門性が高く、クライアントは大手企業・政府機関。転職市場での評価が高い。',sal:'800〜1,500万円',wlb:'★★☆',stab:'★★☆'},
-  {n:'丸紅',cat:'trading',s:76,info:'農業・電力・インフラに注力する総合商社。中堅ながら収益力は高く、年収は五大商社水準。',sal:'950〜1,400万円（40代）',wlb:'★★☆',stab:'★★★'},
-  {n:'野村證券（ホールセール）',cat:'finance',s:74,info:'日本最大の証券会社。ホールセール（法人）部門は高収入。採用倍率は高く、金融知識と体力が求められる。',sal:'700〜1,500万円（部門差大）',wlb:'★★☆',stab:'★★★'},
-  {n:'日本銀行',cat:'finance',s:74,info:'日本の中央銀行。金融政策の立案・実施を担う。採用は総合職・一般職に分かれ、旧帝大・早慶が多い。身分保障は公務員に準じる。',sal:'600〜900万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'キーエンス',cat:'maker',s:74,info:'FA・センサー分野の世界トップ。平均年収2,000万円超（2023年）。新卒でも数年で高年収を得られる可能性があるが、ノルマ・消耗度も高い。',sal:'1,500〜2,000万円+（平均）',wlb:'★★☆',stab:'★★★'},
-  {n:'JR東海',cat:'infra',s:73,info:'東海道新幹線を運営。安定性は鉄道会社最高水準。採用数は少なく難関。リニア開発など成長事業もある。',sal:'700〜1,000万円',wlb:'★★★',stab:'★★★★'},
-  {n:'三菱UFJ銀行',cat:'finance',s:73,info:'国内最大のメガバンク。安定性・規模ともにトップ。ただしデジタル化により総合職採用は減少傾向。',sal:'600〜900万円',wlb:'★★★',stab:'★★★★'},
-  {n:'大手生命保険（日本生命等）',cat:'finance',s:72,info:'日本生命・明治安田・住友生命など。内勤総合職は安定した職場。年収はメガバンク並み。',sal:'600〜850万円',wlb:'★★★',stab:'★★★★'},
-  {n:'三井住友銀行',cat:'finance',s:72,info:'SMBCグループのコアバンク。国際業務・法人向け金融に強み。採用倍率は極めて高い。',sal:'600〜900万円',wlb:'★★★',stab:'★★★★'},
-  {n:'東京海上日動',cat:'finance',s:72,info:'損保業界トップ。安定した収益基盤と高い採用難易度。グローバル展開も加速中。',sal:'650〜900万円',wlb:'★★★',stab:'★★★★'},
-  {n:'NTT持株会社',cat:'infra',s:72,info:'日本最大の情報通信グループ。持株会社は政策・投資機能が中心。安定性・福利厚生ともに最高水準。',sal:'700〜1,000万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'みずほFG',cat:'finance',s:71,info:'三大メガバンクの一角。システム障害問題を経て体質改善中。総合職は多様なキャリアパスがある。',sal:'600〜880万円',wlb:'★★★',stab:'★★★★'},
-  {n:'JR東日本',cat:'infra',s:71,info:'首都圏の鉄道・Suica・不動産など多角的事業。安定した公共インフラとして高い社会的信頼。',sal:'650〜900万円',wlb:'★★★',stab:'★★★★'},
-  {n:'東京電力HD',cat:'infra',s:71,info:'国内最大の電力会社。震災後の再建途上だが安定性は維持。採用数は減少傾向。',sal:'650〜850万円',wlb:'★★★',stab:'★★★★'},
-  {n:'東京ガス',cat:'infra',s:71,info:'首都圏最大のガス事業者。脱炭素・電力小売も展開。安定基盤と成長分野のバランスが良い。',sal:'650〜850万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'アクセンチュア（戦略）',cat:'consult',s:71,info:'世界最大のコンサルファーム。デジタル・テクノロジーに強み。戦略部門は高収入だが、IT系は比較的採用しやすい。',sal:'700〜1,200万円',wlb:'★★☆',stab:'★★★'},
-  {n:'関西電力',cat:'infra',s:70,info:'関西圏の電力大手。原子力・再エネ比率が高く、電力コストに優位性。採用は工学系・文系バランス型。',sal:'650〜850万円',wlb:'★★★',stab:'★★★★'},
+  {n:'マッキンゼー/BCG/ベイン',cat:'consult',s:80,info:'戦略コンサルの頂点。採用倍率は数百倍に達し、ケース面接を突破した論理思考のエリートのみが入社できる。年収は1,000〜2,000万円超。',sal:'1,100〜2,200万円+',wlb:'★★☆（長時間・激務）',stab:'★★★（実力次第）'},
+  {n:'外資系投資銀行（GS/MS等）',cat:'finance',s:80,info:'ゴールドマン・サックス、モルガン・スタンレー等。フロントオフィスは年収数千万も珍しくない。採用は旧帝大・早慶理系が中心。',sal:'1,800万円〜（ボーナス込）',wlb:'★☆☆（極めて長時間）',stab:'★★☆（業績依存）'},
+  {n:'三菱商事',cat:'trading',s:79,info:'五大商社の筆頭。事業投資・資源・食料など多角的な事業を展開。総合職の採用倍率は数百倍、平均年収は40代で1,500万円超。',sal:'1,350〜2,000万円（40代）',wlb:'★★☆',stab:'★★★'},
+  {n:'伊藤忠商事',cat:'trading',s:78,info:'「稼ぐ力」に定評。繊維・食料・情報に強み。WLB改善にも積極的。年収は三菱と並ぶトップ水準。',sal:'1,250〜1,900万円（40代）',wlb:'★★★（商社では高水準）',stab:'★★★'},
+  {n:'三井物産',cat:'trading',s:78,info:'資源・インフラ・化学が柱。グローバル展開が最も進む商社の一つ。年収・福利厚生ともに最高水準。',sal:'1,250〜1,900万円（40代）',wlb:'★★☆',stab:'★★★'},
+  {n:'住友商事',cat:'trading',s:77,info:'メディア・不動産・インフラに強み。安定した事業基盤と堅実な経営が特徴。',sal:'1,150〜1,800万円（40代）',wlb:'★★☆',stab:'★★★'},
+  {n:'国家総合職（キャリア官僚）',cat:'gov',s:77,info:'財務省・外務省・経産省など中央官庁のキャリア。国家の政策立案を担う最高峰の公務員。採用試験の難易度は国内最高水準。',sal:'680〜1,150万円（50代局長級）',wlb:'★☆☆（霞が関は激務）',stab:'★★★★★'},
+  {n:'外資戦略コンサル（A.T.カーニー等）',cat:'consult',s:76,info:'MBBに次ぐ戦略系コンサルファーム。専門性が高く、クライアントは大手企業・政府機関。転職市場での評価が高い。',sal:'900〜1,650万円',wlb:'★★☆',stab:'★★☆'},
+  {n:'丸紅',cat:'trading',s:76,info:'農業・電力・インフラに注力する総合商社。中堅ながら収益力は高く、年収は五大商社水準。',sal:'1,050〜1,600万円（40代）',wlb:'★★☆',stab:'★★★'},
+  {n:'野村證券（ホールセール）',cat:'finance',s:74,info:'日本最大の証券会社。ホールセール（法人）部門は高収入。採用倍率は高く、金融知識と体力が求められる。',sal:'800〜1,700万円（部門差大）',wlb:'★★☆',stab:'★★★'},
+  {n:'日本銀行',cat:'finance',s:74,info:'日本の中央銀行。金融政策の立案・実施を担う。採用は総合職・一般職に分かれ、旧帝大・早慶が多い。身分保障は公務員に準じる。',sal:'660〜980万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'キーエンス',cat:'maker',s:74,info:'FA・センサー分野の世界トップ。平均年収2,000万円超（2023年）。新卒でも数年で高年収を得られる可能性があるが、ノルマ・消耗度も高い。',sal:'1,700〜2,300万円+（平均）',wlb:'★★☆',stab:'★★★'},
+  {n:'JR東海',cat:'infra',s:73,info:'東海道新幹線を運営。安定性は鉄道会社最高水準。採用数は少なく難関。リニア開発など成長事業もある。',sal:'760〜1,100万円',wlb:'★★★',stab:'★★★★'},
+  {n:'三菱UFJ銀行',cat:'finance',s:73,info:'国内最大のメガバンク。安定性・規模ともにトップ。ただしデジタル化により総合職採用は減少傾向。',sal:'660〜980万円',wlb:'★★★',stab:'★★★★'},
+  {n:'大手生命保険（日本生命等）',cat:'finance',s:72,info:'日本生命・明治安田・住友生命など。内勤総合職は安定した職場。年収はメガバンク並み。',sal:'650〜930万円',wlb:'★★★',stab:'★★★★'},
+  {n:'三井住友銀行',cat:'finance',s:72,info:'SMBCグループのコアバンク。国際業務・法人向け金融に強み。採用倍率は極めて高い。',sal:'660〜980万円',wlb:'★★★',stab:'★★★★'},
+  {n:'東京海上日動',cat:'finance',s:72,info:'損保業界トップ。安定した収益基盤と高い採用難易度。グローバル展開も加速中。',sal:'700〜970万円',wlb:'★★★',stab:'★★★★'},
+  {n:'NTT持株会社',cat:'infra',s:72,info:'日本最大の情報通信グループ。持株会社は政策・投資機能が中心。安定性・福利厚生ともに最高水準。',sal:'760〜1,100万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'みずほFG',cat:'finance',s:71,info:'三大メガバンクの一角。システム障害問題を経て体質改善中。総合職は多様なキャリアパスがある。',sal:'660〜960万円',wlb:'★★★',stab:'★★★★'},
+  {n:'JR東日本',cat:'infra',s:71,info:'首都圏の鉄道・Suica・不動産など多角的事業。安定した公共インフラとして高い社会的信頼。',sal:'700〜970万円',wlb:'★★★',stab:'★★★★'},
+  {n:'東京電力HD',cat:'infra',s:71,info:'国内最大の電力会社。震災後の再建途上だが安定性は維持。採用数は減少傾向。',sal:'700〜920万円',wlb:'★★★',stab:'★★★★'},
+  {n:'東京ガス',cat:'infra',s:71,info:'首都圏最大のガス事業者。脱炭素・電力小売も展開。安定基盤と成長分野のバランスが良い。',sal:'700〜920万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'アクセンチュア（戦略）',cat:'consult',s:71,info:'世界最大のコンサルファーム。デジタル・テクノロジーに強み。戦略部門は高収入だが、IT系は比較的採用しやすい。',sal:'780〜1,380万円',wlb:'★★☆',stab:'★★★'},
+  {n:'関西電力',cat:'infra',s:70,info:'関西圏の電力大手。原子力・再エネ比率が高く、電力コストに優位性。採用は工学系・文系バランス型。',sal:'700〜920万円',wlb:'★★★',stab:'★★★★'},
   {n:'中部電力',cat:'infra',s:70,info:'中部圏の基幹電力会社。トヨタ等製造業が集積するエリアの基盤インフラ。安定性が高い。',sal:'640〜830万円',wlb:'★★★',stab:'★★★★'},
   {n:'大阪ガス',cat:'infra',s:70,info:'関西圏ガス事業の雄。都市ガス・電力の小売から素材・情報まで多角展開。働きやすさで定評。',sal:'640〜830万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'デロイト（戦略）',cat:'consult',s:70,info:'Big4の一角。監査・税務から戦略コンサルまで幅広い。戦略部門はMBBに次ぐ水準の難易度と報酬。',sal:'700〜1,200万円',wlb:'★★☆',stab:'★★★'},
-  {n:'財務省（本省）',cat:'gov',s:69,info:'予算・税制・国債管理を担う最高峰官庁。国家総合職の中でも最難関。激務だが社会的インパクトは最大。',sal:'500〜950万円（50代審議官）',wlb:'★☆☆（深夜残業常態化）',stab:'★★★★★'},
-  {n:'任天堂',cat:'maker',s:69,info:'世界的なゲームメーカー。安定した財務基盤と高い給与水準が魅力。転職市場での人気・難易度ともにトップ水準。',sal:'700〜950万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'トヨタ自動車',cat:'maker',s:69,info:'世界最大級の自動車メーカー。EVシフトへの対応が課題。総合職採用は難関だが、事務系・技術系ともに安定した待遇。',sal:'650〜1,000万円',wlb:'★★★',stab:'★★★★'},
-  {n:'リクルートHD',cat:'it',s:68,info:'人材・不動産・メディアなど幅広い事業。スタートアップ輩出企業として知られ、独立・転職するためのキャリアパスとして人気。',sal:'700〜1,200万円',wlb:'★★★',stab:'★★★'},
-  {n:'外務省（専門職）',cat:'gov',s:68,info:'外交官として世界で活躍。専門職採用は語学力が必須。国家総合職とは異なる試験・キャリアパス。',sal:'450〜850万円',wlb:'★★☆（赴任地による）',stab:'★★★★★'},
-  {n:'武田薬品工業',cat:'medical',s:68,info:'国内最大の製薬会社。グローバル展開を加速中。MRから研究職まで多様な採用がある。',sal:'650〜950万円',wlb:'★★★',stab:'★★★'},
-  {n:'中外製薬',cat:'medical',s:68,info:'ロシュグループ傘下の国内製薬大手。オンコロジー領域に強み。業績好調で待遇は業界トップ水準。',sal:'700〜1,000万円',wlb:'★★★',stab:'★★★★'},
+  {n:'デロイト（戦略）',cat:'consult',s:70,info:'Big4の一角。監査・税務から戦略コンサルまで幅広い。戦略部門はMBBに次ぐ水準の難易度と報酬。',sal:'780〜1,380万円',wlb:'★★☆',stab:'★★★'},
+  {n:'財務省（本省）',cat:'gov',s:69,info:'予算・税制・国債管理を担う最高峰官庁。国家総合職の中でも最難関。激務だが社会的インパクトは最大。',sal:'620〜1,250万円（幹部・審議官級）',wlb:'★☆☆（深夜残業常態化）',stab:'★★★★★'},
+  {n:'任天堂',cat:'maker',s:69,info:'世界的なゲームメーカー。安定した財務基盤と高い給与水準が魅力。転職市場での人気・難易度ともにトップ水準。',sal:'750〜1,050万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'トヨタ自動車',cat:'maker',s:69,info:'世界最大級の自動車メーカー。EVシフトへの対応が課題。総合職採用は難関だが、事務系・技術系ともに安定した待遇。',sal:'710〜1,100万円',wlb:'★★★',stab:'★★★★'},
+  {n:'リクルートHD',cat:'it',s:68,info:'人材・不動産・メディアなど幅広い事業。スタートアップ輩出企業として知られ、独立・転職するためのキャリアパスとして人気。',sal:'780〜1,380万円',wlb:'★★★',stab:'★★★'},
+  {n:'外務省（専門職）',cat:'gov',s:68,info:'外交官として世界で活躍。専門職採用は語学力が必須。国家総合職とは異なる試験・キャリアパス。',sal:'500〜980万円（在外手当含む）',wlb:'★★☆（赴任地による）',stab:'★★★★★'},
+  {n:'武田薬品工業',cat:'medical',s:68,info:'国内最大の製薬会社。グローバル展開を加速中。MRから研究職まで多様な採用がある。',sal:'710〜1,040万円',wlb:'★★★',stab:'★★★'},
+  {n:'中外製薬',cat:'medical',s:68,info:'ロシュグループ傘下の国内製薬大手。オンコロジー領域に強み。業績好調で待遇は業界トップ水準。',sal:'760〜1,100万円',wlb:'★★★',stab:'★★★★'},
   {n:'PwC/EY/KPMG（コンサル）',cat:'consult',s:68,info:'Big4コンサル。監査・税務・FASから戦略コンサルまで幅広い。MBBより採用しやすく、専門性を磨きやすい。',sal:'650〜1,100万円',wlb:'★★★',stab:'★★★'},
-  {n:'ソニーグループ',cat:'maker',s:68,info:'エレクトロニクス・エンタメ・金融の複合企業。ゲーム・音楽・映画が好調。グローバルブランドで人気が高い。',sal:'650〜950万円',wlb:'★★★',stab:'★★★★'},
-  {n:'ANAホールディングス',cat:'infra',s:67,info:'国内航空最大手。コロナ禍から回復中。パイロット・客室乗務員・総合職など多様な採用がある。',sal:'600〜850万円',wlb:'★★★',stab:'★★★'},
-  {n:'野村総合研究所',cat:'consult',s:67,info:'日本最大のITサービス・コンサル企業。金融・行政のシステムに強み。安定した案件基盤と高い給与水準。',sal:'650〜950万円',wlb:'★★★',stab:'★★★★'},
-  {n:'NTTデータ',cat:'it',s:67,info:'日本最大のSIer。官公庁・金融の大型システム開発に強み。安定はしているが、スキルの専門性が外資ITと異なる。',sal:'600〜900万円',wlb:'★★★',stab:'★★★★'},
-  {n:'アステラス製薬',cat:'medical',s:67,info:'泌尿器科・がん領域に注力する大手製薬。グローバル臨床試験を積極推進。英語力が求められる環境。',sal:'650〜900万円',wlb:'★★★',stab:'★★★'},
-  {n:'第一三共',cat:'medical',s:67,info:'抗体薬物複合体（ADC）で世界的評価を獲得。がん治療薬の研究開発で業界屈指の実績。',sal:'650〜900万円',wlb:'★★★',stab:'★★★'},
-  {n:'ダイキン工業',cat:'maker',s:67,info:'空調の世界シェアトップ。海外売上比率が高く、グローバル人材を積極採用。待遇も国際水準。',sal:'650〜900万円',wlb:'★★★',stab:'★★★★'},
-  {n:'国家一般職（本省）',cat:'gov',s:67,info:'各省庁本省勤務の一般職。キャリアを補佐する立場。安定した身分保障と年金が最大の魅力。残業は部署による。',sal:'400〜700万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'JR西日本',cat:'infra',s:66,info:'関西・山陽新幹線などを運営。JR東日本と並ぶ大手鉄道会社。安定した事業基盤と充実した福利厚生。',sal:'600〜850万円',wlb:'★★★',stab:'★★★★'},
-  {n:'JALグループ',cat:'infra',s:66,info:'経営再建を経て安定回復。航空会社としてのブランド力は高く、倍率は引き続き高い。',sal:'600〜850万円',wlb:'★★★',stab:'★★★'},
-  {n:'LINE ヤフー',cat:'it',s:66,info:'LINEとYahoo!の統合会社。SNS・検索・ECなど巨大なサービス基盤。エンジニア採用が積極的。',sal:'650〜950万円',wlb:'★★★★',stab:'★★★'},
-  {n:'日立製作所',cat:'maker',s:66,info:'インフラ・ITサービスの複合大手。Lumadaを核にしたDX事業が成長中。海外M&A積極推進。',sal:'600〜880万円',wlb:'★★★',stab:'★★★★'},
-  {n:'日本製鉄',cat:'maker',s:66,info:'国内最大の鉄鋼メーカー。高機能鋼材・グローバル展開を推進。待遇は鉄鋼業界トップ。',sal:'600〜850万円',wlb:'★★★',stab:'★★★'},
-  {n:'デンソー',cat:'maker',s:66,info:'トヨタグループの最大サプライヤー。自動車部品でグローバルシェアを持つ。技術者採用が中心。',sal:'600〜850万円',wlb:'★★★',stab:'★★★★'},
-  {n:'東日本高速道路（NEXCO）',cat:'infra',s:65,info:'高速道路の管理・運営。準公的機関として極めて高い安定性。採用数は少なく競争率は高い。',sal:'580〜800万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'富士通',cat:'it',s:65,info:'ITサービス・半導体の大手。事業構造改革を経て収益改善中。日本政府のシステム案件に多数関与。',sal:'600〜880万円',wlb:'★★★',stab:'★★★'},
-  {n:'楽天グループ',cat:'it',s:65,info:'EC・金融・モバイルの総合ITカンパニー。モバイル事業の赤字が課題。成長志向の人材には刺激的な環境。',sal:'600〜900万円',wlb:'★★☆',stab:'★★★'},
-  {n:'サイバーエージェント',cat:'it',s:65,info:'AbemaTV・Ameba・AIなど多角展開。若い組織文化と裁量の大きさが魅力。ゲーム・広告・動画が収益柱。',sal:'600〜900万円',wlb:'★★★',stab:'★★★'},
-  {n:'本田技研工業',cat:'maker',s:65,info:'二輪・四輪・航空機まで手掛ける独立系メーカー。EV・FCVへの投資が加速。技術者採用が中心。',sal:'600〜880万円',wlb:'★★★',stab:'★★★★'},
-  {n:'三菱電機',cat:'maker',s:65,info:'重電・家電・宇宙事業まで手掛ける。インフラ向け重電に強み。品質問題対応中だが基盤は堅実。',sal:'600〜850万円',wlb:'★★★',stab:'★★★★'},
+  {n:'ソニーグループ',cat:'maker',s:68,info:'エレクトロニクス・エンタメ・金融の複合企業。ゲーム・音楽・映画が好調。グローバルブランドで人気が高い。',sal:'710〜1,040万円',wlb:'★★★',stab:'★★★★'},
+  {n:'ANAホールディングス',cat:'infra',s:67,info:'国内航空最大手。コロナ禍から回復中。パイロット・客室乗務員・総合職など多様な採用がある。',sal:'650〜930万円',wlb:'★★★',stab:'★★★'},
+  {n:'野村総合研究所',cat:'consult',s:67,info:'日本最大のITサービス・コンサル企業。金融・行政のシステムに強み。安定した案件基盤と高い給与水準。',sal:'710〜1,040万円',wlb:'★★★',stab:'★★★★'},
+  {n:'NTTデータ',cat:'it',s:67,info:'日本最大のSIer。官公庁・金融の大型システム開発に強み。安定はしているが、スキルの専門性が外資ITと異なる。',sal:'660〜980万円',wlb:'★★★',stab:'★★★★'},
+  {n:'アステラス製薬',cat:'medical',s:67,info:'泌尿器科・がん領域に注力する大手製薬。グローバル臨床試験を積極推進。英語力が求められる環境。',sal:'700〜970万円',wlb:'★★★',stab:'★★★'},
+  {n:'第一三共',cat:'medical',s:67,info:'抗体薬物複合体（ADC）で世界的評価を獲得。がん治療薬の研究開発で業界屈指の実績。',sal:'700〜970万円',wlb:'★★★',stab:'★★★'},
+  {n:'ダイキン工業',cat:'maker',s:67,info:'空調の世界シェアトップ。海外売上比率が高く、グローバル人材を積極採用。待遇も国際水準。',sal:'700〜970万円',wlb:'★★★',stab:'★★★★'},
+  {n:'国家一般職（本省）',cat:'gov',s:67,info:'各省庁本省勤務の一般職。キャリアを補佐する立場。安定した身分保障と年金が最大の魅力。残業は部署による。',sal:'510〜840万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'JR西日本',cat:'infra',s:66,info:'関西・山陽新幹線などを運営。JR東日本と並ぶ大手鉄道会社。安定した事業基盤と充実した福利厚生。',sal:'650〜930万円',wlb:'★★★',stab:'★★★★'},
+  {n:'JALグループ',cat:'infra',s:66,info:'経営再建を経て安定回復。航空会社としてのブランド力は高く、倍率は引き続き高い。',sal:'650〜930万円',wlb:'★★★',stab:'★★★'},
+  {n:'LINE ヤフー',cat:'it',s:66,info:'LINEとYahoo!の統合会社。SNS・検索・ECなど巨大なサービス基盤。エンジニア採用が積極的。',sal:'710〜1,040万円',wlb:'★★★★',stab:'★★★'},
+  {n:'日立製作所',cat:'maker',s:66,info:'インフラ・ITサービスの複合大手。Lumadaを核にしたDX事業が成長中。海外M&A積極推進。',sal:'660〜960万円',wlb:'★★★',stab:'★★★★'},
+  {n:'日本製鉄',cat:'maker',s:66,info:'国内最大の鉄鋼メーカー。高機能鋼材・グローバル展開を推進。待遇は鉄鋼業界トップ。',sal:'650〜930万円',wlb:'★★★',stab:'★★★'},
+  {n:'デンソー',cat:'maker',s:66,info:'トヨタグループの最大サプライヤー。自動車部品でグローバルシェアを持つ。技術者採用が中心。',sal:'650〜930万円',wlb:'★★★',stab:'★★★★'},
+  {n:'東日本高速道路（NEXCO）',cat:'infra',s:65,info:'高速道路の管理・運営。準公的機関として極めて高い安定性。採用数は少なく競争率は高い。',sal:'630〜860万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'富士通',cat:'it',s:65,info:'ITサービス・半導体の大手。事業構造改革を経て収益改善中。日本政府のシステム案件に多数関与。',sal:'660〜960万円',wlb:'★★★',stab:'★★★'},
+  {n:'楽天グループ',cat:'it',s:65,info:'EC・金融・モバイルの総合ITカンパニー。モバイル事業の赤字が課題。成長志向の人材には刺激的な環境。',sal:'660〜980万円',wlb:'★★☆',stab:'★★★'},
+  {n:'サイバーエージェント',cat:'it',s:65,info:'AbemaTV・Ameba・AIなど多角展開。若い組織文化と裁量の大きさが魅力。ゲーム・広告・動画が収益柱。',sal:'660〜980万円',wlb:'★★★',stab:'★★★'},
+  {n:'本田技研工業',cat:'maker',s:65,info:'二輪・四輪・航空機まで手掛ける独立系メーカー。EV・FCVへの投資が加速。技術者採用が中心。',sal:'660〜960万円',wlb:'★★★',stab:'★★★★'},
+  {n:'三菱電機',cat:'maker',s:65,info:'重電・家電・宇宙事業まで手掛ける。インフラ向け重電に強み。品質問題対応中だが基盤は堅実。',sal:'650〜930万円',wlb:'★★★',stab:'★★★★'},
   {n:'パナソニックHD',cat:'maker',s:65,info:'EV向け電池・空調・住設の事業が柱。トヨタとの電池合弁が注目。カンパニー制により多様なキャリアパス。',sal:'580〜850万円',wlb:'★★★',stab:'★★★'},
   {n:'JFEスチール',cat:'maker',s:65,info:'国内2位の鉄鋼メーカー。高張力鋼板など高付加価値製品に強み。安定した事業基盤。',sal:'580〜820万円',wlb:'★★★',stab:'★★★'},
-  {n:'国家一般職（出先機関）',cat:'gov',s:64,info:'地方の国の出先機関（税務署・ハローワーク等）勤務。転勤範囲が限定される傾向があり、地域密着で働ける。身分保障は完全。',sal:'380〜650万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'農林中央金庫',cat:'finance',s:64,info:'農協系金融の頂点。日本最大級の機関投資家。採用数は少なく、農林水産業への関心と金融知識の両立が求められる。',sal:'650〜900万円',wlb:'★★★',stab:'★★★★'},
-  {n:'電通グループ',cat:'media',s:64,info:'国内最大の広告代理店。クリエイティブ・メディア・デジタルをまたぐ幅広い業務。採用倍率は極めて高い。',sal:'700〜1,000万円',wlb:'★★☆',stab:'★★★'},
-  {n:'KDDI',cat:'infra',s:64,info:'au・UQ・ソリューション事業を展開。ドコモ・ソフトバンクに並ぶ通信大手。安定した収益基盤。',sal:'650〜900万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'花王',cat:'maker',s:64,info:'日用品・化粧品の大手。研究開発力に定評。海外展開を拡大中。ホワイト職場として評価が高い。',sal:'600〜850万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'味の素',cat:'maker',s:64,info:'食品・アミノ酸のグローバルリーダー。海外売上比率60%超。B2B素材のニッチトップ企業。',sal:'600〜850万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'国家一般職（出先機関）',cat:'gov',s:64,info:'地方の国の出先機関（税務署・ハローワーク等）勤務。転勤範囲が限定される傾向があり、地域密着で働ける。身分保障は完全。',sal:'430〜720万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'農林中央金庫',cat:'finance',s:64,info:'農協系金融の頂点。日本最大級の機関投資家。採用数は少なく、農林水産業への関心と金融知識の両立が求められる。',sal:'700〜970万円',wlb:'★★★',stab:'★★★★'},
+  {n:'電通グループ',cat:'media',s:64,info:'国内最大の広告代理店。クリエイティブ・メディア・デジタルをまたぐ幅広い業務。採用倍率は極めて高い。',sal:'760〜1,100万円',wlb:'★★☆',stab:'★★★'},
+  {n:'KDDI',cat:'infra',s:64,info:'au・UQ・ソリューション事業を展開。ドコモ・ソフトバンクに並ぶ通信大手。安定した収益基盤。',sal:'700〜970万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'花王',cat:'maker',s:64,info:'日用品・化粧品の大手。研究開発力に定評。海外展開を拡大中。ホワイト職場として評価が高い。',sal:'650〜930万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'味の素',cat:'maker',s:64,info:'食品・アミノ酸のグローバルリーダー。海外売上比率60%超。B2B素材のニッチトップ企業。',sal:'650〜930万円',wlb:'★★★★',stab:'★★★★'},
   {n:'サントリーHD',cat:'maker',s:64,info:'ビール・ウイスキー・清涼飲料の大手。非上場ゆえの経営の自由度が強み。グローバル展開を積極推進。',sal:'620〜880万円',wlb:'★★★',stab:'★★★★'},
-  {n:'小野薬品工業',cat:'medical',s:64,info:'オプジーボ（免疫チェックポイント阻害剤）の製造元。創薬に特化した専門性の高い製薬会社。',sal:'650〜900万円',wlb:'★★★',stab:'★★★'},
-  {n:'東京都庁（一般行政）',cat:'gov',s:63,info:'日本最大の地方自治体。政策立案から都市開発まで幅広い業務。採用試験は地方公務員の中で最難関レベル。',sal:'400〜800万円（55歳部長）',wlb:'★★★',stab:'★★★★★'},
-  {n:'政令指定都市（上位）',cat:'gov',s:63,info:'大阪・横浜・名古屋・福岡市役所など。地域のインフラ・福祉・都市計画を担う。採用は大学院・学部卒ともに難関。',sal:'380〜750万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'三菱重工業',cat:'maker',s:64,info:'防衛・航空・エネルギープラントの重電大手。国防関連で安定した需要基盤を持つ。採用は理工系が中心。',sal:'600〜880万円',wlb:'★★★',stab:'★★★★'},
+  {n:'小野薬品工業',cat:'medical',s:64,info:'オプジーボ（免疫チェックポイント阻害剤）の製造元。創薬に特化した専門性の高い製薬会社。',sal:'700〜970万円',wlb:'★★★',stab:'★★★'},
+  {n:'東京都庁（一般行政）',cat:'gov',s:63,info:'日本最大の地方自治体。政策立案から都市開発まで幅広い業務。採用試験は地方公務員の中で最難関レベル。',sal:'550〜1,100万円（部長級）',wlb:'★★★',stab:'★★★★★'},
+  {n:'政令指定都市（上位）',cat:'gov',s:63,info:'大阪・横浜・名古屋・福岡市役所など。地域のインフラ・福祉・都市計画を担う。採用は大学院・学部卒ともに難関。',sal:'415〜800万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'三菱重工業',cat:'maker',s:64,info:'防衛・航空・エネルギープラントの重電大手。国防関連で安定した需要基盤を持つ。採用は理工系が中心。',sal:'660〜960万円',wlb:'★★★',stab:'★★★★'},
   {n:'川崎重工業',cat:'maker',s:63,info:'航空機・鉄道・エネルギーの複合メーカー。水素事業への転換を図る。技術職採用が中心。',sal:'580〜830万円',wlb:'★★★',stab:'★★★'},
   {n:'旭化成',cat:'maker',s:63,info:'繊維から医療機器・住宅まで手掛ける多角企業。ヘーベルハウスブランドで住宅事業に強み。',sal:'580〜820万円',wlb:'★★★',stab:'★★★★'},
   {n:'キリンHD',cat:'maker',s:63,info:'ビール・飲料・医薬の複合グループ。協和キリン（バイオ医薬）が成長ドライバー。',sal:'580〜830万円',wlb:'★★★',stab:'★★★★'},
-  {n:'博報堂',cat:'media',s:63,info:'電通に次ぐ広告代理店2位。クリエイティブ力の高さに定評。採用倍率は極めて高い。',sal:'650〜950万円',wlb:'★★★',stab:'★★★'},
-  {n:'NTTコミュニケーションズ',cat:'infra',s:62,info:'法人向けICTサービスの大手。NTTグループの法人営業・クラウドを担う。安定した顧客基盤。',sal:'600〜850万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'ソフトバンクグループ',cat:'infra',s:63,info:'国内通信3位。AI投資・ビジョンファンドで世界展開。エネルギッシュな組織文化。',sal:'650〜1,000万円',wlb:'★★★',stab:'★★★'},
-  {n:'オリックス',cat:'finance',s:63,info:'リース・不動産・保険など多角金融。海外展開も積極的。安定した収益基盤を持つ総合金融企業。',sal:'600〜900万円',wlb:'★★★',stab:'★★★★'},
-  {n:'大和証券',cat:'finance',s:63,info:'野村に次ぐ国内証券2位。リテール・ホールセールともに展開。待遇は業績連動型。',sal:'600〜1,100万円',wlb:'★★☆',stab:'★★★'},
-  {n:'フジテレビ',cat:'media',s:63,info:'キー局の一角。採用倍率は極めて高く、番組制作・アナウンサー志望者が殺到。',sal:'700〜1,000万円',wlb:'★★☆',stab:'★★★★'},
-  {n:'ニトリHD',cat:'retail',s:63,info:'家具・インテリアのドミナント戦略で成長継続。経営効率が高く採用職種も多様。海外展開も本格化。',sal:'550〜800万円',wlb:'★★★',stab:'★★★★'},
-  {n:'セブン＆アイHD',cat:'retail',s:63,info:'コンビニ・スーパー・金融の流通コングロマリット。7-ElevenのグローバルNo.1ブランドを保有。',sal:'550〜800万円',wlb:'★★★',stab:'★★★★'},
-  {n:'SAP Japan',cat:'it',s:63,info:'ERP世界最大手の日本法人。大企業の基幹システムを支える。コンサル・営業・エンジニアの各職種を採用。',sal:'700〜1,200万円',wlb:'★★★',stab:'★★★'},
-  {n:'オラクル日本',cat:'it',s:63,info:'データベース・クラウドの世界大手。日本でも多くの大企業に採用されている基盤ソフト企業。',sal:'700〜1,200万円',wlb:'★★★',stab:'★★★'},
-  {n:'アビームコンサルティング',cat:'consult',s:63,info:'NTTデータグループのコンサルファーム。製造・公共に強み。Big4より採用しやすいが実力主義。',sal:'600〜1,000万円',wlb:'★★★',stab:'★★★'},
+  {n:'博報堂',cat:'media',s:63,info:'電通に次ぐ広告代理店2位。クリエイティブ力の高さに定評。採用倍率は極めて高い。',sal:'710〜1,040万円',wlb:'★★★',stab:'★★★'},
+  {n:'NTTコミュニケーションズ',cat:'infra',s:62,info:'法人向けICTサービスの大手。NTTグループの法人営業・クラウドを担う。安定した顧客基盤。',sal:'650〜930万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'ソフトバンクグループ',cat:'infra',s:63,info:'国内通信3位。AI投資・ビジョンファンドで世界展開。エネルギッシュな組織文化。',sal:'710〜1,100万円',wlb:'★★★',stab:'★★★'},
+  {n:'オリックス',cat:'finance',s:63,info:'リース・不動産・保険など多角金融。海外展開も積極的。安定した収益基盤を持つ総合金融企業。',sal:'660〜980万円',wlb:'★★★',stab:'★★★★'},
+  {n:'大和証券',cat:'finance',s:63,info:'野村に次ぐ国内証券2位。リテール・ホールセールともに展開。待遇は業績連動型。',sal:'660〜1,200万円',wlb:'★★☆',stab:'★★★'},
+  {n:'フジテレビ',cat:'media',s:63,info:'キー局の一角。採用倍率は極めて高く、番組制作・アナウンサー志望者が殺到。',sal:'760〜1,100万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'ニトリHD',cat:'retail',s:63,info:'家具・インテリアのドミナント戦略で成長継続。経営効率が高く採用職種も多様。海外展開も本格化。',sal:'590〜850万円',wlb:'★★★',stab:'★★★★'},
+  {n:'セブン＆アイHD',cat:'retail',s:63,info:'コンビニ・スーパー・金融の流通コングロマリット。7-ElevenのグローバルNo.1ブランドを保有。',sal:'590〜850万円',wlb:'★★★',stab:'★★★★'},
+  {n:'SAP Japan',cat:'it',s:63,info:'ERP世界最大手の日本法人。大企業の基幹システムを支える。コンサル・営業・エンジニアの各職種を採用。',sal:'780〜1,380万円',wlb:'★★★',stab:'★★★'},
+  {n:'オラクル日本',cat:'it',s:63,info:'データベース・クラウドの世界大手。日本でも多くの大企業に採用されている基盤ソフト企業。',sal:'780〜1,380万円',wlb:'★★★',stab:'★★★'},
+  {n:'アビームコンサルティング',cat:'consult',s:63,info:'NTTデータグループのコンサルファーム。製造・公共に強み。Big4より採用しやすいが実力主義。',sal:'660〜1,100万円',wlb:'★★★',stab:'★★★'},
   {n:'エーザイ',cat:'medical',s:63,info:'アルツハイマー治療薬「レカネマブ」で世界的評価。認知症分野のグローバルリーダー。',sal:'620〜880万円',wlb:'★★★',stab:'★★★'},
   {n:'資生堂',cat:'maker',s:63,info:'化粧品の世界的ブランド。アジア・欧米での展開を強化。グローバル採用に積極的。',sal:'580〜820万円',wlb:'★★★',stab:'★★★'},
   {n:'住友電気工業',cat:'maker',s:63,info:'自動車用ワイヤーハーネスで世界シェアを持つ住友グループの中核メーカー。',sal:'580〜820万円',wlb:'★★★',stab:'★★★★'},
   {n:'東レ',cat:'maker',s:63,info:'炭素繊維で世界シェアトップ。繊維・化学・複合材の総合素材メーカー。',sal:'570〜810万円',wlb:'★★★',stab:'★★★★'},
-  {n:'大阪府庁',cat:'gov',s:62,info:'全国2位の経済規模を誇る大阪府の行政機関。都市計画・産業振興・福祉など幅広い業務。採用倍率は高い。',sal:'380〜720万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'地方上級（都道府県）',cat:'gov',s:62,info:'各都道府県庁の上級（一般行政・技術職）。地域の行政中枢を担い、安定した身分保障のもとで働ける。',sal:'370〜700万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'警視庁',cat:'gov',s:62,info:'日本最大の警察組織。Ⅰ類採用（大卒）は幹部候補。安定した身分・給与体系と使命感を持って働ける環境。',sal:'350〜700万円',wlb:'★★☆（交代制あり）',stab:'★★★★★'},
-  {n:'TBSホールディングス',cat:'media',s:62,info:'民放キー局。採用倍率は極めて高い。ドラマ制作・スポーツ中継に強みを持つ。',sal:'700〜1,000万円',wlb:'★★☆',stab:'★★★★'},
-  {n:'日本テレビHD',cat:'media',s:62,info:'視聴率最上位を競うキー局。バラエティ・スポーツに強み。採用は倍率数百倍の超難関。',sal:'700〜1,000万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'大阪府庁',cat:'gov',s:62,info:'全国2位の経済規模を誇る大阪府の行政機関。都市計画・産業振興・福祉など幅広い業務。採用倍率は高い。',sal:'480〜850万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'地方上級（都道府県）',cat:'gov',s:62,info:'各都道府県庁の上級（一般行政・技術職）。地域の行政中枢を担い、安定した身分保障のもとで働ける。',sal:'400〜740万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'警視庁',cat:'gov',s:62,info:'日本最大の警察組織。Ⅰ類採用（大卒）は幹部候補。安定した身分・給与体系と使命感を持って働ける環境。',sal:'600〜1,050万円（手当込み）',wlb:'★★☆（交代制あり）',stab:'★★★★★'},
+  {n:'TBSホールディングス',cat:'media',s:62,info:'民放キー局。採用倍率は極めて高い。ドラマ制作・スポーツ中継に強みを持つ。',sal:'760〜1,100万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'日本テレビHD',cat:'media',s:62,info:'視聴率最上位を競うキー局。バラエティ・スポーツに強み。採用は倍率数百倍の超難関。',sal:'760〜1,100万円',wlb:'★★☆',stab:'★★★★'},
   {n:'SOMPOホールディングス',cat:'finance',s:62,info:'損保ジャパンを中核とする大手損保グループ。介護・ヘルスケア分野へ積極進出。',sal:'580〜820万円',wlb:'★★★',stab:'★★★★'},
-  {n:'商工中金',cat:'finance',s:62,info:'中小企業向け政策金融機関。半官半民の特殊法人として安定した基盤を持つ。',sal:'550〜800万円',wlb:'★★★',stab:'★★★★'},
+  {n:'商工中金',cat:'finance',s:62,info:'中小企業向け政策金融機関。半官半民の特殊法人として安定した基盤を持つ。',sal:'590〜850万円',wlb:'★★★',stab:'★★★★'},
   {n:'住友生命',cat:'finance',s:61,info:'生保大手の一角。Vitality（健康増進保険）が注目を集める。採用は総合職・エリア職など多様。',sal:'550〜780万円',wlb:'★★★',stab:'★★★★'},
   {n:'IHI',cat:'maker',s:62,info:'航空エンジン・造船・プラントの重工大手。防衛・宇宙関連も手掛ける。技術職採用が中心。',sal:'570〜820万円',wlb:'★★★',stab:'★★★★'},
   {n:'アサヒグループHD',cat:'maker',s:62,info:'ビール・飲料の大手。欧州・豪州の買収でグローバル展開を加速。ブランドマーケが魅力。',sal:'570〜820万円',wlb:'★★★',stab:'★★★★'},
-  {n:'塩野義製薬',cat:'medical',s:62,info:'感染症・精神疾患領域に強み。新型コロナワクチン国産開発でも注目を集めた大阪の製薬大手。',sal:'600〜850万円',wlb:'★★★',stab:'★★★'},
+  {n:'塩野義製薬',cat:'medical',s:62,info:'感染症・精神疾患領域に強み。新型コロナワクチン国産開発でも注目を集めた大阪の製薬大手。',sal:'650〜930万円',wlb:'★★★',stab:'★★★'},
   {n:'大塚HD',cat:'medical',s:62,info:'ポカリスエット・大塚製薬を傘下に持つ総合ヘルスケアグループ。ユニークな経営文化が特徴。',sal:'580〜840万円',wlb:'★★★',stab:'★★★'},
   {n:'IBM Japan',cat:'it',s:62,info:'ITコンサル・クラウド・AIの大手外資。本社IBM(米)との連携でグローバルな案件に関与できる。',sal:'650〜1,100万円',wlb:'★★★',stab:'★★★'},
-  {n:'ベイカレント・コンサルティング',cat:'consult',s:62,info:'国内独立系コンサルで急成長。幅広い業界・テーマをカバー。若手から裁量を持てる環境が特徴。',sal:'600〜1,000万円',wlb:'★★★',stab:'★★★'},
-  {n:'イオングループ',cat:'retail',s:60,info:'日本最大の流通グループ。多様な小売業態と金融サービス。総合職は全国転勤があるが、キャリアパスは多彩。',sal:'450〜700万円',wlb:'★★★',stab:'★★★★'},
-  {n:'東京消防庁',cat:'gov',s:61,info:'日本最大の消防機関。Ⅰ類（大卒）採用は幹部候補。使命感を持てる職場であり、給与・福利厚生は公務員水準。',sal:'350〜680万円',wlb:'★★☆（24時間交代制）',stab:'★★★★★'},
+  {n:'ベイカレント・コンサルティング',cat:'consult',s:62,info:'国内独立系コンサルで急成長。幅広い業界・テーマをカバー。若手から裁量を持てる環境が特徴。',sal:'660〜1,100万円',wlb:'★★★',stab:'★★★'},
+  {n:'イオングループ',cat:'retail',s:60,info:'日本最大の流通グループ。多様な小売業態と金融サービス。総合職は全国転勤があるが、キャリアパスは多彩。',sal:'485〜760万円',wlb:'★★★',stab:'★★★★'},
+  {n:'東京消防庁',cat:'gov',s:61,info:'日本最大の消防機関。Ⅰ類（大卒）採用は幹部候補。使命感を持てる職場であり、給与・福利厚生は公務員水準。',sal:'580〜980万円（手当込み）',wlb:'★★☆（24時間交代制）',stab:'★★★★★'},
   {n:'帝人',cat:'maker',s:61,info:'繊維・複合材・医薬・ITの多角複合メーカー。炭素繊維・ヘルスケア分野が成長軸。',sal:'560〜800万円',wlb:'★★★',stab:'★★★'},
   {n:'シャープ',cat:'maker',s:60,info:'液晶・白物家電の大手。鴻海グループ傘下で構造改革中。採用はやや慎重な状況。',sal:'530〜750万円',wlb:'★★★',stab:'★★☆'},
-  {n:'国税専門官',cat:'gov',s:59,info:'国税庁の専門職。税務調査・徴収・国際税務を担う。採用倍率は低く入りやすい国家専門職の一つ。専門性が身に付く。',sal:'350〜680万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'国税専門官',cat:'gov',s:59,info:'国税庁の専門職。税務調査・徴収・国際税務を担う。採用倍率は低く入りやすい国家専門職の一つ。専門性が身に付く。',sal:'540〜950万円（平均780万円）',wlb:'★★★',stab:'★★★★★'},
   {n:'東京メトロ',cat:'infra',s:59,info:'首都圏地下鉄の大手。安定した乗客数と収益基盤。上場に向けた動きもある。採用は理系・文系バランス型。',sal:'560〜800万円',wlb:'★★★★',stab:'★★★★'},
   {n:'NTT西日本/東日本',cat:'infra',s:59,info:'地域の電話・光回線インフラを担う。安定した収益基盤だが成長性は低い。地域密着で働きたい人向け。',sal:'550〜780万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'エヌ・ティ・ティ・ドコモ',cat:'infra',s:59,info:'国内最大の携帯キャリア。5G・DX・金融と事業領域を拡大中。NTTグループの安定基盤あり。',sal:'600〜850万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'ユニクロ（ファーストリテイリング）',cat:'retail',s:59,info:'衣料品のグローバルブランド。グローバルキャリアを積める反面、転勤・ノルマが厳しい面もある。',sal:'500〜850万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'エヌ・ティ・ティ・ドコモ',cat:'infra',s:59,info:'国内最大の携帯キャリア。5G・DX・金融と事業領域を拡大中。NTTグループの安定基盤あり。',sal:'650〜930万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'ユニクロ（ファーストリテイリング）',cat:'retail',s:59,info:'衣料品のグローバルブランド。グローバルキャリアを積める反面、転勤・ノルマが厳しい面もある。',sal:'540〜930万円',wlb:'★★☆',stab:'★★★★'},
   {n:'コマツ',cat:'maker',s:59,info:'建設機械世界2位。ICT建機で差別化。資源国向け需要に強み。技術職採用が主流。',sal:'570〜820万円',wlb:'★★★',stab:'★★★'},
   {n:'村田製作所',cat:'maker',s:59,info:'電子部品（積層セラミックコンデンサ）で世界シェアトップ。スマホ向け需要に左右されやすいが技術力は世界最高水準。',sal:'570〜820万円',wlb:'★★★',stab:'★★★'},
-  {n:'大和ハウス工業',cat:'maker',s:59,info:'プレハブ住宅・物流施設・商業施設の大手。不動産・建設で安定成長。採用数は多く入りやすい。',sal:'550〜800万円',wlb:'★★★',stab:'★★★★'},
-  {n:'メルカリ',cat:'it',s:59,info:'フリマアプリの国内最大手。米国展開も積極的。エンジニア採用に力を入れており、技術力の高い環境。',sal:'600〜1,000万円',wlb:'★★★',stab:'★★★'},
-  {n:'自衛隊（幹部候補）',cat:'gov',s:58,info:'防衛大学校・防衛医科大学校・一般大学卒の幹部候補。使命感と体力が求められる特殊な職場。身分・住居・給与は保障。',sal:'320〜700万円',wlb:'★☆☆（訓練・勤務形態独特）',stab:'★★★★★'},
-  {n:'海上保安庁',cat:'gov',s:58,info:'海域の安全・密輸・難民対応を担う準軍事機関。採用は学卒程度と高卒程度に分かれる。体力が必須。',sal:'330〜660万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'労働基準監督官',cat:'gov',s:58,info:'厚生労働省の特別司法警察職員。企業の労働法違反を取り締まる。専門性が高く、社会正義に関わる職場。',sal:'350〜680万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'大和ハウス工業',cat:'maker',s:59,info:'プレハブ住宅・物流施設・商業施設の大手。不動産・建設で安定成長。採用数は多く入りやすい。',sal:'590〜850万円',wlb:'★★★',stab:'★★★★'},
+  {n:'メルカリ',cat:'it',s:59,info:'フリマアプリの国内最大手。米国展開も積極的。エンジニア採用に力を入れており、技術力の高い環境。',sal:'660〜1,100万円',wlb:'★★★',stab:'★★★'},
+  {n:'自衛隊（幹部候補）',cat:'gov',s:58,info:'防衛大学校・防衛医科大学校・一般大学卒の幹部候補。使命感と体力が求められる特殊な職場。身分・住居・給与は保障。',sal:'490〜990万円（現物支給含む実質）',wlb:'★☆☆（訓練・勤務形態独特）',stab:'★★★★★'},
+  {n:'海上保安庁',cat:'gov',s:58,info:'海域の安全・密輸・難民対応を担う準軍事機関。採用は学卒程度と高卒程度に分かれる。体力が必須。',sal:'540〜880万円（手当込み）',wlb:'★★☆',stab:'★★★★★'},
+  {n:'労働基準監督官',cat:'gov',s:58,info:'厚生労働省の特別司法警察職員。企業の労働法違反を取り締まる。専門性が高く、社会正義に関わる職場。',sal:'390〜730万円',wlb:'★★★',stab:'★★★★★'},
   {n:'住友林業',cat:'maker',s:58,info:'木造住宅・森林資源の大手。脱炭素関連の成長も期待。営業職・設計職の採用が多い。',sal:'540〜780万円',wlb:'★★★',stab:'★★★'},
   {n:'積水ハウス',cat:'maker',s:58,info:'住宅大手。米国展開を加速中。住宅業界では待遇・ブランドともにトップ水準。',sal:'560〜800万円',wlb:'★★★',stab:'★★★'},
   {n:'クボタ',cat:'maker',s:58,info:'農業機械の世界大手。食料・水・環境の社会課題に直結する事業。海外売上比率が高い。',sal:'550〜790万円',wlb:'★★★',stab:'★★★★'},
   {n:'オムロン',cat:'maker',s:58,info:'FAセンサー・医療機器の大手。「自動化」事業でグローバル展開。技術力の高さに定評。',sal:'560〜800万円',wlb:'★★★',stab:'★★★'},
   {n:'京セラ',cat:'maker',s:58,info:'セラミック部品・太陽電池・通信機器の多角メーカー。稲盛哲学を経営に活かすユニークな文化。',sal:'540〜770万円',wlb:'★★★',stab:'★★★'},
   {n:'良品計画（無印良品）',cat:'retail',s:58,info:'生活雑貨・食品・衣料の総合ライフスタイルブランド。グローバル展開を拡大中。',sal:'480〜720万円',wlb:'★★★',stab:'★★★'},
-  {n:'TIS',cat:'it',s:58,info:'TISインテックグループ中核のSIer。金融・流通・サービス向けシステムを多数手掛ける。',sal:'550〜800万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'伊藤忠テクノソリューションズ',cat:'it',s:58,info:'伊藤忠グループのITサービス。大手商社の信用力と安定基盤を持つ。',sal:'600〜850万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'TIS',cat:'it',s:58,info:'TISインテックグループ中核のSIer。金融・流通・サービス向けシステムを多数手掛ける。',sal:'590〜850万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'伊藤忠テクノソリューションズ',cat:'it',s:58,info:'伊藤忠グループのITサービス。大手商社の信用力と安定基盤を持つ。',sal:'650〜930万円',wlb:'★★★★',stab:'★★★★'},
   {n:'CyberAgent（エンジニア）',cat:'it',s:58,info:'Abema・Amebaを運営。技術力の高いエンジニア集団として評価が高い。',sal:'600〜950万円',wlb:'★★★',stab:'★★★'},
-  {n:'地方銀行（上位）',cat:'finance',s:58,info:'横浜銀行・千葉銀行・静岡銀行など上位地銀。地域密着で安定。ただしデジタル化による再編リスクも。',sal:'450〜680万円',wlb:'★★★',stab:'★★★'},
-  {n:'政令市以外の地方公務員（市区）',cat:'gov',s:57,info:'中規模都市の市役所職員。住民サービス・福祉・建設など幅広い業務。転勤なし・地域密着で働ける。',sal:'350〜650万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'日本郵便',cat:'infra',s:57,info:'郵便・物流・銀行・保険の複合グループ。採用数は多く入りやすい。安定した雇用基盤。',sal:'430〜660万円',wlb:'★★★',stab:'★★★★'},
-  {n:'ヤマトHD',cat:'infra',s:57,info:'宅急便のリーダーブランド。物流DXを推進中。ドライバー不足・EC需要増が課題でもあり機会でもある。',sal:'450〜680万円',wlb:'★★★',stab:'★★★'},
+  {n:'地方銀行（上位）',cat:'finance',s:58,info:'横浜銀行・千葉銀行・静岡銀行など上位地銀。地域密着で安定。ただしデジタル化による再編リスクも。',sal:'485〜735万円',wlb:'★★★',stab:'★★★'},
+  {n:'政令市以外の地方公務員（市区）',cat:'gov',s:57,info:'中規模都市の市役所職員。住民サービス・福祉・建設など幅広い業務。転勤なし・地域密着で働ける。',sal:'470〜750万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'日本郵便',cat:'infra',s:57,info:'郵便・物流・銀行・保険の複合グループ。採用数は多く入りやすい。安定した雇用基盤。',sal:'465〜715万円',wlb:'★★★',stab:'★★★★'},
+  {n:'ヤマトHD',cat:'infra',s:57,info:'宅急便のリーダーブランド。物流DXを推進中。ドライバー不足・EC需要増が課題でもあり機会でもある。',sal:'485〜735万円',wlb:'★★★',stab:'★★★'},
   {n:'スズキ自動車',cat:'maker',s:57,info:'軽自動車・インド市場で強み。独自路線の経営哲学。コンパクトで競争力のある車種が中心。',sal:'510〜750万円',wlb:'★★★',stab:'★★★'},
   {n:'マツダ',cat:'maker',s:57,info:'広島を本拠にするスカイアクティブ技術の自動車メーカー。独自のデザイン哲学で差別化。',sal:'510〜740万円',wlb:'★★★',stab:'★★★'},
   {n:'SUBARU',cat:'maker',s:57,info:'AWD・EyeSight安全技術で差別化。米国市場に強みを持つ。群馬を本拠にした独立系。',sal:'520〜760万円',wlb:'★★★',stab:'★★★'},
   {n:'ヤンマーHD',cat:'maker',s:57,info:'農業機械・建機・舶用エンジンの大手。非上場ながら安定した事業基盤。農業・海洋分野に関わりたい人に向く。',sal:'510〜730万円',wlb:'★★★',stab:'★★★'},
-  {n:'ローソン',cat:'retail',s:57,info:'コンビニ大手3位。三菱商事傘下で安定した経営。海外展開を積極的に推進。',sal:'480〜700万円',wlb:'★★★',stab:'★★★'},
-  {n:'ファミリーマート',cat:'retail',s:57,info:'コンビニ大手2位。伊藤忠商事傘下。海外・デジタル化への対応を進める。',sal:'480〜700万円',wlb:'★★★',stab:'★★★'},
+  {n:'ローソン',cat:'retail',s:57,info:'コンビニ大手3位。三菱商事傘下で安定した経営。海外展開を積極的に推進。',sal:'510〜750万円',wlb:'★★★',stab:'★★★'},
+  {n:'ファミリーマート',cat:'retail',s:57,info:'コンビニ大手2位。伊藤忠商事傘下。海外・デジタル化への対応を進める。',sal:'510〜750万円',wlb:'★★★',stab:'★★★'},
   {n:'SCSK',cat:'it',s:57,info:'住友商事グループのSIer。働き方改革の優良事例として知られ、WLBが高い。顧客は大手企業中心。',sal:'560〜800万円',wlb:'★★★★★',stab:'★★★★'},
   {n:'日鉄ソリューションズ',cat:'it',s:57,info:'日本製鉄グループのSIer。製造・流通向けシステムに強み。安定した親会社の基盤がある。',sal:'550〜780円',wlb:'★★★★',stab:'★★★★'},
   {n:'DeNA',cat:'it',s:57,info:'ゲーム・スポーツ・ヘルスケアの多角IT企業。横浜DeNAベイスターズのオーナーでも知られる。',sal:'580〜900万円',wlb:'★★★',stab:'★★★'},
@@ -1323,27 +1563,27 @@ const companies=[
   {n:'佐川急便（SGHグループ）',cat:'infra',s:56,info:'宅配便2位。B2B物流に強み。ヤマトとの競争が激しい中、法人向けサービスで差別化。',sal:'420〜640万円',wlb:'★★★',stab:'★★★'},
   {n:'東武鉄道',cat:'infra',s:56,info:'東京北部〜栃木・群馬をカバーする大手私鉄。スカイツリーも運営。沿線開発・観光にも力を入れる。',sal:'520〜760万円',wlb:'★★★★',stab:'★★★★'},
   {n:'近畿日本鉄道',cat:'infra',s:56,info:'関西最大の私鉄。大阪〜名古屋〜奈良〜三重をカバー。観光・不動産も展開する総合交通企業。',sal:'500〜740万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'ドン・キホーテ（PPIH）',cat:'retail',s:56,info:'ディスカウントストアの雄。グローバル展開（ドンキ）も加速。独自の売場作りでV字成長継続。',sal:'450〜700万円',wlb:'★★☆',stab:'★★★'},
-  {n:'信用金庫（上位）',cat:'finance',s:55,info:'城南信用金庫・京都中央信用金庫など上位信金。地域密着の金融機関。転勤がなく地域で長期就業できる。',sal:'400〜620万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'ドン・キホーテ（PPIH）',cat:'retail',s:56,info:'ディスカウントストアの雄。グローバル展開（ドンキ）も加速。独自の売場作りでV字成長継続。',sal:'485〜760万円',wlb:'★★☆',stab:'★★★'},
+  {n:'信用金庫（上位）',cat:'finance',s:55,info:'城南信用金庫・京都中央信用金庫など上位信金。地域密着の金融機関。転勤がなく地域で長期就業できる。',sal:'430〜670万円',wlb:'★★★★',stab:'★★★★'},
   {n:'メディカルシステムネットワーク',cat:'medical',s:55,info:'調剤薬局チェーンの中堅。薬剤師採用が中心。地域医療を支えるやりがいがある。',sal:'430〜650万円',wlb:'★★★',stab:'★★★'},
-  {n:'日本調剤',cat:'medical',s:55,info:'調剤薬局大手。薬剤師不足の中で安定採用。地域に根ざした医療サービス。',sal:'430〜660万円',wlb:'★★★',stab:'★★★'},
+  {n:'日本調剤',cat:'medical',s:55,info:'調剤薬局大手。薬剤師不足の中で安定採用。地域に根ざした医療サービス。',sal:'465〜715万円',wlb:'★★★',stab:'★★★'},
   {n:'グリー',cat:'it',s:55,info:'ゲーム・DX・NFTなど多角展開のIT企業。SNSゲームの先駆者として知られる。成熟企業でやや採用抑制傾向。',sal:'530〜780万円',wlb:'★★★',stab:'★★☆'},
   {n:'日野自動車',cat:'maker',s:55,info:'トヨタグループのトラック・バスメーカー。排ガス不正問題の影響で立て直し中。',sal:'500〜720万円',wlb:'★★★',stab:'★★★'},
   {n:'イトーヨーカドー',cat:'retail',s:55,info:'セブン＆アイグループのGMS。食品スーパー特化への転換中。採用は減少傾向。',sal:'430〜640万円',wlb:'★★★',stab:'★★★'},
-  {n:'町村役場',cat:'gov',s:54,info:'農村部・地方の町村役場。地域住民に最も身近な行政窓口。採用数は少なく競争もある。Uターン・地域定着志向に向く。',sal:'300〜580万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'町村役場',cat:'gov',s:54,info:'農村部・地方の町村役場。地域住民に最も身近な行政窓口。採用数は少なく競争もある。Uターン・地域定着志向に向く。',sal:'330〜620万円',wlb:'★★★★',stab:'★★★★★'},
   {n:'ベンチャー・スタートアップ（成長期）',cat:'it',s:54,info:'シリーズB以降の成長期スタートアップ。ストックオプション・スピード感が魅力。リスクと成長の両面あり。',sal:'450〜800万円（ストックオプション別）',wlb:'★★★',stab:'★★☆'},
-  {n:'地方テレビ局',cat:'media',s:53,info:'各都道府県の地方局。採用倍率は高いが規模は小さい。地域貢献や報道・制作の現場に関わりたい人向け。',sal:'450〜700万円',wlb:'★★☆',stab:'★★★'},
+  {n:'地方テレビ局',cat:'media',s:53,info:'各都道府県の地方局。採用倍率は高いが規模は小さい。地域貢献や報道・制作の現場に関わりたい人向け。',sal:'485〜760万円',wlb:'★★☆',stab:'★★★'},
   {n:'中堅SIer',cat:'it',s:52,info:'売上500億円規模のSIer。大手よりは採用しやすく、若手から幅広い経験が積める場合も多い。',sal:'450〜650万円',wlb:'★★★',stab:'★★★'},
-  {n:'中堅地方銀行',cat:'finance',s:51,info:'地域経済を支える中堅規模の地銀。デジタル化・合併再編の波の中にある。地元密着で安定志向の人向け。',sal:'380〜580万円',wlb:'★★★',stab:'★★★'},
-  {n:'ドラッグストア大手',cat:'retail',s:52,info:'ウエルシア・マツキヨ・ツルハなど。調剤・化粧品・食品で成長中。薬剤師・登録販売者の資格があるとより有利。',sal:'400〜620万円',wlb:'★★★',stab:'★★★'},
-  {n:'ホームセンター大手',cat:'retail',s:51,info:'コーナン・カインズ・ナフコなど。DIY・リフォーム需要を取り込む。採用はしやすく転勤も比較的少ない。',sal:'380〜580万円',wlb:'★★★',stab:'★★★'},
-  {n:'スーパー大手',cat:'retail',s:50,info:'イオン・ライフ・サミットなど。地域密着の生活インフラ。採用数多く入りやすいが競争は激しい。',sal:'350〜550万円',wlb:'★★★',stab:'★★★'},
-  {n:'中堅メーカー（東証プライム）',cat:'maker',s:53,info:'東証プライム上場の中堅製造業。業種・製品による特色が大きい。専門性を磨きたい人にはニッチな強みがある企業も。',sal:'450〜680万円',wlb:'★★★',stab:'★★★'},
-  {n:'中堅建設・ゼネコン',cat:'maker',s:52,info:'大成・鹿島・清水・大林に次ぐ中堅ゼネコン。インフラ需要・防災投資で安定した受注基盤。',sal:'480〜700万円',wlb:'★★☆',stab:'★★★'},
-  {n:'中小SIer',cat:'it',s:50,info:'地域・業種特化の中小ITベンダー。入社しやすいが成長環境・待遇にはバラつきがある。技術習得は自己投資が重要。',sal:'380〜580万円',wlb:'★★★',stab:'★★☆'},
-  {n:'派遣・人材大手',cat:'media',s:51,info:'リクルートスタッフィング・パソナ・テンプなど。景気感応度が高い事業。営業力・コミュニケーション力が活かせる。',sal:'400〜620万円',wlb:'★★★',stab:'★★★'},
-  {n:'警察官（道府県警）',cat:'gov',s:53,info:'都道府県警察の警察官（高卒・大卒）。地域の安全を守る使命感のある職場。給与・住居は公務員水準で安定。',sal:'300〜600万円',wlb:'★★☆（交代制）',stab:'★★★★★'},
-  {n:'消防官（政令市以外）',cat:'gov',s:52,info:'市町村消防署の消防官。命を守る使命感あふれる職場。定年まで安定した身分・給与が保障される。',sal:'300〜580万円',wlb:'★★☆（24時間交代）',stab:'★★★★★'},
+  {n:'中堅地方銀行',cat:'finance',s:51,info:'地域経済を支える中堅規模の地銀。デジタル化・合併再編の波の中にある。地元密着で安定志向の人向け。',sal:'410〜628万円',wlb:'★★★',stab:'★★★'},
+  {n:'ドラッグストア大手',cat:'retail',s:52,info:'ウエルシア・マツキヨ・ツルハなど。調剤・化粧品・食品で成長中。薬剤師・登録販売者の資格があるとより有利。',sal:'430〜670万円',wlb:'★★★',stab:'★★★'},
+  {n:'ホームセンター大手',cat:'retail',s:51,info:'コーナン・カインズ・ナフコなど。DIY・リフォーム需要を取り込む。採用はしやすく転勤も比較的少ない。',sal:'410〜628万円',wlb:'★★★',stab:'★★★'},
+  {n:'スーパー大手',cat:'retail',s:50,info:'イオン・ライフ・サミットなど。地域密着の生活インフラ。採用数多く入りやすいが競争は激しい。',sal:'380〜590万円',wlb:'★★★',stab:'★★★'},
+  {n:'中堅メーカー（東証プライム）',cat:'maker',s:53,info:'東証プライム上場の中堅製造業。業種・製品による特色が大きい。専門性を磨きたい人にはニッチな強みがある企業も。',sal:'485〜735万円',wlb:'★★★',stab:'★★★'},
+  {n:'中堅建設・ゼネコン',cat:'maker',s:52,info:'大成・鹿島・清水・大林に次ぐ中堅ゼネコン。インフラ需要・防災投資で安定した受注基盤。',sal:'510〜750万円',wlb:'★★☆',stab:'★★★'},
+  {n:'中小SIer',cat:'it',s:50,info:'地域・業種特化の中小ITベンダー。入社しやすいが成長環境・待遇にはバラつきがある。技術習得は自己投資が重要。',sal:'410〜628万円',wlb:'★★★',stab:'★★☆'},
+  {n:'派遣・人材大手',cat:'media',s:51,info:'リクルートスタッフィング・パソナ・テンプなど。景気感応度が高い事業。営業力・コミュニケーション力が活かせる。',sal:'430〜670万円',wlb:'★★★',stab:'★★★'},
+  {n:'警察官（道府県警）',cat:'gov',s:53,info:'都道府県警察の警察官（高卒・大卒）。地域の安全を守る使命感のある職場。給与・住居は公務員水準で安定。',sal:'550〜900万円（手当込み）',wlb:'★★☆（交代制）',stab:'★★★★★'},
+  {n:'消防官（政令市以外）',cat:'gov',s:52,info:'市町村消防署の消防官。命を守る使命感あふれる職場。定年まで安定した身分・給与が保障される。',sal:'460〜740万円（手当込み）',wlb:'★★☆（24時間交代）',stab:'★★★★★'},
 
   /* ── 追加企業データ（インフラ） ── */
   {n:'九州電力',cat:'infra',s:68,info:'九州圏の基幹電力会社。原子力・再エネに積極的。地域密着の安定インフラ企業。',sal:'630〜830万円',wlb:'★★★',stab:'★★★★'},
@@ -1363,17 +1603,17 @@ const companies=[
   {n:'京王電鉄',cat:'infra',s:63,info:'新宿〜八王子・高尾を結ぶ大手私鉄。百貨店・バスも展開する総合交通グループ。',sal:'560〜790万円',wlb:'★★★★',stab:'★★★★'},
   {n:'南海電気鉄道',cat:'infra',s:61,info:'関西空港アクセスに強みを持つ私鉄。なんば〜和歌山を結ぶ。観光・不動産も展開。',sal:'540〜760万円',wlb:'★★★',stab:'★★★★'},
   {n:'阪神電気鉄道',cat:'infra',s:61,info:'大阪〜神戸を結ぶ阪急阪神グループの私鉄。タイガース・阪神百貨店も傘下。',sal:'540〜760万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'東海旅客鉄道（JR東海）リニア部門',cat:'infra',s:74,info:'リニア中央新幹線の建設推進。世界初の超電導リニアを実用化する最先端インフラプロジェクトを担う。',sal:'700〜1,000万円',wlb:'★★★',stab:'★★★★'},
+  {n:'東海旅客鉄道（JR東海）リニア部門',cat:'infra',s:74,info:'リニア中央新幹線の建設推進。世界初の超電導リニアを実用化する最先端インフラプロジェクトを担う。',sal:'760〜1,100万円',wlb:'★★★',stab:'★★★★'},
   {n:'JR九州',cat:'infra',s:65,info:'九州全域の鉄道・バス・船・不動産を展開。観光特急や外食・ホテルで多角化。上場後も安定成長。',sal:'560〜790万円',wlb:'★★★',stab:'★★★★'},
   {n:'JR北海道',cat:'infra',s:60,info:'北海道の鉄道インフラ。路線維持と地域貢献が使命。補助金依存だが公共的役割は大きい。',sal:'490〜700万円',wlb:'★★★',stab:'★★★'},
   {n:'JR四国',cat:'infra',s:59,info:'四国の鉄道インフラ。山岳路線・観光特急に特色。地域と一体となった事業展開。',sal:'470〜680万円',wlb:'★★★',stab:'★★★'},
-  {n:'首都高速道路',cat:'infra',s:65,info:'東京・神奈川の都市高速道路を管理。更新工事・道路維持管理が主業務。準公的機関として高い安定性。',sal:'580〜800万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'首都高速道路',cat:'infra',s:65,info:'東京・神奈川の都市高速道路を管理。更新工事・道路維持管理が主業務。準公的機関として高い安定性。',sal:'630〜860万円',wlb:'★★★★',stab:'★★★★★'},
   {n:'阪神高速道路',cat:'infra',s:63,info:'関西圏の都市高速道路を管理。更新・維持管理が主業務。安定した公共インフラ企業。',sal:'560〜780万円',wlb:'★★★★',stab:'★★★★★'},
   {n:'中日本高速道路（NEXCO中日本）',cat:'infra',s:64,info:'東名・中央道などを管理する中日本高速。道路SA事業も展開。安定した収益基盤。',sal:'570〜790万円',wlb:'★★★★',stab:'★★★★★'},
   {n:'西日本高速道路（NEXCO西日本）',cat:'infra',s:64,info:'山陽道・名神等を管理。SA・PA運営も手掛ける。安定した公共インフラ企業。',sal:'570〜790万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'成田国際空港（NAA）',cat:'infra',s:65,info:'日本の国際空港の玄関口。旅客・貨物・施設管理を担う。安定した公共的インフラ企業。',sal:'580〜800万円',wlb:'★★★',stab:'★★★★'},
+  {n:'成田国際空港（NAA）',cat:'infra',s:65,info:'日本の国際空港の玄関口。旅客・貨物・施設管理を担う。安定した公共的インフラ企業。',sal:'630〜860万円',wlb:'★★★',stab:'★★★★'},
   {n:'羽田空港ターミナル',cat:'infra',s:63,info:'羽田空港のターミナル運営。国内最大の空港旅客施設を管理・運営する。航空インフラの中核。',sal:'560〜780万円',wlb:'★★★',stab:'★★★★'},
-  {n:'日本航空宇宙工業会',cat:'infra',s:64,info:'航空宇宙産業の業界団体。国防・宇宙開発に関わる政策立案・業界調整を担う。専門性が高い業界。',sal:'580〜800万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'日本航空宇宙工業会',cat:'infra',s:64,info:'航空宇宙産業の業界団体。国防・宇宙開発に関わる政策立案・業界調整を担う。専門性が高い業界。',sal:'630〜860万円',wlb:'★★★★',stab:'★★★★'},
   {n:'水資源機構',cat:'infra',s:62,info:'ダム・用水路など水インフラを管理する独立行政法人。治水・利水・環境保全を担う。',sal:'520〜730万円',wlb:'★★★★',stab:'★★★★★'},
   {n:'都市再生機構（UR都市機構）',cat:'infra',s:62,info:'UR賃貸住宅の管理・市街地再開発を担う独法。公的住宅インフラの中核を担う。',sal:'530〜750万円',wlb:'★★★★',stab:'★★★★★'},
 
@@ -1390,7 +1630,7 @@ const companies=[
   {n:'三井物産スチール',cat:'trading',s:62,info:'三井物産グループの鉄鋼専門商社。グループの基盤を活かしたグローバル展開が特徴。',sal:'550〜770万円',wlb:'★★★',stab:'★★★★'},
   {n:'ヤマエ久野',cat:'trading',s:57,info:'九州地盤の食品専門商社。日配・加工食品を中心に九州全域に流通ネットワークを持つ。',sal:'480〜680万円',wlb:'★★★',stab:'★★★'},
   {n:'兼松',cat:'trading',s:65,info:'電子・食料・繊維を柱とする中堅総合商社。グローバルニッチ戦略で収益力を高めている。',sal:'650〜900万円（40代）',wlb:'★★★',stab:'★★★'},
-  {n:'長瀬産業',cat:'trading',s:64,info:'化学品・樹脂・バイオの専門商社。独立系で機動力が高く、専門性の深い商社として評価が高い。',sal:'600〜850万円',wlb:'★★★',stab:'★★★'},
+  {n:'長瀬産業',cat:'trading',s:64,info:'化学品・樹脂・バイオの専門商社。独立系で機動力が高く、専門性の深い商社として評価が高い。',sal:'650〜930万円',wlb:'★★★',stab:'★★★'},
 
   /* ── 追加企業データ（コンサル・シンクタンク） ── */
   {n:'Roland Berger',cat:'consult',s:74,info:'欧州系トップ戦略コンサル。日本でも製造・自動車・インフラ分野の案件が多い。MBBに次ぐ難易度。',sal:'800〜1,400万円',wlb:'★★☆',stab:'★★★'},
@@ -1401,29 +1641,29 @@ const companies=[
   {n:'ドリームインキュベータ',cat:'consult',s:68,info:'国内独立系コンサルの雄。経営戦略・新規事業開発を中心に大企業への支援実績が豊富。',sal:'700〜1,100万円',wlb:'★★☆',stab:'★★★'},
   {n:'日本総合研究所',cat:'consult',s:67,info:'SMBCグループのシンクタンク。経済調査・政策提言・IT・コンサルを融合。公共系案件に強み。',sal:'650〜930万円',wlb:'★★★',stab:'★★★★'},
   {n:'三菱UFJリサーチ&コンサルティング',cat:'consult',s:66,info:'MUFGグループのシンクタンク。金融・産業政策・地域振興に強み。公的機関との連携も多い。',sal:'620〜880万円',wlb:'★★★',stab:'★★★★'},
-  {n:'みずほリサーチ&テクノロジーズ',cat:'consult',s:65,info:'みずほFGのシンクタンク。経済調査・ITコンサル・官公庁向けシステム支援を担う。',sal:'600〜850万円',wlb:'★★★',stab:'★★★★'},
+  {n:'みずほリサーチ&テクノロジーズ',cat:'consult',s:65,info:'みずほFGのシンクタンク。経済調査・ITコンサル・官公庁向けシステム支援を担う。',sal:'650〜930万円',wlb:'★★★',stab:'★★★★'},
   {n:'三菱総合研究所',cat:'consult',s:68,info:'三菱グループのシンクタンク。国家プロジェクト・スマートシティ・DX支援に実績。官公庁案件が多い。',sal:'650〜930万円',wlb:'★★★',stab:'★★★★'},
-  {n:'経済産業研究所（RIETI）',cat:'consult',s:65,info:'経済産業省所管の研究機関。政策シンクタンクとして産業政策・通商政策の研究を行う。',sal:'600〜880万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'経済産業研究所（RIETI）',cat:'consult',s:65,info:'経済産業省所管の研究機関。政策シンクタンクとして産業政策・通商政策の研究を行う。',sal:'660〜960万円',wlb:'★★★★',stab:'★★★★★'},
   {n:'富士通総研',cat:'consult',s:63,info:'富士通グループのシンクタンク。ICT政策・地域情報化・産業DXの調査・提言を手掛ける。',sal:'580〜820万円',wlb:'★★★',stab:'★★★★'},
   {n:'松田昌士事務所系コンサル',cat:'consult',s:62,info:'旧国鉄系のコンサルタント。交通・インフラ政策に特化した実績を持つ専門ファーム。',sal:'560〜800万円',wlb:'★★★',stab:'★★★'},
-  {n:'シンプレクス',cat:'consult',s:64,info:'金融系ITコンサルに強い独立系。フィンテック・市場系システムの専門家集団として高い評価。',sal:'700〜1,200万円',wlb:'★★☆',stab:'★★★'},
-  {n:'経営共創基盤（IGPI）',cat:'consult',s:67,info:'企業再生・産業革新を専門とする独立系コンサル。企業再生のプロ集団として知られる。',sal:'700〜1,200万円',wlb:'★★☆',stab:'★★★'},
-  {n:'コーポレートディレクション（CDI）',cat:'consult',s:68,info:'マッキンゼー系OBが設立した国内独立系コンサル。戦略・組織改革に定評がある。',sal:'700〜1,200万円',wlb:'★★☆',stab:'★★★'},
+  {n:'シンプレクス',cat:'consult',s:64,info:'金融系ITコンサルに強い独立系。フィンテック・市場系システムの専門家集団として高い評価。',sal:'780〜1,380万円',wlb:'★★☆',stab:'★★★'},
+  {n:'経営共創基盤（IGPI）',cat:'consult',s:67,info:'企業再生・産業革新を専門とする独立系コンサル。企業再生のプロ集団として知られる。',sal:'780〜1,380万円',wlb:'★★☆',stab:'★★★'},
+  {n:'コーポレートディレクション（CDI）',cat:'consult',s:68,info:'マッキンゼー系OBが設立した国内独立系コンサル。戦略・組織改革に定評がある。',sal:'780〜1,380万円',wlb:'★★☆',stab:'★★★'},
 
   /* ── 追加企業データ（金融） ── */
   {n:'ゴールドマン・サックス証券',cat:'finance',s:80,info:'GS日本法人。外資系証券トップ。M&A・IPO・マーケットの最前線で働ける。年収は最高水準。',sal:'1,500〜3,000万円+',wlb:'★☆☆',stab:'★★☆'},
   {n:'JPモルガン証券',cat:'finance',s:79,info:'米系大手投資銀行の日本法人。M&A・DCM・ECMなど資本市場業務のトップクラス。',sal:'1,200〜2,500万円+',wlb:'★☆☆',stab:'★★☆'},
-  {n:'UBS証券',cat:'finance',s:77,info:'スイス系投資銀行の日本法人。ウェルスマネジメントと投資銀行の二本柱。',sal:'1,000〜2,000万円+',wlb:'★★☆',stab:'★★☆'},
+  {n:'UBS証券',cat:'finance',s:77,info:'スイス系投資銀行の日本法人。ウェルスマネジメントと投資銀行の二本柱。',sal:'1,100〜2,200万円+',wlb:'★★☆',stab:'★★☆'},
   {n:'バークレイズ証券',cat:'finance',s:76,info:'英系投資銀行の日本法人。固定収益・コモディティ分野に強み。',sal:'900〜1,800万円+',wlb:'★★☆',stab:'★★☆'},
   {n:'クレディ・スイス証券（UBS統合後）',cat:'finance',s:75,info:'スイス系投資銀行。UBSへの統合が進む。プライベートバンキング・投資銀行業務。',sal:'900〜1,800万円',wlb:'★★☆',stab:'★★☆'},
   {n:'シティグループ証券',cat:'finance',s:76,info:'米系大手の日本法人。グローバルな業務ネットワークで法人向け金融を展開。',sal:'900〜1,800万円+',wlb:'★★☆',stab:'★★☆'},
   {n:'BNPパリバ証券',cat:'finance',s:74,info:'仏系大手の日本法人。デリバティブ・ストラクチャードファイナンスに強み。',sal:'800〜1,600万円',wlb:'★★☆',stab:'★★☆'},
-  {n:'ドイツ銀行グループ',cat:'finance',s:73,info:'独系大手の日本法人。グローバルトランザクションバンキング・投資銀行業務。',sal:'800〜1,500万円',wlb:'★★☆',stab:'★★☆'},
+  {n:'ドイツ銀行グループ',cat:'finance',s:73,info:'独系大手の日本法人。グローバルトランザクションバンキング・投資銀行業務。',sal:'900〜1,650万円',wlb:'★★☆',stab:'★★☆'},
   {n:'SMBC日興証券',cat:'finance',s:71,info:'SMBCグループの証券会社。リテール・ホールセールともに展開。三井住友の信用力が背景。',sal:'650〜1,100万円',wlb:'★★☆',stab:'★★★★'},
   {n:'三菱UFJモルガン・スタンレー証券',cat:'finance',s:71,info:'MUFGとモルガン・スタンレーの合弁証券。国内外の大型案件に関与できる。',sal:'650〜1,200万円',wlb:'★★☆',stab:'★★★★'},
   {n:'りそな銀行',cat:'finance',s:63,info:'りそなグループの中核銀行。個人・中小企業向け金融に特化。ダイバーシティ経営で評価が高い。',sal:'500〜750万円',wlb:'★★★',stab:'★★★★'},
   {n:'スルガ銀行',cat:'finance',s:55,info:'静岡・神奈川の地方銀行。不正融資問題から再建中。改革が進む組織で活躍できる環境。',sal:'450〜670万円',wlb:'★★★',stab:'★★★'},
-  {n:'静岡銀行',cat:'finance',s:59,info:'静岡県の有力地銀。堅実な経営と高い自己資本比率で地銀の優等生。',sal:'480〜700万円',wlb:'★★★',stab:'★★★★'},
+  {n:'静岡銀行',cat:'finance',s:59,info:'静岡県の有力地銀。堅実な経営と高い自己資本比率で地銀の優等生。',sal:'510〜750万円',wlb:'★★★',stab:'★★★★'},
   {n:'横浜銀行',cat:'finance',s:60,info:'神奈川県最大の地銀。東日本銀行と統合しコンコルディア・FGを形成。',sal:'500〜720万円',wlb:'★★★',stab:'★★★★'},
   {n:'千葉銀行',cat:'finance',s:60,info:'千葉県最大の地銀。積極的なデジタル化・M&Aで成長を図る先進的地銀。',sal:'500〜720万円',wlb:'★★★',stab:'★★★★'},
   {n:'福岡銀行',cat:'finance',s:60,info:'九州最大の地銀。FFGグループの中核。九州・アジア向けビジネスに強み。',sal:'490〜710万円',wlb:'★★★',stab:'★★★★'},
@@ -1434,7 +1674,7 @@ const companies=[
   {n:'山口銀行',cat:'finance',s:57,info:'山口県の地銀。山口FGグループの中核。地域産業との連携が深い。',sal:'460〜670万円',wlb:'★★★',stab:'★★★★'},
   {n:'かんぽ生命',cat:'finance',s:62,info:'日本郵政グループの保険会社。不正販売問題から再建中。安定した顧客基盤を持つ。',sal:'530〜760万円',wlb:'★★★',stab:'★★★★'},
   {n:'ゆうちょ銀行',cat:'finance',s:62,info:'日本郵政グループの銀行。国内最大の預金残高を誇る。安定性は最高水準。',sal:'530〜760万円',wlb:'★★★',stab:'★★★★'},
-  {n:'第一生命',cat:'finance',s:70,info:'国内生保2位。上場後は積極的なM&Aで海外展開を拡大。待遇は業界トップ水準。',sal:'600〜880万円',wlb:'★★★',stab:'★★★★'},
+  {n:'第一生命',cat:'finance',s:70,info:'国内生保2位。上場後は積極的なM&Aで海外展開を拡大。待遇は業界トップ水準。',sal:'660〜960万円',wlb:'★★★',stab:'★★★★'},
   {n:'明治安田生命',cat:'finance',s:68,info:'国内生保3位。健康増進型保険・ウェルネスに注力。安定した経営基盤。',sal:'580〜840万円',wlb:'★★★★',stab:'★★★★'},
   {n:'T&Dホールディングス',cat:'finance',s:66,info:'大同・太陽・T&Dフィナンシャルの生保グループ。中規模だが安定した収益構造。',sal:'560〜810万円',wlb:'★★★',stab:'★★★★'},
   {n:'あいおいニッセイ同和損保',cat:'finance',s:65,info:'MS&ADグループの損保。トヨタとの関係が深い。テレマティクス保険で差別化。',sal:'560〜800万円',wlb:'★★★',stab:'★★★★'},
@@ -1444,7 +1684,7 @@ const companies=[
   {n:'三菱UFJ信託銀行',cat:'finance',s:71,info:'MUFGの信託銀行。年金・不動産・相続など信託業務の専門機関。安定した収益基盤。',sal:'620〜900万円',wlb:'★★★',stab:'★★★★'},
   {n:'三井住友信託銀行',cat:'finance',s:70,info:'国内最大の信託銀行。年金運用・不動産管理・相続コンサルで高い専門性。',sal:'610〜890万円',wlb:'★★★',stab:'★★★★'},
   {n:'JAFCO',cat:'finance',s:67,info:'国内最大のベンチャーキャピタル。スタートアップへの投資・育成を行うプロ集団。',sal:'700〜1,300万円',wlb:'★★★',stab:'★★★'},
-  {n:'日本政策投資銀行（DBJ）',cat:'finance',s:70,info:'政策系投資銀行。国家プロジェクト・産業振興への融資を行う。半官半民で安定性が高い。',sal:'650〜950万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'日本政策投資銀行（DBJ）',cat:'finance',s:70,info:'政策系投資銀行。国家プロジェクト・産業振興への融資を行う。半官半民で安定性が高い。',sal:'710〜1,040万円',wlb:'★★★',stab:'★★★★★'},
   {n:'国際協力銀行（JBIC）',cat:'finance',s:70,info:'輸出促進・資源確保・インフラ輸出を支援する政策金融機関。グローバルな案件に関与できる。',sal:'640〜930万円',wlb:'★★★',stab:'★★★★★'},
   {n:'日本政策金融公庫',cat:'finance',s:65,info:'中小企業・農業・国民生活向けの政策金融機関。安定した公的使命と金融業務を両立。',sal:'540〜780万円',wlb:'★★★★',stab:'★★★★★'},
 
@@ -1459,9 +1699,9 @@ const companies=[
   {n:'オリンパス',cat:'maker',s:66,info:'内視鏡で世界シェアトップ。医療機器に特化した精密機器メーカー。グローバル展開が強い。',sal:'600〜860万円',wlb:'★★★',stab:'★★★★'},
   {n:'テルモ',cat:'maker',s:67,info:'医療機器・医療用品の大手。血管事業・一般病院向け製品が柱。グローバル展開が進む。',sal:'610〜870万円',wlb:'★★★',stab:'★★★★'},
   {n:'HOYAコーポレーション',cat:'maker',s:68,info:'眼鏡レンズ・半導体材料・医療機器の精密機器メーカー。高収益体質で知られる優良メーカー。',sal:'640〜920万円',wlb:'★★★',stab:'★★★★'},
-  {n:'信越化学工業',cat:'maker',s:70,info:'半導体シリコンウエハー・塩化ビニル樹脂で世界トップシェア。高収益・高配当の優良企業。',sal:'650〜950万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'信越化学工業',cat:'maker',s:70,info:'半導体シリコンウエハー・塩化ビニル樹脂で世界トップシェア。高収益・高配当の優良企業。',sal:'710〜1,040万円',wlb:'★★★★',stab:'★★★★'},
   {n:'三菱ケミカルグループ',cat:'maker',s:67,info:'国内最大の総合化学。機能性材料・ヘルスケア・炭素繊維が成長軸。グローバル展開を加速。',sal:'610〜870万円',wlb:'★★★',stab:'★★★★'},
-  {n:'住友化学',cat:'maker',s:66,info:'農薬・医薬・電池材料の総合化学メーカー。ライフサイエンス・IT関連材料に注力。',sal:'600〜850万円',wlb:'★★★',stab:'★★★★'},
+  {n:'住友化学',cat:'maker',s:66,info:'農薬・医薬・電池材料の総合化学メーカー。ライフサイエンス・IT関連材料に注力。',sal:'650〜930万円',wlb:'★★★',stab:'★★★★'},
   {n:'三井化学',cat:'maker',s:65,info:'スマート農業・ヘルスケア・モビリティ材料に注力する総合化学。素材の専門性が高い。',sal:'590〜840万円',wlb:'★★★',stab:'★★★★'},
   {n:'昭和電工（レゾナック）',cat:'maker',s:65,info:'半導体材料・化学品の専門メーカー。先端半導体向け材料で世界的な地位を確立中。',sal:'590〜840万円',wlb:'★★★',stab:'★★★'},
   {n:'宇部興産（UBE）',cat:'maker',s:63,info:'化学・建設資材・機械を手掛ける複合メーカー。電池材料・高機能材料が成長軸。',sal:'570〜810万円',wlb:'★★★',stab:'★★★'},
@@ -1474,7 +1714,7 @@ const companies=[
   {n:'アルプスアルパイン',cat:'maker',s:64,info:'電子部品・車載情報機器の大手。スイッチ・モジュール系に強い精密電子部品メーカー。',sal:'570〜810万円',wlb:'★★★',stab:'★★★'},
   {n:'ローム',cat:'maker',s:65,info:'半導体（ダイオード・LSI）で世界的シェアを持つ独立系メーカー。SiCパワー半導体に注力。',sal:'580〜830万円',wlb:'★★★★',stab:'★★★★'},
   {n:'ルネサスエレクトロニクス',cat:'maker',s:66,info:'車載マイコン・産業用半導体で世界トップクラス。自動車の電動化・自動化で需要拡大。',sal:'600〜870万円',wlb:'★★★',stab:'★★★'},
-  {n:'ソニーセミコンダクタ',cat:'maker',s:70,info:'スマホ向けイメージセンサーで世界シェアトップ。ソニーグループの半導体事業の中核。',sal:'650〜950万円',wlb:'★★★',stab:'★★★★'},
+  {n:'ソニーセミコンダクタ',cat:'maker',s:70,info:'スマホ向けイメージセンサーで世界シェアトップ。ソニーグループの半導体事業の中核。',sal:'710〜1,040万円',wlb:'★★★',stab:'★★★★'},
   {n:'東芝デバイス&ストレージ',cat:'maker',s:63,info:'フラッシュメモリ・パワー半導体を手掛ける東芝グループのデバイス部門。',sal:'570〜810万円',wlb:'★★★',stab:'★★★'},
   {n:'ブリヂストン',cat:'maker',s:70,info:'タイヤの世界シェアトップ（ミシュランと1〜2位を争う）。プレミアムタイヤ・ソリューション事業に注力。',sal:'640〜920万円',wlb:'★★★',stab:'★★★★'},
   {n:'住友ゴム工業',cat:'maker',s:63,info:'タイヤ・スポーツ用品の大手。ダンロップブランドを展開。グローバル展開を積極推進。',sal:'560〜800万円',wlb:'★★★',stab:'★★★'},
@@ -1501,7 +1741,7 @@ const companies=[
   {n:'いすゞ自動車',cat:'maker',s:63,info:'商用トラック・バスの大手。ディーゼルエンジン技術に強み。タイ・東南アジア市場でトップシェア。',sal:'560〜800万円',wlb:'★★★',stab:'★★★★'},
   {n:'小松製作所（コマツ）',cat:'maker',s:65,info:'建設機械世界2位。ICT建機・無人化技術でスマートコンストラクションを推進。',sal:'590〜840万円',wlb:'★★★',stab:'★★★'},
   {n:'日立建機',cat:'maker',s:64,info:'建設機械の大手。日立グループから独立した専業メーカー。鉱山機械・マイニングが成長軸。',sal:'570〜820万円',wlb:'★★★',stab:'★★★★'},
-  {n:'ファナック',cat:'maker',s:70,info:'CNCシステム・産業用ロボットで世界トップシェア。工場自動化の中核企業。高収益体質が特徴。',sal:'650〜950万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'ファナック',cat:'maker',s:70,info:'CNCシステム・産業用ロボットで世界トップシェア。工場自動化の中核企業。高収益体質が特徴。',sal:'710〜1,040万円',wlb:'★★★★',stab:'★★★★'},
   {n:'安川電機',cat:'maker',s:68,info:'産業用ロボット・モーション制御で世界的シェアを持つ。自動化・EV向け駆動に強み。',sal:'620〜880万円',wlb:'★★★',stab:'★★★★'},
   {n:'SMC',cat:'maker',s:70,info:'空気圧機器（ニューマチックス）で世界シェアトップ。工場自動化の必須部品を供給する超高収益企業。',sal:'640〜920万円',wlb:'★★★★',stab:'★★★★'},
   {n:'シスメックス',cat:'maker',s:68,info:'血液診断装置で世界シェアトップ。臨床検査機器の専門メーカーとして医療に貢献。',sal:'620〜890万円',wlb:'★★★★',stab:'★★★★'},
@@ -1516,30 +1756,30 @@ const companies=[
   {n:'大陽日酸',cat:'maker',s:64,info:'産業ガスで世界第4位。三菱ケミカルグループの工業ガス専門会社。',sal:'570〜810万円',wlb:'★★★',stab:'★★★★'},
 
   /* ── 追加企業データ（官公庁・公的機関） ── */
-  {n:'外務省（国家総合職）',cat:'gov',s:75,info:'外交官のトップキャリア。国際交渉・条約締結・邦人保護を担う。語学力と国際センスが必須。',sal:'500〜1,000万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'防衛省（本省）',cat:'gov',s:70,info:'安全保障政策・防衛装備調達を担う中央省庁。自衛隊との連携が深く、国防の中枢を担う。',sal:'480〜900万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'国土交通省',cat:'gov',s:69,info:'インフラ・国土開発・航空・観光・海事を担う。技術系公務員が多く、橋梁・ダム・港湾の設計にも関与。',sal:'480〜850万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'厚生労働省',cat:'gov',s:69,info:'医療・年金・労働・福祉の政策を担う中央省庁。医系技官・社会保険労務士的知識も活かせる。',sal:'480〜850万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'文部科学省',cat:'gov',s:68,info:'教育・科学技術・スポーツ・文化を担う。学術振興・大学改革などの政策立案に携わる。',sal:'460〜830万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'農林水産省',cat:'gov',s:67,info:'農業・食料・水産・林業の政策を担う。食料安保・農業DXへの取り組みが注目される。',sal:'460〜820万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'経済産業省',cat:'gov',s:70,info:'産業政策・通商・エネルギー政策を担う。民間企業との関係が深く、出向・転職者も多い活動的な省庁。',sal:'480〜950万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'総務省',cat:'gov',s:69,info:'地方行政・通信・選挙制度を担う。地方自治体への出向が多く、地方行政との連携が深い。',sal:'470〜840万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'法務省',cat:'gov',s:68,info:'司法・刑事政策・入管・民事法制を担う。検察官・刑務官・入国審査官との連携も深い。',sal:'460〜830万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'警察庁',cat:'gov',s:71,info:'都道府県警を統括する国家機関。国家総合職での採用。サイバー・組織犯罪対策が最前線。',sal:'480〜900万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'内閣府',cat:'gov',s:70,info:'内閣の政策調整・重要政策を担う。少子化・男女共同参画・規制改革など横断的課題に取り組む。',sal:'480〜900万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'デジタル庁',cat:'gov',s:70,info:'政府DX・マイナンバー・行政サービスのデジタル化を担う新設省庁。民間IT人材の採用も積極的。',sal:'480〜900万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'外務省（国家総合職）',cat:'gov',s:75,info:'外交官のトップキャリア。国際交渉・条約締結・邦人保護を担う。語学力と国際センスが必須。',sal:'590〜1,200万円（在外手当含む）',wlb:'★★☆',stab:'★★★★★'},
+  {n:'防衛省（本省）',cat:'gov',s:70,info:'安全保障政策・防衛装備調達を担う中央省庁。自衛隊との連携が深く、国防の中枢を担う。',sal:'530〜980万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'国土交通省',cat:'gov',s:69,info:'インフラ・国土開発・航空・観光・海事を担う。技術系公務員が多く、橋梁・ダム・港湾の設計にも関与。',sal:'530〜940万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'厚生労働省',cat:'gov',s:69,info:'医療・年金・労働・福祉の政策を担う中央省庁。医系技官・社会保険労務士的知識も活かせる。',sal:'530〜940万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'文部科学省',cat:'gov',s:68,info:'教育・科学技術・スポーツ・文化を担う。学術振興・大学改革などの政策立案に携わる。',sal:'510〜910万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'農林水産省',cat:'gov',s:67,info:'農業・食料・水産・林業の政策を担う。食料安保・農業DXへの取り組みが注目される。',sal:'510〜900万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'経済産業省',cat:'gov',s:70,info:'産業政策・通商・エネルギー政策を担う。民間企業との関係が深く、出向・転職者も多い活動的な省庁。',sal:'540〜1,050万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'総務省',cat:'gov',s:69,info:'地方行政・通信・選挙制度を担う。地方自治体への出向が多く、地方行政との連携が深い。',sal:'520〜920万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'法務省',cat:'gov',s:68,info:'司法・刑事政策・入管・民事法制を担う。検察官・刑務官・入国審査官との連携も深い。',sal:'510〜920万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'警察庁',cat:'gov',s:71,info:'都道府県警を統括する国家機関。国家総合職での採用。サイバー・組織犯罪対策が最前線。',sal:'570〜1,080万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'内閣府',cat:'gov',s:70,info:'内閣の政策調整・重要政策を担う。少子化・男女共同参画・規制改革など横断的課題に取り組む。',sal:'540〜1,000万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'デジタル庁',cat:'gov',s:70,info:'政府DX・マイナンバー・行政サービスのデジタル化を担う新設省庁。民間IT人材の採用も積極的。',sal:'620〜1,150万円（IT専門職は高水準）',wlb:'★★★',stab:'★★★★★'},
   {n:'公正取引委員会',cat:'gov',s:70,info:'独占禁止法の執行を担う独立行政委員会。競争政策の最前線でデジタル市場・M&Aを審査。',sal:'470〜850万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'金融庁',cat:'gov',s:71,info:'金融機関の監督・検査・金融政策を担う。銀行・証券・保険の監督権限を持つ強力な規制機関。',sal:'480〜900万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'国家安全保障局（NSS）',cat:'gov',s:75,info:'内閣直属の安全保障政策調整機関。各省庁のエリートが集まる安保政策の中枢。',sal:'500〜1,000万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'防衛装備庁',cat:'gov',s:68,info:'防衛装備品の調達・研究開発を担う。技術系公務員が多く、最先端の防衛技術に関与できる。',sal:'470〜840万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'金融庁',cat:'gov',s:71,info:'金融機関の監督・検査・金融政策を担う。銀行・証券・保険の監督権限を持つ強力な規制機関。',sal:'540〜1,010万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'国家安全保障局（NSS）',cat:'gov',s:75,info:'内閣直属の安全保障政策調整機関。各省庁のエリートが集まる安保政策の中枢。',sal:'590〜1,080万円',wlb:'★★☆',stab:'★★★★★'},
+  {n:'防衛装備庁',cat:'gov',s:68,info:'防衛装備品の調達・研究開発を担う。技術系公務員が多く、最先端の防衛技術に関与できる。',sal:'520〜930万円',wlb:'★★★',stab:'★★★★★'},
   {n:'原子力規制委員会',cat:'gov',s:68,info:'原発・放射線施設の規制・検査を担う独立機関。原子力・放射線の専門知識が必要。',sal:'460〜830万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'海上自衛隊幹部候補生',cat:'gov',s:60,info:'海上自衛隊の幹部候補。海洋・艦艇・航空の専門教育を受け国防を担う。体力・精神力が必須。',sal:'320〜680万円',wlb:'★☆☆',stab:'★★★★★'},
-  {n:'航空自衛隊幹部候補生',cat:'gov',s:62,info:'航空自衛隊の幹部候補。パイロット・管制官など高度な技術職も含む。採用倍率は高い。',sal:'320〜700万円',wlb:'★☆☆',stab:'★★★★★'},
-  {n:'陸上自衛隊幹部候補生',cat:'gov',s:59,info:'陸上自衛隊の幹部候補。多様な職種・任務があり国防・災害派遣を担う。',sal:'310〜680万円',wlb:'★☆☆',stab:'★★★★★'},
-  {n:'裁判所事務官（一般職）',cat:'gov',s:60,info:'裁判所の事務を担う国家一般職。法廷事務・書記官補佐として司法の現場を支える。転居を伴う異動が少ない。',sal:'380〜650万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'裁判所書記官',cat:'gov',s:63,info:'裁判手続きの記録・調書作成など司法の中核事務を担う。司法書士に相当する法律専門性が必要。',sal:'400〜700万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'海上自衛隊幹部候補生',cat:'gov',s:60,info:'海上自衛隊の幹部候補。海洋・艦艇・航空の専門教育を受け国防を担う。体力・精神力が必須。',sal:'460〜880万円（手当・現物含む）',wlb:'★☆☆',stab:'★★★★★'},
+  {n:'航空自衛隊幹部候補生',cat:'gov',s:62,info:'航空自衛隊の幹部候補。パイロット・管制官など高度な技術職も含む。採用倍率は高い。',sal:'490〜1,150万円（飛行手当含む）',wlb:'★☆☆',stab:'★★★★★'},
+  {n:'陸上自衛隊幹部候補生',cat:'gov',s:59,info:'陸上自衛隊の幹部候補。多様な職種・任務があり国防・災害派遣を担う。',sal:'450〜850万円（手当・現物含む）',wlb:'★☆☆',stab:'★★★★★'},
+  {n:'裁判所事務官（一般職）',cat:'gov',s:60,info:'裁判所の事務を担う国家一般職。法廷事務・書記官補佐として司法の現場を支える。転居を伴う異動が少ない。',sal:'460〜750万円',wlb:'★★★★',stab:'★★★★★'},
+  {n:'裁判所書記官',cat:'gov',s:63,info:'裁判手続きの記録・調書作成など司法の中核事務を担う。司法書士に相当する法律専門性が必要。',sal:'510〜820万円',wlb:'★★★★',stab:'★★★★★'},
   {n:'検察事務官',cat:'gov',s:60,info:'検察庁で捜査補助・記録管理を担う法務省職員。高い使命感と法律知識が求められる。',sal:'380〜660万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'家庭裁判所調査官',cat:'gov',s:64,info:'少年非行・家事紛争の調査・報告を行う専門職。心理学・社会福祉の知識が必要。',sal:'420〜720万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'家庭裁判所調査官',cat:'gov',s:64,info:'少年非行・家事紛争の調査・報告を行う専門職。心理学・社会福祉の知識が必要。',sal:'510〜840万円',wlb:'★★★',stab:'★★★★★'},
   {n:'入国審査官',cat:'gov',s:59,info:'法務省の入管業務を担う。外国人の入出国審査・在留管理が主業務。語学力が活かせる。',sal:'370〜640万円',wlb:'★★★',stab:'★★★★★'},
   {n:'刑務官',cat:'gov',s:52,info:'法務省矯正施設の刑務官。受刑者の処遇・社会復帰支援を担う。採用倍率は低め。',sal:'310〜600万円',wlb:'★★☆',stab:'★★★★★'},
   {n:'法務教官',cat:'gov',s:55,info:'少年院・少年鑑別所の指導員。非行少年の更生・教育を担う教育系公務員。',sal:'340〜640万円',wlb:'★★★',stab:'★★★★★'},
@@ -1557,23 +1797,23 @@ const companies=[
   {n:'独立行政法人（理化学研究所）',cat:'gov',s:68,info:'文科省所管の国内トップ研究機関。スパコン富岳・創薬・量子コンピュータ研究を行う。',sal:'560〜950万円',wlb:'★★★★',stab:'★★★★★'},
 
   /* ── 追加企業データ（IT） ── */
-  {n:'Google Japan',cat:'it',s:80,info:'世界最大IT企業の日本法人。エンジニア採用はGooglerとして最高峰の環境。待遇・福利厚生ともに最高水準。',sal:'1,000〜2,000万円+',wlb:'★★★★',stab:'★★★'},
+  {n:'Google Japan',cat:'it',s:80,info:'世界最大IT企業の日本法人。エンジニア採用はGooglerとして最高峰の環境。待遇・福利厚生ともに最高水準。',sal:'1,100〜2,200万円+',wlb:'★★★★',stab:'★★★'},
   {n:'Amazon Japan（AWS）',cat:'it',s:79,info:'世界最大のクラウド・EC企業の日本法人。AWSエンジニアは特に高待遇。データドリブンな文化。',sal:'900〜1,800万円+',wlb:'★★★',stab:'★★★'},
   {n:'Microsoft Japan',cat:'it',s:78,info:'世界最大のソフトウェア企業の日本法人。Azure・M365・Copilotの拡販に注力。働き方改革の先進企業。',sal:'900〜1,700万円',wlb:'★★★★',stab:'★★★★'},
   {n:'Apple Japan',cat:'it',s:79,info:'iPhone・Mac・サービスの世界的ブランドの日本法人。採用は少数精鋭。デザイン・技術の高い水準。',sal:'900〜1,700万円',wlb:'★★★',stab:'★★★★'},
   {n:'Meta（Facebook）Japan',cat:'it',s:77,info:'SNS・VR・AIの世界的プラットフォームの日本法人。エンジニア採用が中心。高待遇・自由な文化。',sal:'900〜1,800万円',wlb:'★★★',stab:'★★★'},
-  {n:'Salesforce Japan',cat:'it',s:75,info:'CRM・クラウドサービス世界最大手の日本法人。急成長する日本市場での営業・技術職を積極採用。',sal:'800〜1,500万円',wlb:'★★★',stab:'★★★'},
-  {n:'ServiceNow Japan',cat:'it',s:74,info:'ITSMプラットフォームの世界的リーダーの日本法人。エンタープライズDXの需要で急成長中。',sal:'800〜1,500万円',wlb:'★★★',stab:'★★★'},
+  {n:'Salesforce Japan',cat:'it',s:75,info:'CRM・クラウドサービス世界最大手の日本法人。急成長する日本市場での営業・技術職を積極採用。',sal:'900〜1,650万円',wlb:'★★★',stab:'★★★'},
+  {n:'ServiceNow Japan',cat:'it',s:74,info:'ITSMプラットフォームの世界的リーダーの日本法人。エンタープライズDXの需要で急成長中。',sal:'900〜1,650万円',wlb:'★★★',stab:'★★★'},
   {n:'Adobe Japan',cat:'it',s:74,info:'クリエイティブ・マーケティングソフトの世界大手の日本法人。サブスクモデルで安定成長。',sal:'800〜1,400万円',wlb:'★★★★',stab:'★★★★'},
   {n:'Workday Japan',cat:'it',s:73,info:'人事・財務SaaSの世界的リーダーの日本法人。大企業向けERP市場でSAPに対抗。急成長中。',sal:'800〜1,400万円',wlb:'★★★',stab:'★★★'},
   {n:'Cisco Systems Japan',cat:'it',s:73,info:'ネットワーク機器・セキュリティの世界最大手の日本法人。安定した技術力と高い待遇。',sal:'800〜1,400万円',wlb:'★★★★',stab:'★★★★'},
   {n:'NVIDIA Japan',cat:'it',s:76,info:'GPU・AIチップの世界最大手の日本法人。生成AI需要で急成長。エンジニア採用は最難関。',sal:'900〜1,800万円',wlb:'★★★',stab:'★★★★'},
-  {n:'Palantir Technologies Japan',cat:'it',s:73,info:'ビッグデータ分析・国防分野のAI企業の日本法人。国防・政府・大企業向けデータプラットフォーム。',sal:'800〜1,500万円',wlb:'★★☆',stab:'★★★'},
+  {n:'Palantir Technologies Japan',cat:'it',s:73,info:'ビッグデータ分析・国防分野のAI企業の日本法人。国防・政府・大企業向けデータプラットフォーム。',sal:'900〜1,650万円',wlb:'★★☆',stab:'★★★'},
   {n:'Snowflake Japan',cat:'it',s:72,info:'クラウドデータウェアハウスの世界的リーダーの日本法人。データクラウド市場で急成長。',sal:'800〜1,400万円',wlb:'★★★',stab:'★★★'},
   {n:'Datadog Japan',cat:'it',s:71,info:'クラウド監視・可観測性プラットフォームの世界的リーダーの日本法人。DevOps分野で注目。',sal:'750〜1,300万円',wlb:'★★★',stab:'★★★'},
   {n:'Atlassian Japan',cat:'it',s:70,info:'Jira・Confluenceを提供するコラボレーションツールの世界大手日本法人。開発者向けに広く普及。',sal:'750〜1,300万円',wlb:'★★★★',stab:'★★★'},
   {n:'Slack Japan（Salesforce）',cat:'it',s:70,info:'ビジネスコミュニケーションプラットフォームの日本法人。Salesforce傘下でエンタープライズ展開を加速。',sal:'750〜1,300万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'ヤフー（LYコーポレーション）',cat:'it',s:64,info:'Yahoo!JAPANを運営するLINEヤフーグループの事業法人。検索・ニュース・ECを中心に展開。',sal:'600〜900万円',wlb:'★★★★',stab:'★★★'},
+  {n:'ヤフー（LYコーポレーション）',cat:'it',s:64,info:'Yahoo!JAPANを運営するLINEヤフーグループの事業法人。検索・ニュース・ECを中心に展開。',sal:'660〜980万円',wlb:'★★★★',stab:'★★★'},
   {n:'PayPay',cat:'it',s:65,info:'国内最大のQRコード決済サービス。ソフトバンク・PayPay銀行と連携する大規模フィンテック。',sal:'620〜950万円',wlb:'★★★',stab:'★★★'},
   {n:'Sansan',cat:'it',s:63,info:'名刺管理・請求書処理のSaaS企業。法人向けDXツールで急成長。エンジニア・営業採用が活発。',sal:'580〜900万円',wlb:'★★★★',stab:'★★★'},
   {n:'スマートHR',cat:'it',s:62,info:'HR管理SaaSのリーダー的企業。労務・勤怠・給与のデジタル化を支援。急成長スタートアップ。',sal:'570〜880万円',wlb:'★★★★',stab:'★★★'},
@@ -1596,13 +1836,13 @@ const companies=[
   {n:'日本新薬',cat:'medical',s:63,info:'泌尿器科・血液難病の希少疾患に強み。高付加価値製品で高い収益性を維持する製薬。',sal:'570〜830万円',wlb:'★★★★',stab:'★★★★'},
   {n:'久光製薬',cat:'medical',s:63,info:'貼り薬（サロンパス等）で世界的シェアを持つ専門製薬。非上場ながら優良企業として知られる。',sal:'580〜830万円',wlb:'★★★★',stab:'★★★★'},
   {n:'キッセイ薬品工業',cat:'medical',s:61,info:'腎疾患・泌尿器科領域の専門製薬。長野を本拠に堅実な経営と高い社員定着率。',sal:'540〜770万円',wlb:'★★★★',stab:'★★★'},
-  {n:'バイエル薬品（日本）',cat:'medical',s:66,info:'独系グローバル製薬の日本法人。心血管・眼科・がん領域のブロックバスター薬を保有。',sal:'700〜1,000万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'バイエル薬品（日本）',cat:'medical',s:66,info:'独系グローバル製薬の日本法人。心血管・眼科・がん領域のブロックバスター薬を保有。',sal:'760〜1,100万円',wlb:'★★★★',stab:'★★★★'},
   {n:'ロシュ（日本・中外製薬）',cat:'medical',s:68,info:'中外製薬の親会社格。スイス系グローバル製薬最大手。抗体医薬・個別化医療のリーダー。',sal:'700〜1,050万円',wlb:'★★★',stab:'★★★★'},
   {n:'ファイザー（日本）',cat:'medical',s:67,info:'米系世界最大製薬の日本法人。コロナワクチンで知名度向上。多様な疾患領域の医薬品を展開。',sal:'680〜1,000万円',wlb:'★★★★',stab:'★★★★'},
   {n:'ノバルティス（日本）',cat:'medical',s:67,info:'スイス系製薬大手の日本法人。眼科・血液・免疫疾患に強み。革新的治療薬の開発で評価が高い。',sal:'680〜990万円',wlb:'★★★★',stab:'★★★★'},
   {n:'アストラゼネカ（日本）',cat:'medical',s:67,info:'英系製薬大手の日本法人。がん・呼吸器・心臓代謝疾患に強み。革新的な抗体薬物複合体で注目。',sal:'680〜1,000万円',wlb:'★★★★',stab:'★★★★'},
   {n:'MSD（メルク・日本）',cat:'medical',s:67,info:'米系製薬大手の日本法人。キイトルーダ（免疫チェックポイント阻害剤）で抗がん剤市場を牽引。',sal:'680〜1,000万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'グラクソ・スミスクライン（日本）',cat:'medical',s:65,info:'英系製薬大手の日本法人。ワクチン・HIV・がんに強み。コンシューマーヘルスケアを分社化。',sal:'650〜950万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'グラクソ・スミスクライン（日本）',cat:'medical',s:65,info:'英系製薬大手の日本法人。ワクチン・HIV・がんに強み。コンシューマーヘルスケアを分社化。',sal:'710〜1,040万円',wlb:'★★★★',stab:'★★★★'},
   {n:'ジョンソン・エンド・ジョンソン（日本）',cat:'medical',s:67,info:'米系大手の医療機器・製薬の日本法人。外科手術機器・眼科医療機器・OTC薬品を展開。',sal:'680〜980万円',wlb:'★★★★',stab:'★★★★'},
   {n:'日本ベクトン・ディッキンソン',cat:'medical',s:64,info:'注射器・採血管など医療器材の世界大手の日本法人。医療現場に不可欠な製品を安定供給。',sal:'620〜880万円',wlb:'★★★★',stab:'★★★★'},
   {n:'メドトロニック（日本）',cat:'medical',s:66,info:'ペースメーカー・手術支援ロボットの世界大手の日本法人。最先端の医療機器を手術室へ届ける。',sal:'660〜980万円',wlb:'★★★',stab:'★★★★'},
@@ -1619,14 +1859,14 @@ const companies=[
   {n:'三越伊勢丹HD',cat:'retail',s:64,info:'国内百貨店トップ。伊勢丹新宿店を中核に高級ブランドの品揃えが充実。採用倍率は高い。',sal:'530〜760万円',wlb:'★★★',stab:'★★★'},
   {n:'高島屋',cat:'retail',s:62,info:'全国展開する老舗百貨店。海外（シンガポール・タイ）展開も積極的。',sal:'510〜740万円',wlb:'★★★',stab:'★★★'},
   {n:'大丸松坂屋HD',cat:'retail',s:62,info:'J.フロント リテイリング傘下の百貨店。大丸・松坂屋ブランドで全国展開。',sal:'510〜740万円',wlb:'★★★',stab:'★★★'},
-  {n:'そごう・西武',cat:'retail',s:59,info:'セブン＆アイグループから分離した百貨店。再生に向けた取り組みが続く。',sal:'480〜700万円',wlb:'★★★',stab:'★★☆'},
+  {n:'そごう・西武',cat:'retail',s:59,info:'セブン＆アイグループから分離した百貨店。再生に向けた取り組みが続く。',sal:'510〜750万円',wlb:'★★★',stab:'★★☆'},
   {n:'マルイグループ',cat:'retail',s:61,info:'ファッション・フィンテック（エポスカード）の複合流通グループ。Z世代向けマーケティングに強み。',sal:'500〜730万円',wlb:'★★★',stab:'★★★'},
   {n:'パルコ',cat:'retail',s:60,info:'ファッションビルの大手。渋谷パルコのリニューアルが話題。エンタメ・アート系テナントが特徴。',sal:'490〜720万円',wlb:'★★★',stab:'★★★'},
   {n:'アダストリア',cat:'retail',s:59,info:'複数のアパレルブランドを展開するファッション企業。D2C・EC展開に積極的。',sal:'470〜690万円',wlb:'★★★',stab:'★★★'},
   {n:'ワークマン',cat:'retail',s:61,info:'作業服・機能性衣料の大手。PB商品でコスパ最強ブランドとして急成長。加盟店制度でFC展開。',sal:'500〜730万円',wlb:'★★★★',stab:'★★★★'},
   {n:'しまむら',cat:'retail',s:57,info:'低価格ファッションチェーンの大手。堅実な経営と全国展開で安定収益。PB拡充で差別化。',sal:'450〜660万円',wlb:'★★★',stab:'★★★★'},
   {n:'西松屋チェーン',cat:'retail',s:56,info:'子供服・ベビー用品の専門チェーン。少子化に逆行する出店戦略で安定成長。',sal:'430〜640万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'ヤオコー',cat:'retail',s:60,info:'埼玉中心のスーパーマーケット。デリカ強化・惣菜力の高さで差別化。高い顧客満足度が特徴。',sal:'480〜700万円',wlb:'★★★',stab:'★★★★'},
+  {n:'ヤオコー',cat:'retail',s:60,info:'埼玉中心のスーパーマーケット。デリカ強化・惣菜力の高さで差別化。高い顧客満足度が特徴。',sal:'510〜750万円',wlb:'★★★',stab:'★★★★'},
   {n:'オーケー',cat:'retail',s:58,info:'首都圏の「エブリデーロープライス」スーパー。低価格戦略と高品質で強固な支持基盤。',sal:'460〜680万円',wlb:'★★★',stab:'★★★★'},
   {n:'平和堂',cat:'retail',s:57,info:'滋賀・京都地盤のGMS・スーパー。地域密着の安定したスーパー企業。',sal:'440〜650万円',wlb:'★★★',stab:'★★★★'},
   {n:'エレクトロニクスジャパン（ビックカメラ）',cat:'retail',s:58,info:'家電量販店の大手。ソフマップ・コジマを傘下に持つ。EC強化と店舗体験の融合を推進。',sal:'460〜680万円',wlb:'★★★',stab:'★★★'},
@@ -1634,31 +1874,31 @@ const companies=[
   {n:'上島珈琲（UCC）',cat:'retail',s:57,info:'コーヒーの専門メーカー・小売。レギュラーコーヒーのシェアで国内上位。B2B喫茶店向けも強い。',sal:'440〜650万円',wlb:'★★★',stab:'★★★'},
   {n:'スターバックス コーヒー ジャパン',cat:'retail',s:60,info:'全国展開するコーヒーチェーン。バリスタ文化・多様な働き方・キャリア支援が特徴。',sal:'450〜670万円',wlb:'★★★',stab:'★★★'},
   {n:'ドトール・日レスHD',cat:'retail',s:56,info:'ドトールコーヒー・エクセルシオールを展開。低価格コーヒーチェーンの安定した収益基盤。',sal:'420〜630万円',wlb:'★★★',stab:'★★★'},
-  {n:'すかいらーくHD',cat:'retail',s:55,info:'ガスト・バーミヤン・しゃぶ葉などを展開する外食大手。DX・セルフオーダー先進企業。',sal:'400〜620万円',wlb:'★★★',stab:'★★★'},
+  {n:'すかいらーくHD',cat:'retail',s:55,info:'ガスト・バーミヤン・しゃぶ葉などを展開する外食大手。DX・セルフオーダー先進企業。',sal:'430〜670万円',wlb:'★★★',stab:'★★★'},
   {n:'ゼンショーHD',cat:'retail',s:56,info:'すき家・なか卯・ビッグボーイを展開する外食最大手。グローバル展開も積極的。',sal:'420〜640万円',wlb:'★★☆',stab:'★★★'},
   {n:'日本マクドナルドHD',cat:'retail',s:59,info:'日本最大のQSRチェーン。デジタル注文・デリバリー推進で業績回復。マネジメントキャリアが積める。',sal:'470〜700万円',wlb:'★★☆',stab:'★★★'},
   {n:'コメダHD',cat:'retail',s:58,info:'コメダ珈琲店のFC展開企業。独自の「喫茶文化」ブランドで安定成長。ロイヤリティ収益が安定。',sal:'450〜670万円',wlb:'★★★★',stab:'★★★★'},
   {n:'クリエイト・レストランツHD',cat:'retail',s:56,info:'多様なレストランブランドを展開する外食グループ。エリアFC戦略で多業態を効率展開。',sal:'430〜640万円',wlb:'★★★',stab:'★★★'},
 
   /* ── 追加企業データ（広告・メディア） ── */
-  {n:'テレビ朝日HD',cat:'media',s:62,info:'民放キー局。ニュース・バラエティ・スポーツ（Mステ等）に強み。採用倍率は極めて高い。',sal:'700〜950万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'テレビ朝日HD',cat:'media',s:62,info:'民放キー局。ニュース・バラエティ・スポーツ（Mステ等）に強み。採用倍率は極めて高い。',sal:'750〜1,050万円',wlb:'★★☆',stab:'★★★★'},
   {n:'テレビ東京HD',cat:'media',s:61,info:'独自路線の民放キー局。アニメ・経済情報・旅番組に強み。他局とは異なるユニークな文化。',sal:'680〜930万円',wlb:'★★☆',stab:'★★★★'},
   {n:'MBS（毎日放送）',cat:'media',s:59,info:'関西の準キー局。バラエティ・報道・スポーツを展開。TBSネットワーク系で安定した事業基盤。',sal:'620〜870万円',wlb:'★★☆',stab:'★★★★'},
   {n:'ABC テレビ',cat:'media',s:58,info:'朝日放送テレビ。関西準キー局でテレ朝ネット。情報・バラエティ番組に強み。',sal:'610〜860万円',wlb:'★★☆',stab:'★★★★'},
-  {n:'読売新聞東京本社',cat:'media',s:64,info:'世界最大の発行部数を誇る読売新聞。記者・編集・デジタル部門での採用が続く。',sal:'650〜950万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'読売新聞東京本社',cat:'media',s:64,info:'世界最大の発行部数を誇る読売新聞。記者・編集・デジタル部門での採用が続く。',sal:'710〜1,040万円',wlb:'★★☆',stab:'★★★★'},
   {n:'朝日新聞社',cat:'media',s:64,info:'国内紙の有力紙。部数減少が続くが、デジタルサブスク・動画での転換を推進。',sal:'650〜940万円',wlb:'★★☆',stab:'★★★'},
   {n:'毎日新聞社',cat:'media',s:62,info:'全国紙の一角。デジタル強化・スポーツ報道に注力。採用倍率は高い。',sal:'600〜860万円',wlb:'★★☆',stab:'★★★'},
-  {n:'日本経済新聞社',cat:'media',s:67,info:'経済紙のトップブランド。日経電子版のデジタル転換に成功。ビジネスパーソン必読の経済情報メディア。',sal:'700〜1,000万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'日本経済新聞社',cat:'media',s:67,info:'経済紙のトップブランド。日経電子版のデジタル転換に成功。ビジネスパーソン必読の経済情報メディア。',sal:'760〜1,100万円',wlb:'★★☆',stab:'★★★★'},
   {n:'産業経済新聞社（産経）',cat:'media',s:58,info:'保守系の全国紙。デジタル化・コスト削減を推進中。採用数は減少傾向。',sal:'570〜800万円',wlb:'★★★',stab:'★★★'},
   {n:'NHK（日本放送協会）',cat:'media',s:70,info:'国内最大の放送局。公共放送として受信料収入で安定。報道・教育・文化の使命を担う公的メディア。',sal:'600〜950万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'集英社',cat:'media',s:67,info:'漫画・雑誌・書籍の出版大手。週刊少年ジャンプ・ワンピースを抱える日本最大の出版社。',sal:'700〜1,000万円',wlb:'★★★',stab:'★★★★'},
-  {n:'講談社',cat:'media',s:67,info:'漫画・雑誌・書籍の老舗大手出版社。日本最大の発行部数を誇るグループ。知名度・待遇ともに高い。',sal:'700〜1,000万円',wlb:'★★★',stab:'★★★★'},
+  {n:'集英社',cat:'media',s:67,info:'漫画・雑誌・書籍の出版大手。週刊少年ジャンプ・ワンピースを抱える日本最大の出版社。',sal:'760〜1,100万円',wlb:'★★★',stab:'★★★★'},
+  {n:'講談社',cat:'media',s:67,info:'漫画・雑誌・書籍の老舗大手出版社。日本最大の発行部数を誇るグループ。知名度・待遇ともに高い。',sal:'760〜1,100万円',wlb:'★★★',stab:'★★★★'},
   {n:'小学館',cat:'media',s:66,info:'漫画・書籍・雑誌の大手出版社。コロコロコミック・ビッグコミックなど幅広いラインナップ。',sal:'680〜980万円',wlb:'★★★',stab:'★★★★'},
   {n:'角川グループ（KADOKAWA）',cat:'media',s:63,info:'出版・アニメ・ゲーム・ニコニコ動画を展開するメディアコングロマリット。IPビジネスで成長。',sal:'580〜830万円',wlb:'★★★',stab:'★★★'},
-  {n:'サイバーエージェント（メディア）',cat:'media',s:64,info:'AbemaTV・Ameba・インターネット広告を展開。若いメディア企業文化と積極的な新規事業が特徴。',sal:'600〜900万円',wlb:'★★★',stab:'★★★'},
+  {n:'サイバーエージェント（メディア）',cat:'media',s:64,info:'AbemaTV・Ameba・インターネット広告を展開。若いメディア企業文化と積極的な新規事業が特徴。',sal:'660〜980万円',wlb:'★★★',stab:'★★★'},
   {n:'GMOインターネットグループ',cat:'media',s:60,info:'ドメイン・ホスティング・インターネット広告・暗号資産。多角的なネット企業グループ。',sal:'530〜780万円',wlb:'★★★',stab:'★★★'},
   {n:'オプトHD',cat:'media',s:59,info:'デジタルマーケティング・インターネット広告代理店の中堅。電通グループ傘下。',sal:'500〜740万円',wlb:'★★★',stab:'★★★'},
-  {n:'サイバーバズ',cat:'media',s:57,info:'SNSマーケティング・インフルエンサー活用の専門企業。デジタル広告分野で成長中。',sal:'450〜680万円',wlb:'★★★',stab:'★★★'},
+  {n:'サイバーバズ',cat:'media',s:57,info:'SNSマーケティング・インフルエンサー活用の専門企業。デジタル広告分野で成長中。',sal:'485〜735万円',wlb:'★★★',stab:'★★★'},
   {n:'オリコム',cat:'media',s:59,info:'独立系中堅広告代理店。電通・博報堂とは独自路線の専門性で差別化。',sal:'480〜710万円',wlb:'★★★',stab:'★★★'},
   {n:'ADKホールディングス',cat:'media',s:62,info:'WPPグループ傘下の国内広告代理店3位。デジタル・コンテンツ・プロモーションに強み。',sal:'560〜800万円',wlb:'★★★',stab:'★★★'},
   {n:'東急エージェンシー',cat:'media',s:58,info:'東急グループの広告代理店。交通・OOH広告・デジタルに強み。グループ案件が安定基盤。',sal:'500〜730万円',wlb:'★★★',stab:'★★★★'},
@@ -1678,35 +1918,56 @@ const companies=[
   {n:'竹中工務店',cat:'maker',s:66,info:'非上場の大手ゼネコン。建築設計・施工一貫体制と高い技術力・意匠性で差別化。',sal:'600〜870万円',wlb:'★★★',stab:'★★★★'},
   {n:'ENEOSホールディングス',cat:'infra',s:67,info:'国内最大の石油元売り。ガソリン・灯油・ジェット燃料のインフラを支える。再エネ事業も加速。',sal:'620〜880万円',wlb:'★★★',stab:'★★★★'},
   {n:'出光興産',cat:'infra',s:66,info:'エネルギー・石油化学の大手。昭和シェルとの統合でスケールアップ。再エネへの転換も推進。',sal:'600〜860万円',wlb:'★★★',stab:'★★★★'},
-  {n:'国際石油開発帝石（INPEX）',cat:'infra',s:69,info:'日本最大の石油・ガス開発会社。イクシスLNGプロジェクトでオーストラリアに巨大拠点。',sal:'650〜950万円',wlb:'★★★',stab:'★★★★'},
+  {n:'国際石油開発帝石（INPEX）',cat:'infra',s:69,info:'日本最大の石油・ガス開発会社。イクシスLNGプロジェクトでオーストラリアに巨大拠点。',sal:'710〜1,040万円',wlb:'★★★',stab:'★★★★'},
   {n:'国立研究開発法人（JAXA）',cat:'gov',s:70,info:'宇宙航空研究開発機構。月探査・人工衛星・ロケット開発を担う国内唯一の宇宙機関。',sal:'600〜950万円',wlb:'★★★★',stab:'★★★★★'},
   {n:'日本原子力研究開発機構（JAEA）',cat:'gov',s:67,info:'原子力・核融合研究の国内最大機関。廃炉・核燃料サイクルの技術開発に取り組む。',sal:'560〜880万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'国立病院機構（各院）',cat:'medical',s:58,info:'全国144病院を運営する独立行政法人。医師・看護師・医療技術職・事務職で安定した雇用。',sal:'440〜700万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'大学病院（旧帝大系）',cat:'medical',s:62,info:'東大・京大・阪大・東北大等の附属病院。最先端医療・研究の場。医師・研究者のトップキャリア。',sal:'500〜850万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'日本政策投資銀行（DBJ）',cat:'finance',s:70,info:'政策系投資銀行。国家プロジェクト・産業振興への融資を行う。半官半民で安定性が高い。',sal:'650〜950万円',wlb:'★★★',stab:'★★★★★'},
+  {n:'国立病院機構（各院）',cat:'medical',s:58,info:'全国144病院を運営する独立行政法人。医師・看護師・医療技術職・事務職で安定した雇用。',sal:'490〜800万円（職種・資格により差）',wlb:'★★★',stab:'★★★★★'},
+  {n:'大学病院（旧帝大系）',cat:'medical',s:62,info:'東大・京大・阪大・東北大等の附属病院。最先端医療・研究の場。医師・研究者のトップキャリア。',sal:'620〜1,250万円（医師・職種により大きく差）',wlb:'★★☆',stab:'★★★★★'},
+  {n:'日本政策投資銀行（DBJ）',cat:'finance',s:70,info:'政策系投資銀行。国家プロジェクト・産業振興への融資を行う。半官半民で安定性が高い。',sal:'710〜1,040万円',wlb:'★★★',stab:'★★★★★'},
   {n:'国際協力銀行（JBIC）',cat:'finance',s:70,info:'輸出促進・資源確保・インフラ輸出を支援する政策金融機関。グローバルな案件に関与できる。',sal:'640〜930万円',wlb:'★★★',stab:'★★★★★'},
   {n:'日本政策金融公庫',cat:'finance',s:65,info:'中小企業・農業・国民生活向けの政策金融機関。安定した公的使命と金融業務を両立。',sal:'540〜780万円',wlb:'★★★★',stab:'★★★★★'},
-  {n:'Google Japan',cat:'it',s:80,info:'世界最大IT企業の日本法人。エンジニア採用はGooglerとして最高峰の環境。待遇・福利厚生ともに最高水準。',sal:'1,000〜2,000万円+',wlb:'★★★★',stab:'★★★'},
+  {n:'Google Japan',cat:'it',s:80,info:'世界最大IT企業の日本法人。エンジニア採用はGooglerとして最高峰の環境。待遇・福利厚生ともに最高水準。',sal:'1,100〜2,200万円+',wlb:'★★★★',stab:'★★★'},
   {n:'Amazon Japan',cat:'it',s:79,info:'世界最大のクラウド・EC企業の日本法人。AWSエンジニアは特に高待遇。データドリブンな文化。',sal:'900〜1,800万円+',wlb:'★★★',stab:'★★★'},
   {n:'Microsoft Japan',cat:'it',s:78,info:'世界最大のソフトウェア企業の日本法人。Azure・M365・Copilotの拡販に注力。働き方改革の先進企業。',sal:'900〜1,700万円',wlb:'★★★★',stab:'★★★★'},
   {n:'三越伊勢丹HD',cat:'retail',s:64,info:'国内百貨店トップ。伊勢丹新宿店を中核に高級ブランドの品揃えが充実。採用倍率は高い。',sal:'530〜760万円',wlb:'★★★',stab:'★★★'},
   {n:'スターバックス コーヒー ジャパン',cat:'retail',s:60,info:'全国展開するコーヒーチェーン。バリスタ文化・多様な働き方・キャリア支援が特徴。',sal:'450〜670万円',wlb:'★★★',stab:'★★★'},
   {n:'NHK（日本放送協会）',cat:'media',s:70,info:'国内最大の放送局。公共放送として受信料収入で安定。報道・教育・文化の使命を担う公的メディア。',sal:'600〜950万円',wlb:'★★★',stab:'★★★★★'},
-  {n:'集英社',cat:'media',s:67,info:'漫画・雑誌・書籍の出版大手。週刊少年ジャンプ・ワンピースを抱える日本最大の出版社。',sal:'700〜1,000万円',wlb:'★★★',stab:'★★★★'},
-  {n:'講談社',cat:'media',s:67,info:'漫画・雑誌・書籍の老舗大手出版社。日本最大の発行部数を誇るグループ。知名度・待遇ともに高い。',sal:'700〜1,000万円',wlb:'★★★',stab:'★★★★'},
-  {n:'日本経済新聞社',cat:'media',s:67,info:'経済紙のトップブランド。日経電子版のデジタル転換に成功。ビジネスパーソン必読の経済情報メディア。',sal:'700〜1,000万円',wlb:'★★☆',stab:'★★★★'},
-  {n:'ファナック',cat:'maker',s:70,info:'CNCシステム・産業用ロボットで世界トップシェア。工場自動化の中核企業。高収益体質が特徴。',sal:'650〜950万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'信越化学工業',cat:'maker',s:70,info:'半導体シリコンウエハー・塩化ビニル樹脂で世界トップシェア。高収益・高配当の優良企業。',sal:'650〜950万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'集英社',cat:'media',s:67,info:'漫画・雑誌・書籍の出版大手。週刊少年ジャンプ・ワンピースを抱える日本最大の出版社。',sal:'760〜1,100万円',wlb:'★★★',stab:'★★★★'},
+  {n:'講談社',cat:'media',s:67,info:'漫画・雑誌・書籍の老舗大手出版社。日本最大の発行部数を誇るグループ。知名度・待遇ともに高い。',sal:'760〜1,100万円',wlb:'★★★',stab:'★★★★'},
+  {n:'日本経済新聞社',cat:'media',s:67,info:'経済紙のトップブランド。日経電子版のデジタル転換に成功。ビジネスパーソン必読の経済情報メディア。',sal:'760〜1,100万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'ファナック',cat:'maker',s:70,info:'CNCシステム・産業用ロボットで世界トップシェア。工場自動化の中核企業。高収益体質が特徴。',sal:'710〜1,040万円',wlb:'★★★★',stab:'★★★★'},
+  {n:'信越化学工業',cat:'maker',s:70,info:'半導体シリコンウエハー・塩化ビニル樹脂で世界トップシェア。高収益・高配当の優良企業。',sal:'710〜1,040万円',wlb:'★★★★',stab:'★★★★'},
   {n:'ブリヂストン',cat:'maker',s:70,info:'タイヤの世界シェアトップ（ミシュランと1〜2位を争う）。プレミアムタイヤ・ソリューション事業に注力。',sal:'640〜920万円',wlb:'★★★',stab:'★★★★'},
   {n:'SMC',cat:'maker',s:70,info:'空気圧機器（ニューマチックス）で世界シェアトップ。工場自動化の必須部品を供給する超高収益企業。',sal:'640〜920万円',wlb:'★★★★',stab:'★★★★'},
-  {n:'テレビ朝日HD',cat:'media',s:62,info:'民放キー局。ニュース・バラエティ・スポーツに強み。採用倍率は極めて高い。',sal:'700〜950万円',wlb:'★★☆',stab:'★★★★'},
-  {n:'読売新聞東京本社',cat:'media',s:64,info:'世界最大の発行部数を誇る読売新聞。記者・編集・デジタル部門での採用が続く。',sal:'650〜950万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'テレビ朝日HD',cat:'media',s:62,info:'民放キー局。ニュース・バラエティ・スポーツに強み。採用倍率は極めて高い。',sal:'750〜1,050万円',wlb:'★★☆',stab:'★★★★'},
+  {n:'読売新聞東京本社',cat:'media',s:64,info:'世界最大の発行部数を誇る読売新聞。記者・編集・デジタル部門での採用が続く。',sal:'710〜1,040万円',wlb:'★★☆',stab:'★★★★'},
   {n:'ADKホールディングス',cat:'media',s:62,info:'WPPグループ傘下の国内広告代理店3位。デジタル・コンテンツ・プロモーションに強み。',sal:'560〜800万円',wlb:'★★★',stab:'★★★'},
-  {n:'国家安全保障局（NSS）',cat:'gov',s:75,info:'内閣直属の安全保障政策調整機関。各省庁のエリートが集まる安保政策の中枢。',sal:'500〜1,000万円',wlb:'★★☆',stab:'★★★★★'},
-  {n:'金融庁',cat:'gov',s:71,info:'金融機関の監督・検査・金融政策を担う。銀行・証券・保険の監督権限を持つ強力な規制機関。',sal:'480〜900万円',wlb:'★★★',stab:'★★★★★'},
   {n:'公正取引委員会',cat:'gov',s:70,info:'独占禁止法の執行を担う独立行政委員会。競争政策の最前線でデジタル市場・M&Aを審査。',sal:'470〜850万円',wlb:'★★★',stab:'★★★★★'},
   {n:'福岡市',cat:'gov',s:62,info:'九州の中心都市。スタートアップ都市としての取り組みが全国注目。成長著しい政令市。',sal:'380〜720万円',wlb:'★★★',stab:'★★★★★'},
 ];
+
+
+// ── Utility: debounce ──
+function debounce(fn, delay) {
+  let t;
+  return function(...args) {
+    clearTimeout(t);
+    t = setTimeout(() => fn.apply(this, args), delay);
+  };
+}
+const debouncedRenderMap = debounce(renderMap, 200);
+
+// ── Utility: throttle ──
+function throttle(fn, limit) {
+  let lastCall = 0;
+  return function(...args) {
+    const now = Date.now();
+    if (now - lastCall >= limit) {
+      lastCall = now;
+      return fn.apply(this, args);
+    }
+  };
+}
 
 // ── MAP FILTER & RENDER ──
 let mapCatFilter='all';
@@ -1787,7 +2048,7 @@ function showDetail(name){
   const sb=scoreBandMap(c.s);
   const cc=catColorMap[c.cat]||'background:#f0f9ff;color:#0c4a6e';
   document.getElementById('modalHeader').innerHTML=`
-    <button class="modal-close" onclick="closeModal()">✕</button>
+    <button class="modal-close" onclick="closeModal()" aria-label="モーダルを閉じる">✕</button>
     <span class="modal-cat-tag" style="${cc};padding:4px 12px;border-radius:4px;">${catLabel[c.cat]||c.cat}</span>
     <div class="modal-name">${c.n}</div>
     <div class="modal-score-row">
@@ -1828,12 +2089,26 @@ function showDetail(name){
       ※ 年収・WLBは人事院勧告・就職四季報・各社IR・OpenWork等を参考にした目安値です。実際は部署・職種・年次により大きく変動します。
     </p>
   `;
-  document.getElementById('detailModal').style.display='flex';
+  const modal=document.getElementById('detailModal');
+  modal.style.display='flex';
+  document.body.style.overflow='hidden';
 }
-function closeModal(){document.getElementById('detailModal').style.display='none';}
+function closeModal(){
+  const m = document.getElementById('detailModal');
+  m.style.display='none';
+  document.body.style.overflow='';
+}
 document.getElementById('detailModal').addEventListener('click',function(e){
   if(e.target===this)closeModal();
 });
+// Escape key closes modal
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const m = document.getElementById('detailModal');
+    if (m && m.style.display === 'flex') closeModal();
+  }
+});
+/* showDetail override removed - scroll lock integrated below */
 
 // ── DIAGNOSIS ──
 const questions=[
@@ -1982,7 +2257,7 @@ function calcDiag(){
         </div>
         <div class="diag-ad-box">
           <a id="diagAdLink" href="https://px.a8.net/svt/ejp?a8mat=4B3NYT+FYJBJM+348+1C66K1" rel="nofollow" target="_blank" onclick="onAdClick()">
-            <img border="0" width="250" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=260511509965&wid=001&eno=01&mid=s00000000404008091000&mc=1">
+            <img border="0" width="250" height="250" alt="スポンサー広告" loading="lazy" src="https://www22.a8.net/svt/bgt?aid=260511509965&wid=001&eno=01&mid=s00000000404008091000&mc=1">
           </a>
           <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4B3NYT+FYJBJM+348+1C66K1" alt="">
         </div>
@@ -2122,6 +2397,147 @@ function submitFeedback(){
   document.getElementById('feedbackForm').style.display='none';
   document.getElementById('feedbackSuccess').style.display='block';
 }
+</script>
+
+<!-- ══════════════════════════════════════
+  ポリシーモーダル群（利用規約・PP・免責・お問い合わせ）
+══════════════════════════════════════ -->
+
+<div id="policyModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:3000;align-items:center;justify-content:center;" role="dialog" aria-modal="true" aria-labelledby="policyModalTitle" onclick="if(event.target===this)closePolicyModal()">
+  <div style="background:#fff;width:90%;max-width:640px;max-height:85vh;overflow-y:auto;border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,0.35);position:relative;">
+    <div style="background:linear-gradient(135deg,#0b1829,#112238);padding:24px 28px 20px;border-radius:16px 16px 0 0;position:sticky;top:0;z-index:1;">
+      <div id="policyModalTitle" style="font-family:'Noto Serif JP',serif;font-size:17px;font-weight:700;color:#fff;margin-bottom:2px;padding-right:40px;"></div>
+      <button onclick="closePolicyModal()" aria-label="閉じる" style="position:absolute;top:14px;right:16px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;">✕</button>
+    </div>
+    <div id="policyModalBody" style="padding:28px;font-size:13px;color:#374e6e;line-height:1.85;"></div>
+  </div>
+</div>
+
+<footer role="contentinfo" aria-label="サイトフッター">
+  <div style="max-width:1200px;margin:0 auto;padding:32px 28px;">
+    <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start;border-bottom:1px solid rgba(255,255,255,0.07);padding-bottom:24px;margin-bottom:20px;">
+      <div>
+        <div style="font-family:'Noto Serif JP',serif;font-size:15px;font-weight:700;color:#fff;margin-bottom:6px;">就職先比較分析</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);line-height:1.8;">就活生のための中立・無料のキャリア比較データベース</div>
+      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;">
+        <button onclick="openPolicyModal('terms')" style="background:none;border:none;font-size:12px;color:rgba(255,255,255,0.45);cursor:pointer;padding:0;font-family:inherit;">利用規約</button>
+        <button onclick="openPolicyModal('privacy')" style="background:none;border:none;font-size:12px;color:rgba(255,255,255,0.45);cursor:pointer;padding:0;font-family:inherit;">プライバシーポリシー</button>
+        <button onclick="openPolicyModal('disclaimer')" style="background:none;border:none;font-size:12px;color:rgba(255,255,255,0.45);cursor:pointer;padding:0;font-family:inherit;">免責事項</button>
+        <button onclick="openPolicyModal('contact')" style="background:none;border:none;font-size:12px;color:rgba(255,255,255,0.45);cursor:pointer;padding:0;font-family:inherit;">お問い合わせ</button>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;">
+      <p style="font-size:11px;color:rgba(255,255,255,0.28);line-height:1.8;">
+        ※ 掲載データは人事院勧告・各社IR・就職四季報・厚生労働省統計を参考にした目安値です。<br>
+        実際の年収・条件は企業・部署・年次により大きく異なります。投資・意思決定の根拠としないでください。<br>
+        最終更新：2026年5月
+      </p>
+      <p style="font-size:11px;color:rgba(255,255,255,0.2);">© 2026 就職先比較分析</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── ポリシーモーダル ──
+const policyContent = {
+  terms: {
+    title: '利用規約',
+    body: `
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:0 0 12px;">第1条（目的・適用）</h3>
+      <p>本利用規約（以下「本規約」）は、就職先比較分析サイト（以下「本サイト」）の利用に関する条件を定めるものです。本サイトを利用するすべての方（以下「利用者」）は、本規約に同意したうえでご利用ください。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">第2条（コンテンツの利用）</h3>
+      <p>本サイトに掲載されているすべての情報・データ・デザインの著作権は、本サイト運営者に帰属します。無断転載・複製・改変・商用利用は禁止します。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">第3条（情報の正確性）</h3>
+      <p>本サイトが提供する年収・スコア等のデータは、公開情報を基にした参考値です。実際の条件・待遇は企業・部署・年次により異なります。本サイトの情報を就職・転職・投資判断の唯一の根拠とすることはお控えください。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">第4条（禁止事項）</h3>
+      <p>利用者は以下の行為を行ってはなりません。①本サイトの運営を妨害する行為、②不正アクセス・クローリング・スクレイピングの過度な利用、③虚偽の情報を投稿・送信する行為、④その他法令に違反する行為。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">第5条（規約の変更）</h3>
+      <p>本規約は予告なく変更する場合があります。変更後の利用規約は本サイトに掲載した時点で効力を生じます。</p>
+    `
+  },
+  privacy: {
+    title: 'プライバシーポリシー',
+    body: `
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:0 0 12px;">個人情報の取り扱いについて</h3>
+      <p>本サイトは、利用者のプライバシーを尊重し、個人情報の保護に努めます。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">収集する情報</h3>
+      <p>本サイトでは以下の情報を収集することがあります。①意見箱フォームからご送信いただいたお問い合わせ内容、②アクセス解析ツール（Google Analytics等）によるサイト利用状況（匿名）。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">情報の利用目的</h3>
+      <p>収集した情報は、サービスの改善・お問い合わせ対応・統計分析のみに使用します。第三者への販売・提供は行いません。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">Cookieについて</h3>
+      <p>本サイトはGoogle Analytics等のサービス向上のためCookieを使用する場合があります。ブラウザ設定によりCookieを無効化することができます。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">広告について</h3>
+      <p>本サイトはA8.net等のアフィリエイトサービスを通じて広告を掲載しています。広告主が独自にCookieを使用する場合があります。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">お問い合わせ</h3>
+      <p>個人情報の取り扱いに関するお問い合わせは、意見箱フォームよりご連絡ください。</p>
+    `
+  },
+  disclaimer: {
+    title: '免責事項',
+    body: `
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:0 0 12px;">データの正確性について</h3>
+      <p>本サイトに掲載している年収・偏差値・スコア・企業情報等は、人事院勧告・各社IR・就職四季報・厚生労働省統計・OpenWork等の公開情報を参考に独自算出した<strong>参考値・目安値</strong>です。実際の待遇・条件は企業・部署・職種・年次・景況により大きく異なります。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">利用上の注意</h3>
+      <p>本サイトの情報は、就職・転職・投資・進学等の意思決定における<strong>唯一の根拠としないこと</strong>を強くお願いします。最終的な判断は各自の責任において行ってください。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">損害賠償の免責</h3>
+      <p>本サイトの利用により生じた損害・損失について、運営者は一切の責任を負いません。また、本サイトのリンク先サイトの内容についても責任を負いません。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">情報の更新について</h3>
+      <p>掲載情報は随時更新しますが、常に最新・正確であることを保証するものではありません。最新情報は各企業の公式発表・公式採用サイトでご確認ください。</p>
+      <h3 style="font-size:14px;font-weight:700;color:#0b1829;margin:20px 0 12px;">診断結果について</h3>
+      <p>自己分析診断の結果はアンケートに基づく参考情報です。職業適性の確定的な判定ではありません。キャリアカウンセラー等の専門家へのご相談も合わせてご検討ください。</p>
+    `
+  },
+  contact: {
+    title: 'お問い合わせ',
+    body: `
+      <p style="margin-bottom:20px;">ご質問・ご意見・データの修正依頼・企業追加要望等は、ページ下部の<strong>「意見箱」フォーム</strong>よりお送りください。</p>
+      <div style="background:#f2f5fb;border-radius:10px;padding:18px 20px;border:1px solid #dde3ee;margin-bottom:16px;">
+        <div style="font-size:12px;font-weight:700;color:#374e6e;margin-bottom:8px;">受け付けているお問い合わせ内容</div>
+        <ul style="font-size:13px;color:#374e6e;line-height:2;padding-left:18px;">
+          <li>掲載データ・年収数値の修正依頼</li>
+          <li>企業・機関の新規追加要望</li>
+          <li>表示・動作に関する不具合報告</li>
+          <li>新機能・改善のご提案</li>
+          <li>その他ご意見・ご感想</li>
+        </ul>
+      </div>
+      <div style="background:#e8f0fd;border-radius:10px;padding:16px 20px;border:1px solid #c5d5f8;">
+        <div style="font-size:12px;font-weight:700;color:#1d58d4;margin-bottom:6px;">🔒 送信方法</div>
+        <p style="font-size:12px;color:#374e6e;margin:0;">意見箱フォームから送信された内容はメールクライアントを通じて管理者に届きます。個人情報は収集・公開されません。</p>
+      </div>
+      <div style="margin-top:20px;text-align:center;">
+        <button onclick="closePolicyModal();document.querySelector('.feedback-card').scrollIntoView({behavior:'smooth'});" style="background:linear-gradient(135deg,#1d58d4,#2a6aed);color:#fff;border:none;border-radius:8px;padding:12px 28px;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;box-shadow:0 2px 10px rgba(29,88,212,0.3);">意見箱へ移動する →</button>
+      </div>
+    `
+  }
+};
+
+function openPolicyModal(type) {
+  const data = policyContent[type];
+  if (!data) return;
+  document.getElementById('policyModalTitle').textContent = data.title;
+  document.getElementById('policyModalBody').innerHTML = data.body;
+  const m = document.getElementById('policyModal');
+  m.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  // Focus the modal for accessibility
+  m.querySelector('button').focus();
+}
+
+function closePolicyModal() {
+  const m = document.getElementById('policyModal');
+  m.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+// Escape key also closes policy modal
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const pm = document.getElementById('policyModal');
+    if (pm && pm.style.display === 'flex') closePolicyModal();
+  }
+});
 </script>
 
 </body>
