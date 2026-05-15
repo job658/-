@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="color-scheme" content="light only">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARCH・関関同立 出口戦略比較 | 自己分析データベース 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+/* Enterprise Design System - University Edition
+   No En-dash / No Smart Quotes Version
+*/
+
+:root {
+  --navy: #0b1829;
+  --navy2: #112238;
+  --navy3: #1a2e4a;
+  --gold: #c5a059;
+  --gold-light: #e0c58e;
+  --teal: #2a5d67;
+  --accent: #d4af37;
+  --bg-sub: #f8f9fa;
+  --text-main: #2c3e50;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--text-main);
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--navy);
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--gold);
+}
+.logo-main {
+  color: #fff;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+  color: #fff;
+  padding: 5rem 10%;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Noto Serif JP', serif;
+}
+.hero-desc {
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* Compare Grid */
+.compare-container {
+  padding: 4rem 5%;
+  background: var(--bg-sub);
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.compare-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.compare-card:hover { transform: translateY(-5px); }
+.card-header {
+  padding: 2rem;
+  background: var(--navy3);
+  color: #fff;
+}
+.ec-cat {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.card-body { padding: 2rem; flex-grow: 1; }
+
+/* Score & Lists */
+.dev-score-badge {
+  background: var(--bg-sub);
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid var(--gold);
+}
+.fit-list { list-style: none; padding: 0; margin: 0; }
+.fit-list li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+.fit-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
+}
+.fit-list li.not::before { content: '×'; color: #e74c3c; }
+
+/* Ads Area (Protected) */
+.ads-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #eee;
+  text-align: center;
+  min-height: 250px;
+}
+
+/* Feedback Box */
+.feedback-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 4rem auto;
+}
+.feedback-submit {
+  background: var(--navy);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-main">CAREER ANALYSIS 2026</div>
+</header>
+
+<section class="hero">
+  <h1>その「出口」で、10年後笑えますか？</h1>
+  <p class="hero-desc">
+    MARCH・関関同立という看板に甘んじ、思考停止していませんか？<br>
+    大手企業の「学歴フィルター」を突破したその先にあるのは、激しい社内競争か、安定したルーチンか。<br>
+    独自のデータ分析に基づき、あなたの性質に合った「出口戦略」を可視化します。
+  </p>
+</section>
+
+<div class="ads-section">
+  <div style="padding: 20px; color: #666;">
+    スポンサーリンク<br>
+    ここに既存の広告コードをそのまま挿入
+  </div>
+  </div>
+
+<div class="compare-container">
+  <div class="compare-grid">
+    <article class="compare-card">
+      <div class="card-header">
+        <span class="ec-cat">Type A: Elite Corporate</span>
+        <h3>大手総合職・金融キャリア</h3>
+      </div>
+      <div class="card-body">
+        <div class="dev-score-badge">
+          <span>適正年収（30歳）: 750万〜</span>
+          <span style="font-weight:bold; color:var(--gold);">S Rank</span>
+        </div>
+        <ul class="fit-list">
+          <li>「組織の歯車」として巨大な仕組みを動かしたい</li>
+          <li>住宅ローンや家族の安定を最優先したい</li>
+          <li class="not">個人の名前で勝負したい、自由な時間が欲しい</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="compare-card">
+      <div class="card-header">
+        <span class="ec-cat">Type B: Specialist / IT</span>
+        <h3>実力主義・専門職キャリア</h3>
+      </div>
+      <div class="card-body">
+        <div class="dev-score-badge">
+          <span>適正年収（30歳）: 600万〜1200万</span>
+          <span style="font-weight:bold; color:var(--gold);">A+ Rank</span>
+        </div>
+        <ul class="fit-list">
+          <li>場所や組織に縛られないスキルを身につけたい</li>
+          <li>年功序列の会議や飲み会が苦痛で仕方ない</li>
+          <li class="not">明確な評価基準がないと不安になる</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</div>
+
+<div class="feedback-box">
+  <h3>自己分析フィードバック箱</h3>
+  <p>分析結果はいかがでしたか？あなたの現状やご意見をお聞かせください。</p>
+  <select id="fbCat" style="width:100%; padding:10px; margin-bottom:10px;">
+    <option value="分析精度">分析の精度について</option>
+    <option value="項目追加">項目追加のリクエスト</option>
+  </select>
+  <textarea id="fbMsg" style="width:100%; height:100px; padding:10px; margin-bottom:10px;" placeholder="メッセージを入力..."></textarea>
+  <button class="feedback-submit" onclick="submitFeedback()">分析結果を送信する →</button>
+</div>
+
+<script>
+function submitFeedback(){
+  const msg = document.getElementById('fbMsg').value.trim();
+  if(!msg){alert('メッセージを入力してください。'); return;}
+  alert('送信されました。ご協力ありがとうございます。');
+}
+</script>
+
+</body>
+</html>
